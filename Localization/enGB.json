@@ -16,10 +16,6 @@
       "Offset": 0,
       "Text": "<u>(10 + 2 × {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
     },
-    "4d6fa8e7-29f7-43cf-9680-114a0e03ba60": {
-      "Offset": 0,
-      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s next non-{g|Encyclopedia:AreaOfEffect}area attack{/g} inflicts the intimidated effect on the first target {g|Encyclopedia:HitSequenceGlossary}hit{/g} by the attack and all enemies in a 5-cell radius around that target.\nThe {g|Encyclopedia:DamageGlossary}damage{/g} dealt by intimidated enemies is reduced by −<u>{unit_stat|WarhammerPerception|bonus}</u>% until the Operative's next turn."
-    },
     "692275c6-d3e2-4b96-ad40-a5183593815a": {
       "Offset": 0,
       "Text": "<u>(10 x {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
