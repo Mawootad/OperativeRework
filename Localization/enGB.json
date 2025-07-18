@@ -1,0 +1,140 @@
+{
+  "strings": {
+    "93878892-b607-4305-90e8-5ce9f81cd9da": {
+      "Offset": 0,
+      "Text": "<u>(5 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
+    },
+    "63599150-19f3-467d-8085-9a79a94557ac": {
+      "Offset": 0,
+      "Text": "At the start of each turn, the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} inflicts +1 stack of the {g|Encyclopedia:Exploit}exploit{/g} {g|Encyclopedia:CommonStatusesGlossary}effect{/g} on all enemies in the Operative's {g|Encyclopedia:LineOfSight}line of sight{/g}.\nEnemies suffer +5% more damage for each stack of exploit. Enemies damaged by the Operative suffer +<u>{uip|damage|6cfd9b9830ea403db07a816843a8e39a}</u>% more damage for each stack instead."
+    },
+    "f7d0c492-d327-4200-9339-d498eb1f63c9": {
+      "Offset": 0,
+      "Text": "Until the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s next {g|Encyclopedia:Turn}turn{/g}, the next time each enemy is attacked the attack deals +{unit_stat|WarhammerIntelligence|bonus} more {g|Encyclopedia:DamageGlossary}damage{/g} and applies an {g|Encyclopedia:Exploit}exploit{/g}."
+    },
+    "0ab59101-6bb2-4daa-ae9f-1d27698ad99e": {
+      "Offset": 0,
+      "Text": "<u>(10 + 2 × {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
+    },
+    "4d6fa8e7-29f7-43cf-9680-114a0e03ba60": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s next non-{g|Encyclopedia:AreaOfEffect}area attack{/g} inflicts the intimidated effect on the first target {g|Encyclopedia:HitSequenceGlossary}hit{/g} by the attack and all enemies in a 5-cell radius around that target.\nThe {g|Encyclopedia:DamageGlossary}damage{/g} dealt by intimidated enemies is reduced by −<u>{unit_stat|WarhammerPerception|bonus}</u>% until the Operative's next turn."
+    },
+    "692275c6-d3e2-4b96-ad40-a5183593815a": {
+      "Offset": 0,
+      "Text": "<u>(10 x {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
+    },
+    "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
+      "Offset": 0,
+      "Text": "<u>(1 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus / 2)</u>"
+    },
+    "e034f512-4a52-471d-98b8-b5bc5aeea652": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} removes all {g|Encyclopedia:Exploit}exploits{/g} from the target and revealing that many weaknesses, decreasing the target's {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockGlossary}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g} by 5% and increasing the damage they take by 5% per stack. Multiple uses stack but do not change duration.\nThe next attack made against the target by the Operative deals +<u>({uip|damagebase|fbdba5fe2a264c25bada29aecd64049a} + weaknesses x {unit_stat|WarhammerPerception|bonus})</u>% more damage and gains additional effects based on the number of stacks:\n-<indent=5%>At least 3: The attack always hits.</indent>\n-<indent=5%>At least 7: The attack always crits and ignores deflection.</indent>\n-<indent=5%>At least 12: The operative regains 2 AP and can make an additional attack this turn.</indent>"
+    },
+    "3d5d194e-8a6f-4fea-8090-ae08e7991f1a": {
+      "Offset": 0,
+      "Text": "<u>(10 + 2 x {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
+    },
+    "17341334-2892-4499-b985-19ec89ca53fa": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s next attack gains +<u>{uip|hitchance|d9e00160ce96479281c1abe9a26ac4e5}</u>% hit chance and dodge reduction, reduces the target's {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and block by −<u>{uip|hitchance|d9e00160ce96479281c1abe9a26ac4e5}</u>%, and applies two stacks of {g|Encyclopedia:Exploit}exploit{/g}."
+    },
+    "95b8c0cd-4699-48f2-864a-1b82b3655c65": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} removes −1 {g|Encyclopedia:Exploit}exploit{/g} from each enemy in a 5-cell radius around a point within 10 cells from the Operative and gains one stack of <b>Tactical Knowledge</b> per exploit removed.\nAll allies gain +<u>{uip|armor|9f2261fcdb7a494eb4a59966ac59c795}</u>% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} per stack of knowledge. If the Operative has more than 4 stacks of knowledge, the Operative deals +<u>{uip|damage|9f2261fcdb7a494eb4a59966ac59c795}</u>% {g|Encyclopedia:DamageGlossary}damage{/g} per stack of knowledge."
+    },
+    "bd06750d-f34d-46af-bbba-a2eb7a1b58ee": {
+      "Offset": 0,
+      "Text": "<u>(1 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 5)</u>"
+    },
+    "d0ee2a50-0e58-43ea-8def-4ea5c454eb84": {
+      "Offset": 0,
+      "Text": "<u>(2 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 2)</u>"
+    },
+    "4d6fa8e7-29f7-43cf-9680-114a0e03ba60": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s next non-{g|Encyclopedia:AreaOfEffect}area attack{/g} inflicts the intimidated effect on the first target {g|Encyclopedia:HitSequenceGlossary}hit{/g} by the attack and all enemies in a 5-cell radius around that target.\nThe {g|Encyclopedia:DamageGlossary}damage{/g} dealt by intimidated enemies is reduced by −<u>{uip|damage|ec872eda7b1b40a08122b6330262a903}</u>% and they lose −3 {g|Encyclopedia:MovementPoints}MP{/g} until the Operative's next turn."
+    },
+    "6839b085-1dd6-4107-bb95-b014b2c48206": {
+      "Offset": 0,
+      "Text": "<u>(15 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
+    },
+    "3e3fab18-18c4-4ac9-8d34-0b70cafb30cd": {
+      "Offset": 0,
+      "Text": "If <b>Intimidation</b> kills the target, <b>Intimidation</b> is applied to all enemies that can see the target and the damage reduction is increased by −<u>{uip|DamagePenalty|dde11f867df84e61a67c2a444fe87a68}</u>%."
+    },
+    "21c32bfe-7886-4f55-9899-494f4a929729": {
+      "Offset": 0,
+      "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} {g|Encyclopedia:HitSequenceGlossary}hits{/g} an enemy that is affected by <b>Expose Weakness</b>, that enemy loses −3 {g|Encyclopedia:MovementPoints}MP{/g} and their {g|Encyclopedia:DamageGlossary}damage{/g} is reduced by −10% on their next {g|Encyclopedia:Turn}turn{/g}."
+    },
+    "de578abd-c1e5-42da-b022-e431e335a598": {
+      "Offset": 0,
+      "Text": "If the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} scores a critical hit with <b>Precise Attack</b> they apply an additional stack of {g|Encyclopedia:Exploit}exploit{/g}. If the target of <b>Precise Attack</b> has {uip|MinimumStacks|5be08b3ea6fa4b82a3473de749e68488} or more exploits, the attack becomes a {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit{/g}."
+    },
+    "3fdfc7a5-6bce-4aa3-b263-e48f99cfed63": {
+      "Offset": 0,
+      "Text": "<u>(6 − {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 2)</u>"
+    },
+    "4680c9c2-daae-4b01-adfd-ce9bc57fb424": {
+      "Offset": 0,
+      "Text": "<b>Precise Attack</b> grants the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} +5 {g|Encyclopedia:WarhammerPerception}Perception{/g} until the end of combat. Stacks."
+    },
+    "a041c969-b3d2-427b-9592-64f62b5c868f": {
+      "Offset": 0,
+      "Text": "<u>(2 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 2)</u>"
+    },
+	"b3653ca6-4344-436a-ac27-14e575b890d2": {
+      "Offset": 0,
+      "Text": "If an enemy within 5 cells from the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} attacks the Operative or their ally, that enemy suffers +1 additional {g|Encyclopedia:Exploit}exploit{/g}."
+    },
+	"d9fe0ee9-f347-417a-9bdc-380fb74c9318": {
+      "Offset": 0,
+      "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} removes {g|Encyclopedia:Exploit}exploits{/g} from an enemy or kills an enemy with an exploit, the Operative gains +1 damage and +2% {g|Encyclopedia:ArmourPenetration}armour penetration{/g} until the end of combat. Stacks."
+    },
+	"eb67a351-701e-4641-a4e3-c0e4a67456ce": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +15 {g|Encyclopedia:WarhammerPerception}Perception{/g}, and +15 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g} until the Operative moves. Does not stack.\nIf Perfect Spot is still active when the Operative's turn starts, they apply a stack of {g|Encyclopedia:Exploit}exploit{/g} to each enemy in line of sight."
+    },
+	"f6bfca6c-526b-4ac6-83c1-9659aa645517": {
+      "Offset": 0,
+      "Text": "The Operative immediately inflicts 1 {g|Encyclopedia:Exploit}exploit{/g} on all enemies in combat and 6 stacks of <b>Expose Weakness</b> on the target, then makes a free attack against that target. That attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g}.\nUntil the end of combat, <b>Expose Weakness</b> does not expire from the target."
+    },
+	"ac457028-f741-493e-b1f8-1c016a7a14a1": {
+      "Offset": 0,
+      "Text": "The Operative immediately inflicts 1 {g|Encyclopedia:Exploit}exploit{/g} on all enemies in combat and 6 stacks of <b>Expose Weakness</b> on the target, then makes a free attack against that target. That attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g}.\n-<indent=5%>Until the end of combat, <b>Expose Weakness</b> does not expire from the target.</indent>\n-<indent=5%>Until the end of combat, the Operative's attacks cost +1 {g|Encyclopedia:ActionPoints}AP{/g} more.</indent>"
+    },
+	"a5b28dd7-93e6-4447-be67-7e5dc068c065": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} also applies {g|Encyclopedia:Exploit}exploits{/g} at the start of combat and on each of their {g|Encyclopedia:ExtraTurn}extra turns{/g}."
+    },
+	"51fab033-018b-4212-9b58-3a64e137551e": {
+      "Offset": 0,
+      "Text": "<b>Analyse Enemies</b> also distributes half as many {g|Encyclopedia:Exploit}exploits{/g} on enemies within 5 tiles of the target. If there are no enemies within 5 tiles of the target it adds that many additional exploits to the target instead."
+    },
+	"5181bb6a-f7e8-4866-aa8d-2bd9dcf62fb6": {
+      "Offset": 0,
+      "Text": "Whenever an enemy with an {g|Encyclopedia:Exploit}exploit{/g} dies, the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} gains +2  {g|Encyclopedia:WarhammerIntelligence}Intelligence{/g} until the end of combat. Stacks."
+    },
+	"4670a313-ac58-4c74-a789-b4249ff00ece": {
+      "Offset": 0,
+      "Text": "If the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} has not moved this {g|Encyclopedia:Turn}turn{/g}, they deal +{uip|DamageBonus|9a0e7e64902e491baa29d60469eae188} damage for every 4 cells between them and the target and gain +{unit_stat|WarhammerPerception|bonus} {g|Encyclopedia:WarhammerBallisticSkill} Ballistic Skill{/g}. Only applies to the first strike or projectile in a {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack."
+    },
+	"2d57f87a-968c-499f-82e3-be446306bb91": {
+      "Offset": 0,
+      "Text": "The wearer's {g|Encyclopedia:DeadeyeShot}deadeye shot{/g} {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hits{/g} extend the duration of <b>Expose Weakness</b> by 1 round."
+    },
+	"8922a79d-b8eb-4e09-bfb6-dca7736b6500": {
+      "Offset": 0,
+      "Text": "Whenever the wearer's ally applies an {g|Encyclopedia:Exploit}exploit{/g} with <b>Joint Analysis</b>, the wearer gains +5 {g|Encyclopedia:WarhammerPerception}Perception{/g}."
+    },
+	"512f08c5-c5b3-4718-9693-4d67fa4de4a3": {
+      "Offset": 0,
+      "Text": "This axe's attacks apply <b>Expose Weakness</b> to its targets. If a target of this axe's attack is suffering from the effect of <b>Expose Weakness</b>, all {g|Encyclopedia:EnergyDamage}energy damage{/g} dealt to the target is increased by +{uip|Debuff|6ceac4db06434d3eae9c7839290aaf1d}% until the end of combat."
+    },
+	"94e06216-60e0-40ec-bbba-b214cfbf1182": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} gains +1 stack of <b>Tactical Knowledge</b> at the start of combat and each time <b>Tactical Knowledge</b> is used."
+    },
+  }
+}
