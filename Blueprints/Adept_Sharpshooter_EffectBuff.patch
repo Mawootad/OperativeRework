@@ -1,0 +1,117 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$MovedInCombatTrigger$45cbbae4-cc92-436a-950a-b6dadb7a1b49",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerDamageModifierInitiator$f7d3350c-98b0-498f-ba56-afd986c1ca53",
+      "InsertAfterTarget": "$MovedInCombatTrigger$45cbbae4-cc92-436a-950a-b6dadb7a1b49"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageModifierInitiator$f7d3350c-98b0-498f-ba56-afd986c1ca53",
+      "ElementPatch": {
+        "Restrictions": {
+          "Property": {
+            "Getters": [
+              {
+                "PatchType": "Prepend",
+                "NewElement": {
+                  "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                  "name": "$PropertyCalculatorGetter$e3dcc511472b49449c6504a1fcb537ba",
+                  "Settings": {
+                    "Progression": "AsIs",
+                    "m_CustomProgression": [],
+                    "m_StartLevel": 0,
+                    "m_StepLevel": 0,
+                    "Negate": false,
+                    "Limit": "None",
+                    "Min": 0,
+                    "Max": 0
+                  },
+                  "Value": {
+                    "Operation": "Eq",
+                    "TargetType": "CurrentEntity",
+                    "TargetEvaluator": null,
+                    "FailSilentlyIfNoTarget": false,
+                    "Getters": [
+                      {
+                        "$type": "92afe7375fcc46cea53424f91e0480b5, CurrentBurstIndexAbilityGetter",
+                        "name": "$CurrentBurstIndexAbilityGetter$8158ebcedebf46d5bf4cb8e19d63d46c",
+                        "Settings": {
+                          "Progression": "AsIs",
+                          "m_CustomProgression": [],
+                          "m_StartLevel": 0,
+                          "m_StepLevel": 0,
+                          "Negate": false,
+                          "Limit": "None",
+                          "Min": 0,
+                          "Max": 0
+                        }
+                      },
+                      {
+                        "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                        "name": "$ContextValueGetter$924287577b1540a6a583230deb1b8b78",
+                        "Settings": {
+                          "Progression": "AsIs",
+                          "m_CustomProgression": [],
+                          "m_StartLevel": 0,
+                          "m_StepLevel": 0,
+                          "Negate": false,
+                          "Limit": "None",
+                          "Min": 0,
+                          "Max": 0
+                        },
+                        "Value": {
+                          "ValueType": "Simple",
+                          "Value": 0,
+                          "ValueRank": "Default",
+                          "ValueShared": "Damage",
+                          "Property": "None",
+                          "m_CustomProperty": null,
+                          "PropertyName": "Value1"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "PatchType": "RemoveFromEnd",
+                "Target": "$CheckAbilityAttackTypeGetter$5c4959de63d4412db4daf63b836d99a3"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$24ee447b-2204-4dc5-b518-710d870e92b9",
+      "InsertAfterTarget": "$WarhammerDamageModifierInitiator$f7d3350c-98b0-498f-ba56-afd986c1ca53"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$24ee447b-2204-4dc5-b518-710d870e92b9",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$DistanceGetter$245cb9180d005578a9e30d3f30d42714",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 4
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Author": "Unknown"
+}

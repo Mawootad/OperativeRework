@@ -1,0 +1,105 @@
+{
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "6d519a34c3e747bfa7d858a3c9a4b978, WarhammerKillTrigger",
+        "name": "$WarhammerKillTrigger$df0bc706-2784-4ac5-acf3-44bfc38c81b6",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "ActionsOnKill": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$465656d714674c48ab94a4b08e80eb37",
+              "m_Buff": "!bp_349c91e2137a4a18a386d930bea58747",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": true,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "ActionsOnSurvive": {
+          "Actions": []
+        },
+        "ActionsOnTarget": false,
+        "RefundActionPointsOnKill": false,
+        "RefundActionPointsOnSurvive": false,
+        "ResetCooldownOnKill": false,
+        "ResetCooldownOnSurvive": false,
+        "RemoveOnKill": false,
+        "RemoveOnSurvive": false,
+        "OnlyEnemyKill": false,
+        "m_AffectedGroup": null,
+        "m_OtherAffectedGroupList": [],
+        "m_FilterFacts": [
+          "!bp_66e7b370e32b43118315ab0fd24a7f0d"
+        ],
+        "ContextPropertyName": "Value1",
+        "PropertyToSave": "None"
+      }
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "m_Key": "",
+    "m_OwnerString": "",
+    "m_OwnerPropertyPath": "",
+    "m_JsonPath": "",
+    "Shared": {
+      "assetguid": "b8e02a79775a64d4a906976a1acba6e7",
+      "stringkey": "d9fe0ee9-f347-417a-9bdc-380fb74c9318"
+    }
+  }
+}

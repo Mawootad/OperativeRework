@@ -1,0 +1,27 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$630345c8-3886-42e1-ab7d-a74d1c4e79ef",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$ec39887f063f40b9ba8605666000c050",
+              "ElementPatch": {
+                "Settings": {
+                  "Progression": "AsIs"
+                }
+              }
+            },
+            {
+              "PatchType": "RemoveFromEnd",
+              "Target": "$ContextValueGetter$cbc4e5ad312c410dac3b935e9b422b43"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

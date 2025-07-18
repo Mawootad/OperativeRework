@@ -1,0 +1,165 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$UIPropertiesComponent$df196e70-4d31-457f-b98b-b4060913f7bf",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$900d218b-7462-4cdc-8b15-1b3a8a6e5e13",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "3b0ac1ec67bff3941b9e4760d23c622b",
+                "stringkey": "0ab59101-6bb2-4daa-ae9f-1d27698ad99e"
+              }
+            },
+            "m_DescriptionFact": "!bp_aedb4d2a2fd049db9c3f61b6737043a4",
+            "m_LinkProperty": false,
+            "m_PropertyName": "Value1",
+            "m_PropertySource": null,
+            "m_LinkKey": "reduction"
+          }
+        ]
+      },
+      "InsertAfterTarget": "$UIPropertiesComponent$df196e70-4d31-457f-b98b-b4060913f7bf"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$dc0c81f6-5509-43d8-8886-bcc52cb54835",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$d88490350930459d941f2402ed1674b0",
+              "Settings": {
+                "Progression": "DoublePlusBonusValue",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 10,
+                "Negate": true,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "PerceptionBonus"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$UIPropertiesComponent$900d218b-7462-4cdc-8b15-1b3a8a6e5e13"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "$AbilityEffectRunAction$65f2a036-8d46-418c-8494-1dbcfc5ced73",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$f3f25877fb1c45d4982a9659b3d7a5a2",
+              "m_Buff": "!bp_29705adaeab6492287580277329b90db",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": true,
+              "AsChild": true,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$dc0c81f6-5509-43d8-8886-bcc52cb54835"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityEffectRunAction$6270ee5b-ff56-4bbc-8d7c-180c62ca319b"
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "Shared": {
+      "assetguid": "8bdb5f42cf3a82a49aa182f329015757",
+      "stringkey": "4d6fa8e7-29f7-43cf-9680-114a0e03ba60"
+    }
+  }
+}

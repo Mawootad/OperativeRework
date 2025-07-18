@@ -1,0 +1,237 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerDodgeChanceModifierDefender$cade46d8-8c07-4ea3-bccb-72c3d7343d49",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDodgeChanceModifierDefender$cade46d8-8c07-4ea3-bccb-72c3d7343d49",
+      "ElementPatch": {
+        "DodgeChance": {
+          "ValueType": "TargetBuffRank",
+          "Value": -5
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerParryChanceModifierDefender$694a4c2f-20ab-4ce5-ab3d-2e72e6231081",
+      "InsertAfterTarget": "$WarhammerDodgeChanceModifierDefender$cade46d8-8c07-4ea3-bccb-72c3d7343d49"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerParryChanceModifierDefender$694a4c2f-20ab-4ce5-ab3d-2e72e6231081",
+      "ElementPatch": {
+        "ParryChance": {
+          "ValueType": "TargetBuffRank",
+          "Value": -5
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerArmorBonus$12d16780-93de-4db6-9aef-70be46f9693b",
+      "ElementPatch": {
+        "BonusAbsorptionValue": {
+          "ValueType": "TargetBuffRank",
+          "Value": -5
+        }
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "d3092219e0964c2f96138a84033fc57b, BlockChanceModifierDefender",
+        "name": "$BlockChanceModifierDefender$2eaa6232-fd27-4ea1-af46-881745c8f8b2",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Properties": "BlockChance",
+        "BlockChance": {
+          "ValueType": "TargetBuffRank",
+          "Value": -5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "BlockChanceMultiplierValue": {
+          "ValueType": "Simple",
+          "Value": 1,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        }
+      },
+      "InsertAfterTarget": "$WarhammerArmorBonus$12d16780-93de-4db6-9aef-70be46f9693b"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "aac928a1f314a4144923e7e3850a24ba, WarhammerDamageModifierTarget",
+        "name": "$WarhammerDamageModifierTarget$8326a515-efa6-4a9d-96b0-9d587fec8e31",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolAnd",
+            "TargetType": "CurrentTarget",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                "name": "$FactRankGetter$a95cac39f68e4029ade555998a7effd0",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": true,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_9105bae162914b79ac29b74313acde01",
+                "Aggregation": "Max",
+                "BuffWithCasterFromTargetType": true,
+                "Target": "RuleInitiator"
+              }
+            ]
+          }
+        },
+        "MinimumDamage": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "MaximumDamage": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "PenetrationMod": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "PercentDamageModifier": {
+          "ValueType": "TargetBuffRank",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": true
+        },
+        "AbsorptionPenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "DeflectionPenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "UnmodifiableFlatDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "UnmodifiablePercentDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None",
+        "ModifyEvenDirectDamage": false,
+        "ModifyEvenDamageOverTime": true
+      },
+      "InsertAfterTarget": "$BlockChanceModifierDefender$2eaa6232-fd27-4ea1-af46-881745c8f8b2"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "d0acd208ae7e443084c50e30e16bc641, BuffOverrideUIOrder",
+        "name": "$BuffOverrideUIOrder$a3528d57-8372-4a28-a781-37411d01aab6",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": []
+      },
+      "InsertAfterTarget": "$WarhammerDamageModifierTarget$8326a515-efa6-4a9d-96b0-9d587fec8e31"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerWeaponHitTargetTrigger$8bb65688-f6bc-4e3f-8366-187a27a33eac"
+    }
+  ],
+  "m_Description": {
+    "Shared": {
+      "assetguid": "bab3a43e00661194681c02f224f1b16a",
+      "stringkey": "e034f512-4a52-471d-98b8-b5bc5aeea652"
+    }
+  },
+  "Stacking": "Rank",
+  "Ranks": 100
+}

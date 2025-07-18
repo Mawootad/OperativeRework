@@ -1,0 +1,46 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$AdditionalDescriptionComponent$338c0d26-f739-4628-9b90-37d5e7a5e5f4",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AdditionalDescriptionComponent$1c4f8f86-6480-4720-b577-5b3978e8e53b",
+      "InsertAfterTarget": "$AdditionalDescriptionComponent$338c0d26-f739-4628-9b90-37d5e7a5e5f4"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$ReapplyFactsFromItem$68fca7f6-6244-4af6-8cb9-9c8d96981c82",
+      "InsertAfterTarget": "$AdditionalDescriptionComponent$1c4f8f86-6480-4720-b577-5b3978e8e53b"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AddFactToEquipmentWielder$e017d3d9-5d64-457a-ade4-9ad04a4790c3",
+      "InsertAfterTarget": "$ReapplyFactsFromItem$68fca7f6-6244-4af6-8cb9-9c8d96981c82"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$EquipmentRestrictionHasFacts$0cfa7398-7cb9-4c02-91dd-8a6dd9e37b3b",
+      "InsertAfterTarget": "$AddFactToEquipmentWielder$e017d3d9-5d64-457a-ade4-9ad04a4790c3"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AddFactToEquipmentWielder$e2cc82d7-5ea5-4c27-b29e-3787596ffbfc",
+      "InsertAfterTarget": "$EquipmentRestrictionHasFacts$0cfa7398-7cb9-4c02-91dd-8a6dd9e37b3b"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$EquipmentRestrictionMachineTrait$b22d8b55-2484-4e39-a0cf-5ff84b474699",
+      "InsertAfterTarget": "$AddFactToEquipmentWielder$e2cc82d7-5ea5-4c27-b29e-3787596ffbfc"
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "Shared": {
+      "assetguid": "05fab0d833dbbb943a523b065e6e36c9",
+      "stringkey": "512f08c5-c5b3-4718-9693-4d67fa4de4a3"
+    }
+  }
+}

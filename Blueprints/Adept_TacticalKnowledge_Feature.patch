@@ -1,0 +1,284 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "5a95724975c24882a5efb0c5aed8c2ab, GlobalCombatStateTrigger",
+        "name": "$GlobalCombatStateTrigger$4bdefb7e-1113-4cbc-b4ca-f0ee4639f8e5",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "ActionsOnEnter": {
+          "Actions": [
+            {
+              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+              "name": "$Conditional$5890e4a576df405faf465a92b73abbcf",
+              "Comment": "",
+              "ConditionsChecker": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "c5b3b6002404ca249add2943e99f366a, ContextConditionIsAlly",
+                    "name": "$ContextConditionIsAlly$2cc18504e5de42ad948b6cd6a355ee8a",
+                    "Not": false
+                  },
+                  {
+                    "$type": "d271cb15605a459ca6188e939a2d5d72, ContextConditionProperty",
+                    "name": "$ContextConditionProperty$b63d370c80034b9fbe3c4dae3caab228",
+                    "Not": true,
+                    "Property": {
+                      "Operation": "Sum",
+                      "TargetType": "CurrentTarget",
+                      "TargetEvaluator": null,
+                      "FailSilentlyIfNoTarget": false,
+                      "Getters": [
+                        {
+                          "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                          "name": "$FactRankGetter$b4cab901804c44348b942d9746824f58",
+                          "Settings": {
+                            "Progression": "AsIs",
+                            "m_CustomProgression": [],
+                            "m_StartLevel": 0,
+                            "m_StepLevel": 0,
+                            "Negate": false,
+                            "Limit": "None",
+                            "Min": 0,
+                            "Max": 0
+                          },
+                          "m_Fact": "!bp_8058270c43d64816808fb861731b7905",
+                          "Aggregation": "Max",
+                          "BuffWithCasterFromTargetType": true,
+                          "Target": "RuleInitiator"
+                        }
+                      ]
+                    },
+                    "NegativeDoesNotCount": false
+                  }
+                ]
+              },
+              "IfTrue": {
+                "Actions": [
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "name": "$ContextActionApplyBuff$626ad5a4342b4c8b8cd56206ab85509e",
+                    "m_Buff": "!bp_8058270c43d64816808fb861731b7905",
+                    "BuffEndCondition": "CombatEnd",
+                    "Permanent": true,
+                    "DurationValue": {
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      },
+                      "RoundsValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    },
+                    "ToCaster": false,
+                    "AsChild": false,
+                    "SameDuration": false,
+                    "Ranks": {
+                      "ValueType": "Simple",
+                      "Value": 1,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "ActionsOnApply": {
+                      "Actions": []
+                    },
+                    "ActionsOnImmune": {
+                      "Actions": []
+                    },
+                    "AddFactSource": false
+                  }
+                ]
+              },
+              "IfFalse": {
+                "Actions": []
+              }
+            }
+          ]
+        },
+        "ActionsOnLeave": {
+          "Actions": []
+        }
+      },
+      "InsertAfterTarget": "$AddFacts$286cf93e-5fe6-4886-a2f0-73fbf3eecab8"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$1df8e2bd-3b2e-4cf6-bf14-11866e2eff6e",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Bonus1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$e9e13faaec214595a6b7b681672a085c",
+              "Settings": {
+                "Progression": "OnePlusDivStep",
+                "m_CustomProgression": [],
+                "m_StartLevel": 1,
+                "m_StepLevel": 5,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "IntelligenceBonus"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$GlobalCombatStateTrigger$4bdefb7e-1113-4cbc-b4ca-f0ee4639f8e5"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$ced1ff3e-b117-448a-b52f-f322ca25cc77",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Bonus2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$e0f6cd07-0af8-4a8e-8c3f-4e8cf6f5429f",
+              "Settings": {
+                "Progression": "Div2PlusStep",
+                "m_CustomProgression": [],
+                "m_StartLevel": 2,
+                "m_StepLevel": 2,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "IntelligenceBonus"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$1df8e2bd-3b2e-4cf6-bf14-11866e2eff6e"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$c73e0880-a9af-4870-b675-47a9e0df674c",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "815f80fa549a94b488417fe90f9d5720",
+                "stringkey": "bd06750d-f34d-46af-bbba-a2eb7a1b58ee"
+              }
+            },
+            "m_DescriptionFact": "!bp_9f2261fcdb7a494eb4a59966ac59c795",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Bonus1",
+            "m_PropertySource": "!bp_9f2261fcdb7a494eb4a59966ac59c795",
+            "m_LinkKey": "armor"
+          },
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "0a65d2800e15a444a86fa902fd546692",
+                "stringkey": "d0ee2a50-0e58-43ea-8def-4ea5c454eb84"
+              }
+            },
+            "m_DescriptionFact": "!bp_9f2261fcdb7a494eb4a59966ac59c795",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Bonus2",
+            "m_PropertySource": "!bp_9f2261fcdb7a494eb4a59966ac59c795",
+            "m_LinkKey": "damage"
+          }
+        ]
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$ced1ff3e-b117-448a-b52f-f322ca25cc77"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$15317d56-b3c0-4c16-a6ca-417080cd0e02"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityLifecycleTriggerCaster$2449084d-ad0c-4042-9aee-9820186f3181"
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "Shared": {
+      "assetguid": "17d2d3de6ab4cab488a269dbcbc91ca0",
+      "stringkey": "95b8c0cd-4699-48f2-864a-1b82b3655c65"
+    }
+  }
+}

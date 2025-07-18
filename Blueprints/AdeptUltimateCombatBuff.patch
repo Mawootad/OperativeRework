@@ -1,0 +1,21 @@
+{
+  "Components": [
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$BlockChanceModifierDefender$85367d05-b4bb-423a-b40b-9b695d0b0a04"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerParryChanceModifierDefender$a809f1fa-ee0e-4fe4-a431-1a4c7d191774"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerDodgeChanceModifierDefender$b52d7187-a04b-4a1e-89b2-db06aff4a2ed"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerArmorBonus$fc14816f-c231-4b20-ac19-4d1d521d1ee3"
+    }
+  ],
+  "Author": "Unknown"
+}

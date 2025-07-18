@@ -1,0 +1,85 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$3687f1a6-cbd6-4f12-81d2-0e58e6320c93",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$3687f1a6-cbd6-4f12-81d2-0e58e6320c93",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$d7a2464d1bd04857b3d6ee24d01bfa4a",
+              "ElementPatch": {
+                "Value": {
+                  "TargetEvaluator": null,
+                  "Getters": [
+                    {
+                      "PatchType": "Relocate",
+                      "Target": "$SimplePropertyGetter$7126f8cdd2074510a90b54d446e58e9d",
+                      "InsertAfterTarget": null
+                    },
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$SimplePropertyGetter$7126f8cdd2074510a90b54d446e58e9d",
+                      "ElementPatch": {
+                        "Settings": {
+                          "Progression": "Div2PlusStep",
+                          "m_StartLevel": 6,
+                          "m_StepLevel": -6,
+                          "Negate": true
+                        }
+                      }
+                    },
+                    {
+                      "PatchType": "RemoveFromEnd",
+                      "Target": "$ContextValueGetter$326327972af24a11b5bff8f25f2ea2e3"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$08cc80d9-710c-46a5-b7aa-d42dfdef5c43",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "PatchElement",
+            "Target": "Value1",
+            "ElementPatch": {
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": {
+                  "assetguid": "8796857b501ee3b4da776b85b3bfa4dc",
+                  "stringkey": "3fdfc7a5-6bce-4aa3-b263-e48f99cfed63"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "m_Description": {
+    "m_Key": "",
+    "m_OwnerString": "",
+    "m_OwnerPropertyPath": "",
+    "m_JsonPath": "",
+    "Shared": {
+      "assetguid": "3304fe26afc39f140ba4b3239493a095",
+      "stringkey": "de578abd-c1e5-42da-b022-e431e335a598"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$2db21323-d200-4aae-8d6e-a5243f36fb41",
+      "ElementPatch": {
+        "Value": {
+          "Operation": "Mul",
+          "TargetType": "ContextCaster",
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$FactRankGetter$bd5b142be1b7409ab91ca772fbab0459",
+              "ElementPatch": {
+                "m_Fact": "!bp_55477251f6724496b9a70bad24fb5582"
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+                "name": "$SimplePropertyGetter$602e690eaaf040f98252f26931ce65ca",
+                "Settings": {
+                  "Progression": "OnePlusDivStep",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 5,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Property": "IntelligenceBonus"
+              },
+              "InsertAfterTarget": "$FactRankGetter$bd5b142be1b7409ab91ca772fbab0459"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Author": "Unknown",
+  "Stacking": "Stack"
+}

@@ -1,0 +1,51 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityEffectRunAction$e3097372-24d0-4084-9a13-584df80b5e7e",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityUseCurrentWeaponSetting$7e0d2326-9da2-4493-86f4-c22d333326b7",
+      "InsertAfterTarget": "$AbilityEffectRunAction$e3097372-24d0-4084-9a13-584df80b5e7e"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilitySpecialMomentumAction$6ef34bc1-9912-49bf-9776-35bfb7c92a9c",
+      "InsertAfterTarget": "$AbilityUseCurrentWeaponSetting$7e0d2326-9da2-4493-86f4-c22d333326b7"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "e4181e2a638237a4c9f02ceb97e297b7, AbilityExecuteActionOnCast",
+        "name": "$AbilityExecuteActionOnCast$50e8ed91-87f9-48a0-af16-47710e3bfe6f",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Conditions": {
+          "Operation": "And",
+          "Conditions": []
+        },
+        "Actions": {
+          "Actions": []
+        }
+      },
+      "InsertAfterTarget": "$AbilityMomentumLogic$0b466404-24f3-4a19-83fb-1071fdb89b1d"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityExecuteActionOnCast$a5cdee23-37f9-4c68-b72d-6a0b427e1f8e"
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "Shared": {
+      "assetguid": "9eadb807bdd58bc45aba9fd60943d5b1",
+      "stringkey": "f6bfca6c-526b-4ac6-83c1-9659aa645517"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerAbilityTooltipHelper$2868ec6e-142e-414e-8b00-36d1fabcf34c",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$22705400-feb3-4f0f-b38a-070da7f3d87c",
+      "InsertAfterTarget": "$WarhammerAbilityTooltipHelper$2868ec6e-142e-414e-8b00-36d1fabcf34c"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "$AbilityEffectRunAction$1252aad2-c721-42de-ac2b-b4a5d6add8b7",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "7b1d3a11c0f4426a8584738997ebc207, ContextActionOnAllUnitsInCombat",
+              "name": "$ContextActionOnAllUnitsInCombat$d983687ed89942318eb51b299d0489eb",
+              "OnlyEnemies": true,
+              "OnlyAllies": false,
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "name": "$ContextActionApplyBuff$0365aec2961448dfa770c5162a925672",
+                    "m_Buff": "!bp_b17b2e8b16b54e8fa77c813f6ea6b77e",
+                    "BuffEndCondition": "CombatEnd",
+                    "Permanent": false,
+                    "DurationValue": {
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      },
+                      "RoundsValue": {
+                        "ValueType": "Simple",
+                        "Value": 1,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    },
+                    "ToCaster": false,
+                    "AsChild": false,
+                    "SameDuration": false,
+                    "Ranks": {
+                      "ValueType": "Simple",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "ActionsOnApply": {
+                      "Actions": []
+                    },
+                    "ActionsOnImmune": {
+                      "Actions": []
+                    },
+                    "AddFactSource": false
+                  }
+                ]
+              },
+              "OnlyParty": false,
+              "WithoutPets": false,
+              "m_FilterNoFacts": [],
+              "m_FilterHaveAnyFact": [],
+              "ActionsOnRandomTarget": false,
+              "NotCaster": false,
+              "OnlyVisible": false,
+              "OnlyNotVisible": false,
+              "IncludeDead": false,
+              "IncludeUntargetable": false
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$22705400-feb3-4f0f-b38a-070da7f3d87c"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityEffectRunAction$6270ee5b-ff56-4bbc-8d7c-180c62ca319b"
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "Shared": {
+      "assetguid": "239c6497d86f83342bb7df1ec468e432",
+      "stringkey": "f7d0c492-d327-4200-9339-d498eb1f63c9"
+    }
+  }
+}

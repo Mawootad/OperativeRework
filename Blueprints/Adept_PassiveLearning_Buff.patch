@@ -1,0 +1,61 @@
+{
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$2ccdcc4a-689c-42d3-bf59-1289d174e1a5",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerIntelligence",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "CasterBuffRank",
+          "Value": 1,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      }
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$2d2243d7-3d6e-4ba4-893f-51c57f9801ca"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$d44914c8-a12e-4203-99b4-f2bc873da676"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$TurnBasedModeEventsTrigger$a290df87-a94a-4af1-9f64-53a13e23a34f"
+    }
+  ],
+  "m_DisplayName": {
+    "Shared": {
+      "assetguid": "1b143b11607e2e844b06c1c426fa1433",
+      "stringkey": "a9d1e22e-584e-4b6f-a7ea-9d5730875033"
+    }
+  },
+  "Stacking": "Rank",
+  "Ranks": 100
+}

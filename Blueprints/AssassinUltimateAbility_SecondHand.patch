@@ -1,0 +1,68 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityCasterMainWeaponHasAmmo$508c7fd1-e9be-4a71-b66b-8f28c9eeb6a4",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AddStringToFactName$21589420-9be2-48bd-ba8d-1f63c363117f",
+      "InsertAfterTarget": "$AbilityCasterMainWeaponHasAmmo$508c7fd1-e9be-4a71-b66b-8f28c9eeb6a4"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityExecuteActionOnCast$60f9458c-415e-42dd-b67d-be87fc15c27c",
+      "InsertAfterTarget": "$AddStringToFactName$21589420-9be2-48bd-ba8d-1f63c363117f"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityUseCurrentWeaponSetting$7e0d2326-9da2-4493-86f4-c22d333326b7",
+      "InsertAfterTarget": "$AbilityExecuteActionOnCast$60f9458c-415e-42dd-b67d-be87fc15c27c"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilitySpecialMomentumAction$6ef34bc1-9912-49bf-9776-35bfb7c92a9c",
+      "InsertAfterTarget": "$AbilityUseCurrentWeaponSetting$7e0d2326-9da2-4493-86f4-c22d333326b7"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityMomentumLogic$0b466404-24f3-4a19-83fb-1071fdb89b1d",
+      "InsertAfterTarget": "$AbilitySpecialMomentumAction$6ef34bc1-9912-49bf-9776-35bfb7c92a9c"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "$AbilityEffectRunAction$9b07b63e-c189-4a3f-a8ae-cee260cb629c",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "c635b9ab19e16be419c637e0474dc6a9, ContextActionAttackWithFirstWeaponAbility",
+              "name": "$ContextActionAttackWithFirstWeaponAbility$25b674f9c0284a4a837b5dc28b65e3c3",
+              "TargetIsPriorityTarget": false,
+              "m_PriorityTargetBuff": null,
+              "useSecondWeapon": true,
+              "OwnerIsAttacker": false,
+              "SaveMPAfterUsingWeaponAbility": false,
+              "ContextCasterIsTarget": false
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$AbilityMomentumLogic$0b466404-24f3-4a19-83fb-1071fdb89b1d"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityEffectRunAction$0721d792-cbf2-44d7-a9f1-b626fd341edf"
+    }
+  ],
+  "Author": "Unknown"
+}

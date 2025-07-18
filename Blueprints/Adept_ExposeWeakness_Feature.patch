@@ -1,0 +1,225 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$58f9a8b4-9852-4792-8586-4d4b28f15990",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "Prepend",
+            "NewElement": {
+              "NameType": "Damage",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": {
+                  "assetguid": "7a6cd831504ad1c49b0c9f2aeda05e6e",
+                  "stringkey": "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537"
+                }
+              },
+              "m_DescriptionFact": "!bp_fbdba5fe2a264c25bada29aecd64049a",
+              "m_LinkProperty": true,
+              "m_PropertyName": "DamageDice1",
+              "m_PropertySource": "!bp_fbdba5fe2a264c25bada29aecd64049a",
+              "m_LinkKey": "damagebase"
+            }
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": {
+              "NameType": "Damage",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": {
+                  "assetguid": "74e1d9cb4a43b2d40911a496e926495d",
+                  "stringkey": "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537"
+                }
+              },
+              "m_DescriptionFact": "!bp_fbdba5fe2a264c25bada29aecd64049a",
+              "m_LinkProperty": true,
+              "m_PropertyName": "DamageDice2",
+              "m_PropertySource": "!bp_fbdba5fe2a264c25bada29aecd64049a",
+              "m_LinkKey": "scaling"
+            },
+            "InsertAfterTarget": "DamageDice1"
+          },
+          {
+            "PatchType": "RemoveFromEnd",
+            "Target": "DamageBonus2"
+          }
+        ]
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$297c1482-41b9-4a10-ba2b-aa7ff3df5371",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "DamageDice1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Mul",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$4f3f0a21-9516-491e-9dad-f576317046fd",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 10,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "PerceptionBonus"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$UIPropertiesComponent$58f9a8b4-9852-4792-8586-4d4b28f15990"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "dbb7058d31be12446942310a6ab86b83, CombatStateTrigger",
+        "name": "$CombatStateTrigger$d78b415b-0732-4ed6-9075-ff8fd3480d4d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "CombatStartActions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$d0f34d6b17424b04a8aba2f9656885cb",
+              "m_Buff": "!bp_acbc22476881476887ed1801ebcc7960",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": true,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "CombatEndActions": {
+          "Actions": []
+        },
+        "UnitMustBeConscious": false
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$297c1482-41b9-4a10-ba2b-aa7ff3df5371"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$8c733233-652f-47f0-90c9-439f37544662",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "DamageDice2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Mul",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$1d92914f-8e9f-4c64-b5e2-965eef525a3a",
+              "Settings": {
+                "Progression": "OnePlusDiv2",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 10,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "PerceptionBonus"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$CombatStateTrigger$d78b415b-0732-4ed6-9075-ff8fd3480d4d"
+    }
+  ],
+  "m_Description": {
+    "Shared": {
+      "assetguid": "bab3a43e00661194681c02f224f1b16a",
+      "stringkey": ""
+    }
+  }
+}

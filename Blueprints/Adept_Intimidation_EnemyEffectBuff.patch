@@ -1,0 +1,74 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$AddFactContextActions$04ad737f-67df-4763-91de-3e7d01c79716",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$c483147e-aaa4-419f-9356-f05dc5a6a255",
+      "InsertAfterTarget": "$AddFactContextActions$04ad737f-67df-4763-91de-3e7d01c79716"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$c483147e-aaa4-419f-9356-f05dc5a6a255",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$d7dbe13cb7fc4db7ac6a58f344c44d25",
+              "ElementPatch": {
+                "Settings": {
+                  "Progression": "AsIs"
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextValueGetter$eb7c26c7dd384b5a8db1facefd0b6f6e",
+              "ElementPatch": {
+                "Value": {
+                  "Value": 15
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "6d4d8e393e06464abf749d2b80d67adc, WarhammerBonusMovementPoints",
+        "name": "$WarhammerBonusMovementPoints$6bc5209e-56c0-496c-a148-74c7e32f2f27",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Bonus": 0,
+        "Modifier": 1.0,
+        "SetUpperLimit": false,
+        "UpperLimitValue": 0,
+        "Value": {
+          "ValueType": "Simple",
+          "Value": -3,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        }
+      },
+      "InsertAfterTarget": "$WarhammerDamageModifierInitiator$fdf88bb3-b689-4eb5-b4df-449d5ad67c80"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerBonusMovementPoints$bd5c60f7-bd3e-4dc4-a2bc-a16d2e44af88"
+    }
+  ],
+  "Author": "Unknown"
+}

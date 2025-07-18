@@ -1,0 +1,15 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$f2cc449a-e1f5-40bd-b5cf-c7c6dcdc5715",
+      "InsertAfterTarget": null
+    }
+  ],
+  "m_Description": {
+    "Shared": {
+      "assetguid": "05fab0d833dbbb943a523b065e6e36c9",
+      "stringkey": "512f08c5-c5b3-4718-9693-4d67fa4de4a3"
+    }
+  }
+}

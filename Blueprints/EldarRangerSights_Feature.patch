@@ -1,0 +1,113 @@
+{
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "67bd9d5235e74484bb1d673b885ab430, WarhammerWeaponHitTriggerInitiator",
+        "name": "$WarhammerWeaponHitTriggerInitiator$8713d684-732a-40e1-8659-338122ea73e0",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Or",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                "name": "$FactRankGetter$c11731b19f6d4e2fab3a0d79e8758648",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_b78d820137d34cc99a38229c37e3760a",
+                "Aggregation": "Max",
+                "BuffWithCasterFromTargetType": false,
+                "Target": "CurrentEntity"
+              },
+              {
+                "$type": "622b2e3118c34edebe1597cf4c03339e, CheckAbilityBlueprintGetter",
+                "name": "$CheckAbilityBlueprintGetter$aafeeb1c23e844c8867868385d2ebab9",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Abilities": [
+                  "!bp_7315f74b9a084b1d804caa90e9a26f47",
+                  "!bp_083b3e6ce885487089638ca969070c03",
+                  "!bp_8fe7633db25d46a8bebc2868b8acff12"
+                ]
+              }
+            ]
+          }
+        },
+        "ActionOnSelfHit": {
+          "Actions": []
+        },
+        "ActionOnSelfMiss": {
+          "Actions": []
+        },
+        "ActionsOnTargetHit": {
+          "Actions": [
+            {
+              "$type": "3f86389a846d484dbd94775da12bc94b, ContextActionProlongBuff",
+              "name": "$ContextActionProlongBuff$f0292792580448308fcfaecc04aa51ed",
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 1,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "m_Buff": "!bp_a2c8d30542b84a84bcc6480cf374c516"
+            }
+          ]
+        },
+        "ActionsOnTargetMiss": {
+          "Actions": []
+        },
+        "OnlyRighteousFury": false,
+        "OnlyMelee": false
+      }
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$55f2fe69-00f7-4060-89c4-0ce241caddbc"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerWeaponHitTriggerInitiator$998df21d-ee12-4092-ab5d-277ef84cc594"
+    }
+  ],
+  "Author": "Unknown"
+}

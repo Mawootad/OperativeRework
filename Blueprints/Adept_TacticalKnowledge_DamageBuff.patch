@@ -1,0 +1,77 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$de88110c-037a-415e-a16e-a9556b76fabe",
+      "ElementPatch": {
+        "Value": {
+          "Operation": "Mul",
+          "TargetType": "CurrentEntity",
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$FactRankGetter$ef5fae45-da15-46cc-a755-39cef8cf378f",
+              "ElementPatch": {
+                "Settings": {
+                  "Progression": "AsIs"
+                },
+                "m_Fact": "!bp_55477251f6724496b9a70bad24fb5582"
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+                "name": "$SimplePropertyGetter$626455c5b709473693dce137d583aec0",
+                "Settings": {
+                  "Progression": "Div2PlusStep",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 2,
+                  "m_StepLevel": 2,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Property": "IntelligenceBonus"
+              },
+              "InsertAfterTarget": "$FactRankGetter$ef5fae45-da15-46cc-a755-39cef8cf378f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerDamageModifierInitiator$93cf205e-3350-4435-bab1-02d35ec6e478",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$de88110c-037a-415e-a16e-a9556b76fabe"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageModifierInitiator$93cf205e-3350-4435-bab1-02d35ec6e478",
+      "ElementPatch": {
+        "Restrictions": {
+          "Property": {
+            "Getters": [
+              {
+                "PatchType": "RemoveFromEnd",
+                "Target": "$CheckDamageFromDOTGetter$c03bb434b5a24359bf77bd3c19a3431c"
+              }
+            ]
+          }
+        },
+        "ModifyEvenDamageOverTime": false
+      }
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerDamageModifierInitiator$084435b8-2f04-493f-bc9d-fd1f7d85465f"
+    }
+  ],
+  "Author": "Unknown",
+  "m_DisplayName": {
+    "m_OwnerString": "eed7a650126f4912a71ecd16e715526d"
+  },
+  "m_Flags": "HiddenInUi, NeedsNoVisual",
+  "Stacking": "Replace"
+}

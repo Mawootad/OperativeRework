@@ -1,0 +1,51 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerHitChanceModifierInitiator$0774edd6-6cf2-4546-ad75-46bc222769d0",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$527373dd-126d-4a90-b3ee-b0bc1d1d4c99",
+      "InsertAfterTarget": "$WarhammerHitChanceModifierInitiator$0774edd6-6cf2-4546-ad75-46bc222769d0"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$527373dd-126d-4a90-b3ee-b0bc1d1d4c99",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$4ca71d86-38e9-4b76-8ec4-692d44e18b2a",
+              "ElementPatch": {
+                "Settings": {
+                  "Progression": "Div2PlusStep",
+                  "m_StartLevel": 6,
+                  "m_StepLevel": -6,
+                  "Negate": true
+                },
+                "Value": {
+                  "TargetEvaluator": null,
+                  "Getters": [
+                    {
+                      "PatchType": "Relocate",
+                      "Target": "$SimplePropertyGetter$e9b172eb-079f-4cf9-a38b-683ff1171e70",
+                      "InsertAfterTarget": null
+                    },
+                    {
+                      "PatchType": "RemoveFromEnd",
+                      "Target": "$ContextValueGetter$693c7ba1-7d65-405b-b269-c1db440f52e9"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Author": "Unknown"
+}

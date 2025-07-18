@@ -1,0 +1,35 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$93687e9c-0ba0-4b29-a214-00cc253b98d9",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$93687e9c-0ba0-4b29-a214-00cc253b98d9",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$404f0cf34c384fe1ab8b957990c161c8",
+              "ElementPatch": {
+                "Settings": {
+                  "Progression": "Div2PlusStep",
+                  "m_StepLevel": 2
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerRighteousFuryBonus$090e1da2-01fd-4689-9e97-74ce7ae0c545",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$93687e9c-0ba0-4b29-a214-00cc253b98d9"
+    }
+  ],
+  "Author": "Unknown"
+}

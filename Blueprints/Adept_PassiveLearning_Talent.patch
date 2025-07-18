@@ -1,0 +1,23 @@
+{
+  "Components": [
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$CombatStateTrigger$bbb87c6d-bec9-4dd3-bba7-decfd82f8c33"
+    }
+  ],
+  "m_DisplayName": {
+    "m_Key": "7c1856e6-c5b4-4647-aaf9-d7a0146014a7",
+    "m_OwnerString": "ec4f6ac63df24585843693f01dc69b1c",
+    "m_JsonPath": "Strings/Mechanics/Blueprints\\Classes\\Adept\\AdeptTalents\\Adept_ContinuousStudy_Talent_m_DisplayName.json"
+  },
+  "m_Description": {
+    "m_Key": "",
+    "m_OwnerString": "",
+    "m_OwnerPropertyPath": "",
+    "m_JsonPath": "",
+    "Shared": {
+      "assetguid": "84c7545f6efc92f45ab291c6a13aa001",
+      "stringkey": "a5b28dd7-93e6-4447-be67-7e5dc068c065"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$932a5a19-08c0-40c2-9632-21a3575bec1f",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$UIPropertiesComponent$f6dd3e15-9a03-4358-9868-dd0e581eed3b",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$932a5a19-08c0-40c2-9632-21a3575bec1f"
+    }
+  ],
+  "m_Description": {
+    "m_Key": "",
+    "m_OwnerString": "",
+    "m_OwnerPropertyPath": "",
+    "m_JsonPath": "",
+    "Shared": {
+      "assetguid": "8cf7cff031cec754686410b63b66ff65",
+      "stringkey": "4670a313-ac58-4c74-a789-b4249ff00ece"
+    }
+  }
+}

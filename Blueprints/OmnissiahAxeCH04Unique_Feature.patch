@@ -1,0 +1,111 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$UIPropertiesComponent$a0d171d0-229d-4096-b968-a54a6ce519eb",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "961a1f33fbdad5c4ca08247f49b98c47, WarhammerAfterAttackRollTrigger",
+        "name": "$WarhammerAfterAttackRollTrigger$6d10f62d-e0f8-49f9-a657-1ea328a40d33",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolAnd",
+            "TargetType": "CurrentTarget",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "83a8a95dacc24c6f8bb7fdccf7ec43ea, CheckAbilityWeaponBlueprintGetter",
+                "name": "$CheckAbilityWeaponBlueprintGetter$5331bf55623a409f9207c905f32679e6",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Weapon": "!bp_36dec72188af4c3e99757db6443f8bd7"
+              },
+              {
+                "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                "name": "$FactRankGetter$aa4515cdc00e4105ba96e1b65463ed9d",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                "Aggregation": "Max",
+                "BuffWithCasterFromTargetType": false,
+                "Target": "CurrentEntity"
+              }
+            ]
+          }
+        },
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "2f9cfff2340b8c344ab4fd92c2eb61f2, ContextActionCastSpell",
+              "name": "$ContextActionCastSpell$626bfe48740e4304bb8b5afd5d0b5127",
+              "m_Spell": "!bp_197b8a8a12b0442db7ffee1067cf3d97",
+              "OverrideDC": false,
+              "DC": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "OverrideSpellLevel": false,
+              "SpellLevel": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "CastByTarget": false,
+              "UseFullAbilityCastCycle": false
+            }
+          ]
+        },
+        "triggerAfterAttack": false,
+        "onlyMeleeAttack": true,
+        "ActionsOnTarget": true,
+        "OnlyHit": false
+      },
+      "InsertAfterTarget": "$WarhammerWeaponHitTriggerInitiator$140fab6e-0f94-476a-a786-070fa71e0961"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerAfterAttackRollTrigger$bfeda18e-34ef-413b-802c-d51014e4c8f3"
+    }
+  ],
+  "m_Description": {
+    "Shared": {
+      "assetguid": "05fab0d833dbbb943a523b065e6e36c9",
+      "stringkey": "512f08c5-c5b3-4718-9693-4d67fa4de4a3"
+    }
+  }
+}

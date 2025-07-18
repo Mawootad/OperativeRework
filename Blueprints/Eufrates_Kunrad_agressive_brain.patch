@@ -1,0 +1,96 @@
+{
+  "Author": "Unknown",
+  "AbilitySettings": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "AbilitySource": {
+          "Type": "Ability",
+          "m_Ability": "!bp_18f968c992344aa08d873bab8ae6a7af",
+          "m_Equipment": null,
+          "m_RandomGroup": []
+        },
+        "ValidTargetConditions": [
+          {
+            "Operation": "Sum",
+            "TargetType": "CurrentTarget",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                "name": "$HasFactGetter$57bdec6408be4f71817487d22ec0c11c",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                "Target": "CurrentTarget"
+              }
+            ]
+          }
+        ],
+        "HasMovePointsLimit": false,
+        "MovePointsLimit": 0,
+        "IsAOE": false,
+        "MustHitTargetsCount": 1,
+        "CountTargetConditions": [],
+        "HighPriorityTargetConditions": [],
+        "LowPriorityTargetConditions": [],
+        "MinDifficultySetting": "Story",
+        "CantCastUntilRound": 0
+      }
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": {
+        "AbilitySource": {
+          "Type": "Ability",
+          "m_Ability": "!bp_18f968c992344aa08d873bab8ae6a7af",
+          "m_Equipment": null,
+          "m_RandomGroup": []
+        },
+        "ValidTargetConditions": [
+          {
+            "Operation": "Sum",
+            "TargetType": "CurrentTarget",
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                "name": "$HasFactGetter$57bdec6408be4f71817487d22ec0c11c",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_bb9d26ae98234a7e95fc4e8e39aacc02",
+                "Target": "CurrentTarget"
+              }
+            ]
+          }
+        ],
+        "HasMovePointsLimit": false,
+        "MovePointsLimit": 0,
+        "IsAOE": false,
+        "MustHitTargetsCount": 1,
+        "CountTargetConditions": [],
+        "HighPriorityTargetConditions": [],
+        "LowPriorityTargetConditions": [],
+        "MinDifficultySetting": "Story",
+        "CantCastUntilRound": 0
+      }
+    }
+  ]
+}

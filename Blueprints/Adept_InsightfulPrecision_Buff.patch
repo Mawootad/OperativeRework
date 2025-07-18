@@ -1,0 +1,47 @@
+{
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$44caa5b4-a498-4220-b637-39aa6767283f",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerPerception",
+        "Multiplier": 5,
+        "Value": {
+          "ValueType": "CasterBuffRank",
+          "Value": 1,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      }
+    }
+  ],
+  "m_Description": {
+    "Shared": {
+      "assetguid": "977417bbb3caac04793255e5a97136e0",
+      "stringkey": "4680c9c2-daae-4b01-adfd-ce9bc57fb424"
+    }
+  }
+}

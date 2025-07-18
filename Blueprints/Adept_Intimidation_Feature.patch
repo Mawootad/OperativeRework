@@ -1,0 +1,90 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$10cc57cd-1700-4fc1-9a6e-803189abef3a",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$0279525335e34ba7bb09807eb0bddeb4",
+              "Settings": {
+                "Progression": "BonusValue",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 15,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "PerceptionBonus"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$AddFacts$286cf93e-5fe6-4886-a2f0-73fbf3eecab8"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$f037510d-ffc4-440e-9878-922695f32cc0",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "2cbbeff62cbfd4d43924be101b2b871c",
+                "stringkey": "6839b085-1dd6-4107-bb95-b014b2c48206"
+              }
+            },
+            "m_DescriptionFact": "!bp_ec872eda7b1b40a08122b6330262a903",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Value1",
+            "m_PropertySource": "!bp_ec872eda7b1b40a08122b6330262a903",
+            "m_LinkKey": "damage"
+          }
+        ]
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$10cc57cd-1700-4fc1-9a6e-803189abef3a"
+    }
+  ],
+  "m_Description": {
+    "Shared": {
+      "assetguid": "8bdb5f42cf3a82a49aa182f329015757",
+      "stringkey": "4d6fa8e7-29f7-43cf-9680-114a0e03ba60"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fe07f61edc4914ac44891e22e1fdf7, type: 3}
+  m_Name: PatchesConfig
+  m_EditorClassIdentifier: 
+  Entries:
+  - Guid: 6fe716905fb747948d01bdea5b807b9c
+    Filename: Adept_ActOfTerror_Buff
+    PatchType: 2
+  - Guid: 039046af66424b238a9ed78c4ad4a021
+    Filename: Adept_ActOfTerror_KillTriggerBuff
+    PatchType: 2
+  - Guid: 014b6572e19946ae8bc74fc8cbe0f92b
+    Filename: Adept_ComprehensiveStudy_Talent
+    PatchType: 2
+  - Guid: ec4f6ac63df24585843693f01dc69b1c
+    Filename: Adept_ContinuousStudy_Talent
+    PatchType: 2
+  - Guid: 197b8a8a12b0442db7ffee1067cf3d97
+    Filename: Adept_ExposeWeakness_Ability
+    PatchType: 2
+  - Guid: a2c8d30542b84a84bcc6480cf374c516
+    Filename: Adept_ExposeWeakness_Buff
+    PatchType: 2
+  - Guid: fbdba5fe2a264c25bada29aecd64049a
+    Filename: Adept_ExposeWeakness_Feature
+    PatchType: 2
+  - Guid: 45e2c72d4698481e9185fb922044496c
+    Filename: Adept_ImprovedTactics_Talent
+    PatchType: 2
+  - Guid: c1b53a6c3da747a3b963c333cb9954c9
+    Filename: Adept_InflictDespair_Talent
+    PatchType: 2
+  - Guid: cca8165cefd3432092cd5720d7b8791b
+    Filename: Adept_InformedHit_Buff
+    PatchType: 2
+  - Guid: 5be08b3ea6fa4b82a3473de749e68488
+    Filename: Adept_InformedHit_Talent
+    PatchType: 2
+  - Guid: 4e1df6066e584e339ac8497efdfd37e2
+    Filename: Adept_InsightfulPrecision_Buff
+    PatchType: 2
+  - Guid: f8a2497eed104f889ac0d094d9b97162
+    Filename: Adept_InsightfulPrecision_Talent
+    PatchType: 2
+  - Guid: aedb4d2a2fd049db9c3f61b6737043a4
+    Filename: Adept_Intimidation_Ability
+    PatchType: 2
+  - Guid: 29705adaeab6492287580277329b90db
+    Filename: Adept_Intimidation_Buff
+    PatchType: 2
+  - Guid: 225946959e564d1591c85cefecb3bc05
+    Filename: Adept_Intimidation_EnemyEffectBuff
+    PatchType: 2
+  - Guid: ec872eda7b1b40a08122b6330262a903
+    Filename: Adept_Intimidation_Feature
+    PatchType: 2
+  - Guid: 663d238524554308bd50f3d149ada085
+    Filename: Adept_JointOffence_AllyBuff
+    PatchType: 2
+  - Guid: 832dd8b02731461a881775696d937d71
+    Filename: Adept_JointOffence_Talent
+    PatchType: 2
+  - Guid: 6f6d2e22b4e744dd9e777b769c1aa167
+    Filename: Adept_JointStudy_Ability
+    PatchType: 2
+  - Guid: 65f2a606086249969be80163be79e32c
+    Filename: Adept_JointStudy_Feature
+    PatchType: 2
+  - Guid: 502b9195c84c42c5b180f3f63ed7955c
+    Filename: Adept_Keystone_Ability
+    PatchType: 2
+  - Guid: 66e7b370e32b43118315ab0fd24a7f0d
+    Filename: Adept_Keystone_Buff_Clue_Effect
+    PatchType: 2
+  - Guid: b17b2e8b16b54e8fa77c813f6ea6b77e
+    Filename: Adept_Keystone_Buff_ClueShared_Effect
+    PatchType: 2
+  - Guid: 6cfd9b9830ea403db07a816843a8e39a
+    Filename: Adept_Keystone_Feature
+    PatchType: 2
+  - Guid: 882f658e49f34143a0e01ace79a3cfc7
+    Filename: Adept_PassiveLearning_Buff
+    PatchType: 2
+  - Guid: c0fa529cfe40414cbf1e71516c1f57a6
+    Filename: Adept_PassiveLearning_Talent
+    PatchType: 2
+  - Guid: 7b00b5ea0dc246e1a304619d5678ca5b
+    Filename: Adept_PreciseAttack_Ability
+    PatchType: 2
+  - Guid: 5f9c3a4d2f8e439883a1722c1d8b91b9
+    Filename: Adept_PreciseAttack_Buff
+    PatchType: 2
+  - Guid: d9e00160ce96479281c1abe9a26ac4e5
+    Filename: Adept_PreciseAttack_Feature
+    PatchType: 2
+  - Guid: 515835d674924da2873f183abc942be4
+    Filename: Adept_ReactiveStudy_Talent
+    PatchType: 2
+  - Guid: 45fca2ad6687442ea64f166fe36edeeb
+    Filename: Adept_Sharpshooter_EffectBuff
+    PatchType: 2
+  - Guid: 9a0e7e64902e491baa29d60469eae188
+    Filename: Adept_Sharpshooter_Talent
+    PatchType: 2
+  - Guid: d0f95ed472d542579026e8a8b8eb2bab
+    Filename: Adept_SnipingSHot_Ability
+    PatchType: 2
+  - Guid: bca05f1815dc49ed870306461a4cd686
+    Filename: Adept_SnipingSHot_Buff
+    PatchType: 2
+  - Guid: 4d68f05c9aaf4620aa66f16cd4ba2efd
+    Filename: Adept_SnipingSHot_Feature
+    PatchType: 2
+  - Guid: 2a417cde46674ae0a5da8dcfd9ec621d
+    Filename: Adept_TacticalKnowledge_Ability
+    PatchType: 2
+  - Guid: 8058270c43d64816808fb861731b7905
+    Filename: Adept_TacticalKnowledge_ArmourBuff
+    PatchType: 2
+  - Guid: a4eea154b9af4e5b9ec1ae291a844875
+    Filename: Adept_TacticalKnowledge_DamageBuff
+    PatchType: 2
+  - Guid: 55477251f6724496b9a70bad24fb5582
+    Filename: Adept_TacticalKnowledge_DamageCounterBuff
+    PatchType: 2
+  - Guid: 9f2261fcdb7a494eb4a59966ac59c795
+    Filename: Adept_TacticalKnowledge_Feature
+    PatchType: 2
+  - Guid: 241156c970804b319d24604b8b7ab31a
+    Filename: Adept_TideOfExcellence_Talent
+    PatchType: 2
+  - Guid: 0b34f40754f84c85ac4b12ea289b12e8
+    Filename: AdeptDesperateAbility
+    PatchType: 2
+  - Guid: 765e3c47c4a649648b315a5e353592ce
+    Filename: AdeptDesperateAbility_SecondHand
+    PatchType: 2
+  - Guid: c4c25ebbdea341c5a153c073240d574d
+    Filename: AdeptUltimateAbility
+    PatchType: 2
+  - Guid: d983fdecfc444017991a6f9b703da01a
+    Filename: AdeptUltimateAbility_SecondHand
+    PatchType: 2
+  - Guid: 264e8fc120fc4cdda336d31ddc0c15f7
+    Filename: AdeptUltimateFeature
+    PatchType: 2
+  - Guid: f193d69f593c476d998c97c341a90971
+    Filename: AssassinDesperateAbility_SecondHand
+    PatchType: 2
+  - Guid: 96d65b0b0f8e47c4bc587c19d933135d
+    Filename: AssassinUltimateAbility_SecondHand
+    PatchType: 2
+  - Guid: 4db5feb706ee4b6796be176b8305c2e7
+    Filename: EldarRangerSights_Feature
+    PatchType: 2
+  - Guid: 3830a4dc0fc4453cb4392e6500b20098
+    Filename: EldarRangerSights_Item
+    PatchType: 2
+  - Guid: f3d1066a5b2b4336a7531b9a53f60a6d
+    Filename: Eufrates_Kunrad_agressive_brain
+    PatchType: 2
+  - Guid: 41a31dce64c448f8a881d98280b0095d
+    Filename: OmnissiahAxeCH04Unique_Buff
+    PatchType: 2
+  - Guid: 6ceac4db06434d3eae9c7839290aaf1d
+    Filename: OmnissiahAxeCH04Unique_Feature
+    PatchType: 2
+  - Guid: 36dec72188af4c3e99757db6443f8bd7
+    Filename: OmnissiahAxeCH04Unique_Item
+    PatchType: 2
+  - Guid: 610f4b29b1874c58b82e5e22c880a285
+    Filename: VidCaptureRelay_Buff_Ally
+    PatchType: 2
+  - Guid: 51699198c8c44f448f9d49bb83812376
+    Filename: VidCaptureRelay_Item
+    PatchType: 2

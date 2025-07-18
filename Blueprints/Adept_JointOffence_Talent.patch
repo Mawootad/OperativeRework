@@ -1,0 +1,61 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$UIPropertiesComponent$2e2ad202-cac2-49e0-a17c-028c910299d4",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$2e2ad202-cac2-49e0-a17c-028c910299d4",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "Prepend",
+            "NewElement": {
+              "NameType": "Damage",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": {
+                  "assetguid": "18a728a40f1794d4a8ae87c5719dd5b3",
+                  "stringkey": "a041c969-b3d2-427b-9592-64f62b5c868f"
+                }
+              },
+              "m_DescriptionFact": "!bp_832dd8b02731461a881775696d937d71",
+              "m_LinkProperty": true,
+              "m_PropertyName": "Value1",
+              "m_PropertySource": "!bp_663d238524554308bd50f3d149ada085",
+              "m_LinkKey": "HitChanceBonus"
+            }
+          },
+          {
+            "PatchType": "RemoveFromEnd",
+            "Target": "Bonus1"
+          }
+        ]
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$GlobalCombatStateTrigger$188c395b-16b4-473a-a6e7-865414efa75e",
+      "InsertAfterTarget": "$UIPropertiesComponent$2e2ad202-cac2-49e0-a17c-028c910299d4"
+    }
+  ],
+  "Author": "Unknown",
+  "m_DisplayName": {
+    "m_OwnerString": "16c636c76c6b42f89c93d850c1e1f83d"
+  },
+  "m_Description": {
+    "m_OwnerString": "16c636c76c6b42f89c93d850c1e1f83d"
+  }
+}

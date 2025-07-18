@@ -1,0 +1,23 @@
+{
+  "Components": [
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$BuffApplyTrigger$4c55e541-de00-47a3-b0a7-69f798d30a94"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AddContextStatBonus$df783528-9c8b-4222-b1e3-5fe40447eb28"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$021d955c-ce50-4150-badd-0ab1b684f953"
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "Shared": {
+      "assetguid": "977417bbb3caac04793255e5a97136e0",
+      "stringkey": "4680c9c2-daae-4b01-adfd-ce9bc57fb424"
+    }
+  }
+}

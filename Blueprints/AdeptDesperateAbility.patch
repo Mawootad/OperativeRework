@@ -1,0 +1,30 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityEffectRunAction$e3097372-24d0-4084-9a13-584df80b5e7e",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityUseCurrentWeaponSetting$7e0d2326-9da2-4493-86f4-c22d333326b7",
+      "InsertAfterTarget": "$AbilityEffectRunAction$e3097372-24d0-4084-9a13-584df80b5e7e"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilitySpecialMomentumAction$6ef34bc1-9912-49bf-9776-35bfb7c92a9c",
+      "InsertAfterTarget": "$AbilityUseCurrentWeaponSetting$7e0d2326-9da2-4493-86f4-c22d333326b7"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityExecuteActionOnCast$a5cdee23-37f9-4c68-b72d-6a0b427e1f8e"
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "Shared": {
+      "assetguid": "5153a86b9e67d704aad6d58afc5faf48",
+      "stringkey": "ac457028-f741-493e-b1f8-1c016a7a14a1"
+    }
+  }
+}
