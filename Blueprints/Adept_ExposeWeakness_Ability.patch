@@ -52,8 +52,8 @@
                       },
                       "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
                       "Aggregation": "Max",
-                      "BuffWithCasterFromTargetType": false,
-                      "Target": "CurrentEntity"
+                      "BuffWithCasterFromTargetType": true,
+                      "Target": "ContextCaster"
                     }
                   ]
                 }
@@ -115,8 +115,8 @@
         "Actions": {
           "Actions": [
             {
-              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-              "name": "$ContextActionApplyBuff$94756dcf8135473f9d377aa2ee7b52b8",
+              "$type": "7948892518980b855c341fdadac45263, ApplyBuffStackedByCaster",
+              "name": "$ApplyBuffStackedByCaster$f0533229ba304a25bb0be6bd8dfee94c",
               "m_Buff": "!bp_a2c8d30542b84a84bcc6480cf374c516",
               "BuffEndCondition": "CombatEnd",
               "Permanent": false,
@@ -161,22 +161,18 @@
               "AddFactSource": false
             },
             {
-              "$type": "23ddfb172c2d3c144ab007dec380d712, ContextActionRemoveBuff",
-              "name": "$ContextActionRemoveBuff$1cd6e97f12534d7a81a5bb3a95aa4359",
-              "m_Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
-              "RemoveRank": false,
-              "RemoveSeveralRanks": false,
-              "RankNumber": {
+              "$type": "d08c6f8712f9ceb821185aa7f4cbf05c, RemoveBuffStacksByCaster",
+              "name": "$RemoveBuffStacksByCaster$6fd172ed43c44b8e8142915f12682f3c",
+              "Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+              "StackCount": {
                 "ValueType": "Simple",
-                "Value": 0,
+                "Value": 100,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
                 "m_CustomProperty": null,
                 "PropertyName": "Value1"
-              },
-              "m_CasterRanksRemovalPolicy": "Default",
-              "ToCaster": false
+              }
             },
             {
               "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
@@ -315,7 +311,7 @@
   "m_Description": {
     "Shared": {
       "assetguid": "bab3a43e00661194681c02f224f1b16a",
-      "stringkey": "e034f512-4a52-471d-98b8-b5bc5aeea652"
+      "stringkey": ""
     }
   }
 }
