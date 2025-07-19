@@ -43,7 +43,7 @@
       "fileid": 21300000
     },
     "m_AllowNonContextActions": false,
-    "m_Flags": 0,
+    "m_Flags": "ShowInLogOnlyOnYourself",
     "m_SoundTypeSwitch": {
       "Value": "",
       "Group": ""

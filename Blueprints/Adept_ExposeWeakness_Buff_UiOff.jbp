@@ -10,8 +10,8 @@
         "name": "$BuffOverrideUIOrder$52c5f2f6-8fda-45c3-9567-d2100d790e6e",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": null,
-          "name": null
+          "guid": "",
+          "name": ""
         },
         "m_Overrides": []
       }
@@ -43,7 +43,7 @@
       "fileid": 21300000
     },
     "m_AllowNonContextActions": false,
-    "m_Flags": 0,
+    "m_Flags": "ShowInLogOnlyOnYourself",
     "m_SoundTypeSwitch": {
       "Value": "",
       "Group": ""
