@@ -103,6 +103,9 @@ MonoBehaviour:
   - Guid: d9e00160ce96479281c1abe9a26ac4e5
     Filename: Adept_PreciseAttack_Feature
     PatchType: 2
+  - Guid: a56633e62907444795672602b51a0b61
+    Filename: Adept_ReactiveStufy_EnemyMarkEffectBUff
+    PatchType: 2
   - Guid: 515835d674924da2873f183abc942be4
     Filename: Adept_ReactiveStudy_Talent
     PatchType: 2

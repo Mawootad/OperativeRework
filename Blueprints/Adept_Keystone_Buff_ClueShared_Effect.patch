@@ -92,8 +92,8 @@
         "Actions": {
           "Actions": [
             {
-              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-              "name": "$ContextActionApplyBuff$71e462eba9654fddb16ce2b38fefd58d",
+              "$type": "7948892518980b855c341fdadac45263, ApplyBuffStackedByCaster",
+              "name": "$ApplyBuffStackedByCaster$2c362f4a4c3744b29377bba16eec975b",
               "m_Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
