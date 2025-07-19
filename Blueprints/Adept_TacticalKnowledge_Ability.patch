@@ -22,20 +22,36 @@
                 "Operation": "And",
                 "Conditions": [
                   {
-                    "$type": "6c00fcc900e9e82499d86ef9e35ea70d, ContextConditionBuffRank",
-                    "name": "$ContextConditionBuffRank$cf7064eb1f4e44f28906edca7f34d6ad",
+                    "$type": "d271cb15605a459ca6188e939a2d5d72, ContextConditionProperty",
+                    "name": "$ContextConditionProperty$e960aa1a4f4d4fb791b58eda3da9fc6f",
                     "Not": false,
-                    "Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
-                    "RankValue": {
-                      "ValueType": "Simple",
-                      "Value": 1,
-                      "ValueRank": "Default",
-                      "ValueShared": "Damage",
-                      "Property": "None",
-                      "m_CustomProperty": null,
-                      "PropertyName": "Value1"
+                    "Property": {
+                      "Operation": "Sum",
+                      "TargetType": "CurrentTarget",
+                      "TargetEvaluator": null,
+                      "FailSilentlyIfNoTarget": false,
+                      "Getters": [
+                        {
+                          "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                          "name": "$FactRankGetter$56c76b2420b4416c8acaa478a1cc2aa0",
+                          "Settings": {
+                            "Progression": "AsIs",
+                            "m_CustomProgression": [],
+                            "m_StartLevel": 0,
+                            "m_StepLevel": 0,
+                            "Negate": false,
+                            "Limit": "None",
+                            "Min": 0,
+                            "Max": 0
+                          },
+                          "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                          "Aggregation": "Max",
+                          "BuffWithCasterFromTargetType": true,
+                          "Target": "ContextCaster"
+                        }
+                      ]
                     },
-                    "BuffFromCaster": true
+                    "NegativeDoesNotCount": false
                   }
                 ]
               },
@@ -195,7 +211,7 @@
           "Pattern": {
             "m_Type": "Circle",
             "m_Blueprint": null,
-            "m_Radius": 0,
+            "m_Radius": 5,
             "m_Angle": 0
           },
           "Targets": "Enemy",
@@ -213,20 +229,36 @@
           "Operation": "And",
           "Conditions": [
             {
-              "$type": "6c00fcc900e9e82499d86ef9e35ea70d, ContextConditionBuffRank",
-              "name": "$ContextConditionBuffRank$b09b846803fc42feb44a800272efd1dd",
+              "$type": "d271cb15605a459ca6188e939a2d5d72, ContextConditionProperty",
+              "name": "$ContextConditionProperty$49413109b799439a90765e3350c1def0",
               "Not": false,
-              "Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
-              "RankValue": {
-                "ValueType": "Simple",
-                "Value": 1,
-                "ValueRank": "Default",
-                "ValueShared": "Damage",
-                "Property": "None",
-                "m_CustomProperty": null,
-                "PropertyName": "Value1"
+              "Property": {
+                "Operation": "Sum",
+                "TargetType": "CurrentTarget",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": [
+                  {
+                    "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                    "name": "$FactRankGetter$03583d540e334574b192d2e56743ed9c",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "Aggregation": "Max",
+                    "BuffWithCasterFromTargetType": true,
+                    "Target": "ContextCaster"
+                  }
+                ]
               },
-              "BuffFromCaster": true
+              "NegativeDoesNotCount": false
             }
           ]
         }
