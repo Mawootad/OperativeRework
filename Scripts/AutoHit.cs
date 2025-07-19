@@ -84,7 +84,9 @@ namespace OperativeRework
 		[SerializeField]
 		private bool Permanent;
 
+#pragma warning disable IDE0051 // Remove unused private members
 		private bool IsCustomDuration { get => !Permanent; }
+#pragma warning restore IDE0051 // Remove unused private members
 		[ShowIf("IsCustomDuration")]
 		public ContextDurationValue DurationValue;
 
@@ -122,12 +124,12 @@ namespace OperativeRework
 
 			list.Shuffle(PFStatefulRandom.Mechanics);
 
-			BuffDuration buffDuration = new BuffDuration(Permanent ? null : new Kingmaker.Utility.Rounds?(DurationValue.Calculate(Context)), BuffEndCondition.CombatEnd);
+			BuffDuration buffDuration = new(Permanent ? null : new Kingmaker.Utility.Rounds?(DurationValue.Calculate(Context)), BuffEndCondition.CombatEnd);
 
 			for (var i = 0; i < list.Count; i++)
 			{
 				var unit = list[i];
-				var unitStacks = stacks / list.Count + (i < stacks % list.Count ? 1 : 0);
+				var unitStacks = (stacks / list.Count) + (i < stacks % list.Count ? 1 : 0);
 				if (unitStacks <= 0) break;
 
 				Buff buff = unit.Buffs.Enumerable.Where(it => it.Blueprint == Buff.Get()).FirstOrDefault(it => it.MaybeContext.MaybeCaster == Context.MaybeCaster);
@@ -238,12 +240,21 @@ namespace OperativeRework
 		[SerializeField]
 		private BlueprintFeatureReference FeatureTrigger;
 
-		private Buff GetBuffFromCaster(BlueprintBuff buff) => Context?.MainTarget?.Entity?.Buffs?.Enumerable?.Where(it => it?.Blueprint == buff)?.FirstOrDefault(it => it.MaybeContext?.MaybeCaster == Context?.MaybeCaster);
+		private BuffCollection Buffs { get => (Fact as Buff)?.Owner?.Buffs; }
+
+		private Buff[] GetBuffsFromCaster(BlueprintBuff buff) => Buffs?.Enumerable?.Where(it => it?.Blueprint == buff)?.Where(it => it.MaybeContext?.MaybeCaster == (Fact as Buff)?.MaybeContext?.MaybeCaster)?.ToArray() ?? new Buff[0];
 
 		private void RemoveBuffs()
 		{
-			GetBuffFromCaster(UiOnBuff.Get())?.Remove();
-			GetBuffFromCaster(UiOffBuff.Get())?.Remove();
+			foreach (var buff in GetBuffsFromCaster(UiOnBuff.Get()))
+			{
+				buff.Remove();
+			}
+
+			foreach (var buff in GetBuffsFromCaster(UiOffBuff.Get()))
+			{
+				buff.Remove();
+			}
 		}
 
 		private void UpdateBuffs()
@@ -253,12 +264,10 @@ namespace OperativeRework
 			if (entity == null) return;
 			bool uiOn = !entity.Facts.Contains(FeatureTrigger.Get()) || Fact.MaybeContext?.MaybeCaster == entity;
 			RemoveBuffs();
-			var data = Fact as Buff;
-			var target = Context?.MainTarget?.Entity;
-			if (target == null || data == null) return;
+			if (Buffs == null || Fact is not Buff data) return;
 			Rounds? duration = data.IsPermanent ? null : new Rounds(data.DurationInRounds);
-			var buff = target.Buffs.Add(uiOn ? UiOnBuff.Get() : UiOffBuff.Get(), Context, new(duration));
-			buff.AddRank(data.Rank - 1);
+			var buff = Buffs.Add(uiOn ? UiOnBuff.Get() : UiOffBuff.Get(), Context, new(duration));
+			buff?.AddRank(data.Rank - 1);
 		}
 
 		public void HandleUnitContinueTurn(bool isTurnBased) => UpdateBuffs();
@@ -273,22 +282,22 @@ namespace OperativeRework
 
 		public void HandleBuffDidAdded(Buff buff)
 		{
-			if (buff == Fact as Buff) UpdateBuffs();
+			if (buff == (Fact as Buff)) UpdateBuffs();
 		}
 
 		public void HandleBuffDidRemoved(Buff buff)
 		{
-			if (buff == Fact as Buff) RemoveBuffs();
+			if (buff == (Fact as Buff)) RemoveBuffs();
 		}
 
 		public void HandleBuffRankIncreased(Buff buff)
 		{
-			if (buff == Fact as Buff) UpdateBuffs();
+			if (buff == (Fact as Buff)) UpdateBuffs();
 		}
 
 		public void HandleBuffRankDecreased(Buff buff)
 		{
-			if (buff == Fact as Buff) UpdateBuffs();
+			if (buff == (Fact as Buff)) UpdateBuffs();
 		}
 	}
 
