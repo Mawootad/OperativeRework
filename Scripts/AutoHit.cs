@@ -117,7 +117,7 @@ namespace OperativeRework
 			if (stacks <= 0) return;
 
 			List<BaseUnitEntity> list = TempList.Get<BaseUnitEntity>();
-			foreach (CustomGridNodeBase customGridNodeBase in GridAreaHelper.GetNodesSpiralAround(base.Target.NearestNode, base.Target.SizeRect, Radius, true))
+			foreach (CustomGridNodeBase customGridNodeBase in GridAreaHelper.GetNodesSpiralAround(Target.NearestNode, Target.SizeRect, Radius, true))
 			{
 				BaseUnitEntity unit = customGridNodeBase.GetUnit();
 				if (unit != null && unit.CombatGroup.IsEnemy(Context.MaybeCaster) && !unit.Features.IsUntargetable && !unit.IsDeadOrUnconscious && !list.HasItem(unit))
@@ -142,8 +142,16 @@ namespace OperativeRework
 				var unitStacks = stacks / list.Count + (i < stacks % list.Count ? 1 : 0);
 				if (unitStacks <= 0) break;
 
-				Buff buff = unit.Buffs.Add(Buff, Context, buffDuration);
-				if (unitStacks > 1) buff.AddRank(unitStacks - 1);
+				Buff buff = unit.Buffs.Enumerable.Where(it => it.Blueprint == Buff.Get()).FirstOrDefault(it => it.MaybeContext.MaybeCaster == Context.MaybeCaster);
+
+				if (buff == null)
+				{
+					buff = unit.Buffs.Add(Buff, Context, buffDuration);
+					unitStacks--;
+				}
+
+
+				if (unitStacks >= 1) buff.AddRank(unitStacks);
 
 				if (buff.FirstSource == null)
 				{
@@ -176,7 +184,7 @@ namespace OperativeRework
 				return;
 			}
 
-			var existingBuff = buffTarget.Buffs.Enumerable.Where(it => it.Blueprint == Buff).FirstOrDefault(it => it.Blueprint == Buff);
+			var existingBuff = buffTarget.Buffs.Enumerable.Where(it => it.Blueprint == Buff).FirstOrDefault(it => it.MaybeContext.MaybeCaster == Context.MaybeCaster);
 
 			if (existingBuff == null)
 			{
@@ -190,17 +198,7 @@ namespace OperativeRework
 
 		private int CalculateRank(MechanicsContext context)
 		{
-			if (!Buff.HasRanks)
-			{
-				return 0;
-			}
-			ContextValue ranks = Ranks;
-			int num = Math.Max((ranks != null) ? ranks.Calculate(context) : 0, 1);
-			if (num == 1)
-			{
-				return 0;
-			}
-			return num - 1;
+			return Math.Max(Ranks?.Calculate(context) ?? 1, 1); ;
 		}
 	}
 

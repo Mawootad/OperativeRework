@@ -154,6 +154,9 @@ MonoBehaviour:
   - Guid: 264e8fc120fc4cdda336d31ddc0c15f7
     Filename: AdeptUltimateFeature
     PatchType: 2
+  - Guid: 7571b4a471cb4103992c42bfcb9bf667
+    Filename: AnalyzingHelmet_Buff
+    PatchType: 2
   - Guid: f193d69f593c476d998c97c341a90971
     Filename: AssassinDesperateAbility_SecondHand
     PatchType: 2
@@ -169,6 +172,9 @@ MonoBehaviour:
   - Guid: f3d1066a5b2b4336a7531b9a53f60a6d
     Filename: Eufrates_Kunrad_agressive_brain
     PatchType: 2
+  - Guid: 95cdd5f42ef5480d9fadd9e0acee641b
+    Filename: MachineSpiritAbility
+    PatchType: 2
   - Guid: 41a31dce64c448f8a881d98280b0095d
     Filename: OmnissiahAxeCH04Unique_Buff
     PatchType: 2
@@ -177,6 +183,9 @@ MonoBehaviour:
     PatchType: 2
   - Guid: 36dec72188af4c3e99757db6443f8bd7
     Filename: OmnissiahAxeCH04Unique_Item
+    PatchType: 2
+  - Guid: fa831e0ef77347c48588673ff9fbac70
+    Filename: TargetDesignator_Feature
     PatchType: 2
   - Guid: 610f4b29b1874c58b82e5e22c880a285
     Filename: VidCaptureRelay_Buff_Ally

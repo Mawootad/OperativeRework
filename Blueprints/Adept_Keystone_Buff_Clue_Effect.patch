@@ -248,5 +248,6 @@
       "stringkey": "63599150-19f3-467d-8085-9a79a94557ac"
     }
   },
-  "m_Flags": "StayOnDeath"
+  "m_Flags": "StayOnDeath",
+  "Stacking": "Stack"
 }
