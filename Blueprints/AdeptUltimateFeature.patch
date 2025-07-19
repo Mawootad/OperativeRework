@@ -35,8 +35,8 @@
               "Actions": {
                 "Actions": [
                   {
-                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-                    "name": "$ContextActionApplyBuff$49d62b12dcd94fa783d46cca526ed43d",
+                    "$type": "7948892518980b855c341fdadac45263, ApplyBuffStackedByCaster",
+                    "name": "$ApplyBuffStackedByCaster$6f596c6e26b24110bfbd689c03cbb72f",
                     "m_Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
                     "BuffEndCondition": "CombatEnd",
                     "Permanent": true,
@@ -94,8 +94,8 @@
               "IncludeUntargetable": false
             },
             {
-              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-              "name": "$ContextActionApplyBuff$4b48a639731c4d89bc06258f33604ca0",
+              "$type": "7948892518980b855c341fdadac45263, ApplyBuffStackedByCaster",
+              "name": "$ApplyBuffStackedByCaster$f21a5e3d86a54bb28c065a9f4d02f39f",
               "m_Buff": "!bp_a2c8d30542b84a84bcc6480cf374c516",
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
@@ -111,7 +111,7 @@
                 },
                 "RoundsValue": {
                   "ValueType": "Simple",
-                  "Value": 1,
+                  "Value": 0,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
                   "Property": "None",

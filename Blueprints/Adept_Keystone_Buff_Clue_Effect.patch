@@ -237,6 +237,23 @@
       "InsertAfterTarget": "$WarhammerDamageModifierTarget$f4433f7e-f7db-4466-abbb-96e82b38dc68"
     },
     {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "a38f30053d7a26d8cf92f598d2346ebc, ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster",
+        "name": "$ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster$d26abd21-39dc-4966-9329-153a80f45dd4",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "UiOnBuff": "!bp_1a2559279c204bce9ec9f070f82b537e",
+        "UiOffBuff": "!bp_66a04247ca1247e59ac6f50b6a99025f",
+        "FeatureTrigger": "!bp_6cfd9b9830ea403db07a816843a8e39a"
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$c26d3255-6a6d-468b-bbca-e645f157c40a"
+    },
+    {
       "PatchType": "RemoveFromEnd",
       "Target": "$WarhammerDamageTriggerTarget$b84c019c-0730-436a-aee7-ad2efc26a827"
     }
@@ -248,6 +265,6 @@
       "stringkey": "63599150-19f3-467d-8085-9a79a94557ac"
     }
   },
-  "m_Flags": "StayOnDeath",
+  "m_Flags": "HiddenInUi, StayOnDeath",
   "Stacking": "Stack"
 }

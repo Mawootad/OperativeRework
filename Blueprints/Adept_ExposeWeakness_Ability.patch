@@ -101,6 +101,27 @@
       "InsertAfterTarget": "$PropertyCalculatorComponent$1355b2d2-ec98-4460-8678-ae5157a378c5"
     },
     {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityTargetHasFact$c03cf466-31ef-4f3e-921d-24dcc3fbdae2",
+      "ElementPatch": {
+        "m_CheckedFacts": [
+          {
+            "PatchType": "Prepend",
+            "NewElement": "!bp_1a2559279c204bce9ec9f070f82b537e"
+          },
+          {
+            "PatchType": "Relocate",
+            "Target": "!bp_215d9f42b7e6435e9ed77337156e0fc3",
+            "InsertAfterTarget": "!bp_1a2559279c204bce9ec9f070f82b537e"
+          },
+          {
+            "PatchType": "RemoveFromEnd",
+            "Target": "!bp_66e7b370e32b43118315ab0fd24a7f0d"
+          }
+        ]
+      }
+    },
+    {
       "PatchType": "Insert",
       "NewElement": {
         "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",

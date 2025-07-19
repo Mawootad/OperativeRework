@@ -1,31 +1,19 @@
-using HarmonyLib;
 using Kingmaker;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Attributes;
-using Kingmaker.Blueprints.Facts;
 using Kingmaker.Blueprints.JsonSystem.Helpers;
 using Kingmaker.Designers.Mechanics.Facts.Restrictions;
-using Kingmaker.Modding;
 using Kingmaker.PubSubSystem.Core;
 using Kingmaker.RuleSystem.Rules;
-using Kingmaker.UI.Models.Log.Events;
 using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Abilities;
-using Kingmaker.UnitLogic.Abilities.Components;
-using Kingmaker.UnitLogic.Abilities.Components.Base;
 using Kingmaker.UnitLogic.Buffs;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.Enums;
-using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics.Facts;
 using OperativeRework;
-using Owlcat.QA.Validation;
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Kingmaker.ElementsSystem.ContextData;
 using Kingmaker.ElementsSystem;
 using Kingmaker.EntitySystem.Entities;
@@ -69,12 +57,10 @@ namespace OperativeRework
 			if (Restrictions.IsPassed(Fact, evt, evt.Ability))
 			{
 				Owner.GetMechanicFeature(MechanicsFeatureType.AutoHit).Retain(Fact as Buff);
-				PFLog.Default.Log("Mawootad - AutoHit - Applying");
 			}
 			else
 			{
 				Owner.GetMechanicFeature(MechanicsFeatureType.AutoHit).Release(Fact as Buff);
-				PFLog.Default.Log("Mawootad - AutoHit - Removing");
 			}
 		}
 
@@ -218,7 +204,6 @@ namespace OperativeRework
 			MechanicEntity mechanicEntity = Context.MaybeCaster;
 			if (mechanicEntity == null)
 			{
-				PFLog.Default.Error("Context.MaybeCaster can't be null!");
 				return;
 			}
 
@@ -251,7 +236,7 @@ namespace OperativeRework
 		[SerializeField]
 		private BlueprintFeatureReference FeatureTrigger;
 
-		private Buff GetBuffFromCaster(BlueprintBuff buff) => Context?.MainTarget?.Entity?.Buffs?.Enumerable?.Where(it => it.Blueprint == buff)?.FirstOrDefault(it => it.MaybeContext?.MaybeCaster == Context?.MaybeCaster);
+		private Buff GetBuffFromCaster(BlueprintBuff buff) => Context?.MainTarget?.Entity?.Buffs?.Enumerable?.Where(it => it?.Blueprint == buff)?.FirstOrDefault(it => it.MaybeContext?.MaybeCaster == Context?.MaybeCaster);
 
 		private void RemoveBuffs()
 		{
@@ -266,13 +251,12 @@ namespace OperativeRework
 			if (entity == null) return;
 			bool uiOn = !entity.Facts.Contains(FeatureTrigger.Get()) || Fact.MaybeContext?.MaybeCaster == entity;
 			RemoveBuffs();
-
-			var data = ContextData<Buff.Data>.Current.Buff;
+			var data = Fact as Buff;
 			var target = Context?.MainTarget?.Entity;
-			if (target == null) return;
+			if (target == null || data == null) return;
 			Rounds? duration = data.IsPermanent ? null : new Rounds(data.DurationInRounds);
 			var buff = target.Buffs.Add(uiOn ? UiOnBuff.Get() : UiOffBuff.Get(), Context, new(duration));
-			buff.AddRank(buff.Rank - 1);
+			buff.AddRank(data.Rank - 1);
 		}
 
 		public void HandleUnitContinueTurn(bool isTurnBased) => UpdateBuffs();
@@ -287,22 +271,22 @@ namespace OperativeRework
 
 		public void HandleBuffDidAdded(Buff buff)
 		{
-			if (buff == ContextData<Buff.Data>.Current.Buff) UpdateBuffs();
+			if (buff == Fact as Buff) UpdateBuffs();
 		}
 
 		public void HandleBuffDidRemoved(Buff buff)
 		{
-			if (buff == ContextData<Buff.Data>.Current.Buff) RemoveBuffs();
+			if (buff == Fact as Buff) RemoveBuffs();
 		}
 
 		public void HandleBuffRankIncreased(Buff buff)
 		{
-			if (buff == ContextData<Buff.Data>.Current.Buff) UpdateBuffs();
+			if (buff == Fact as Buff) UpdateBuffs();
 		}
 
 		public void HandleBuffRankDecreased(Buff buff)
 		{
-			if (buff == ContextData<Buff.Data>.Current.Buff) UpdateBuffs();
+			if (buff == Fact as Buff) UpdateBuffs();
 		}
 	}
 }

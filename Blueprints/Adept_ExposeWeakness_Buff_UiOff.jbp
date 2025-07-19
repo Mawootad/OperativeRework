@@ -1,0 +1,76 @@
+{
+  "AssetId": "637c18375d3b4dd9ad1f6435d970f9b1",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "d0acd208ae7e443084c50e30e16bc641, BuffOverrideUIOrder",
+        "name": "$BuffOverrideUIOrder$52c5f2f6-8fda-45c3-9567-d2100d790e6e",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": null,
+          "name": null
+        },
+        "m_Overrides": []
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "09792a9926dacac4799fab61db8a85fb",
+        "stringkey": "911352dd-db75-41ac-ac2b-e41686c099e6"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "e95b5dcd4f6828b4ba43ee0ba0b4f612",
+        "stringkey": "a6b9621a-5d74-43d9-9b6e-5d3402b6550b"
+      }
+    },
+    "m_Icon": {
+      "guid": "dba589517cd35c64793abb0ee286a86b",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "m_Flags": 0,
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Stack",
+    "ProlongWhenRankAdded": false,
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 100,
+    "FxOnStart": {
+      "AssetId": ""
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_priorityInUI": 0,
+    "m_AbilityGroups": [],
+    "m_Cyclical": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
