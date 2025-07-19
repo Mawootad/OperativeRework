@@ -32,7 +32,7 @@
         },
         "Properties": "BlockChance",
         "BlockChance": {
-          "ValueType": "TargetBuffRank",
+          "ValueType": "ContextProperty",
           "Value": -5,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -122,13 +122,13 @@
           "Enabled": false
         },
         "PercentDamageModifier": {
-          "ValueType": "TargetBuffRank",
+          "ValueType": "CasterNamedProperty",
           "Value": 5,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
           "m_CustomProperty": null,
-          "PropertyName": "DamageBonus1",
+          "PropertyName": "Value2",
           "Enabled": true
         },
         "AbsorptionPenetration": {
@@ -245,8 +245,8 @@
                 "FailSilentlyIfNoTarget": false,
                 "Getters": [
                   {
-                    "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-                    "name": "$ContextValueGetter$3d137735bd234d9b9004e4a426621b82",
+                    "$type": "632487675d6d954fbec7898dbd252e97, CurrentRankGetter",
+                    "name": "$CurrentRankGetter$fea2882b11b64f5dad3e3a27f17fb706",
                     "Settings": {
                       "Progression": "AsIs",
                       "m_CustomProgression": [],
@@ -256,15 +256,6 @@
                       "Limit": "None",
                       "Min": 0,
                       "Max": 0
-                    },
-                    "Value": {
-                      "ValueType": "TargetBuffRank",
-                      "Value": 1,
-                      "ValueRank": "Default",
-                      "ValueShared": "Damage",
-                      "Property": "None",
-                      "m_CustomProperty": null,
-                      "PropertyName": "Value1"
                     }
                   },
                   {
@@ -467,6 +458,82 @@
         "FeatureTrigger": "!bp_6cfd9b9830ea403db07a816843a8e39a"
       },
       "InsertAfterTarget": "$WarhammerDamageModifierTarget$c590eb13-ceae-4f57-b24c-96e3a5e7bc08"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$4db5a19b-2351-47ff-99b5-1ae327384f0c",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "632487675d6d954fbec7898dbd252e97, CurrentRankGetter",
+              "name": "$CurrentRankGetter$60a977f320b94cb2a07773df904a8b5c",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 5,
+                "Negate": true,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster$2f69f6a2-ee96-430c-b9a3-4f8ec9c3f580"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$7673e602-2481-4983-8080-fbc3365a8114",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "632487675d6d954fbec7898dbd252e97, CurrentRankGetter",
+              "name": "$CurrentRankGetter$c8753c00-c6cf-4ecb-8e84-e184bb78f289",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 5,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$4db5a19b-2351-47ff-99b5-1ae327384f0c"
     },
     {
       "PatchType": "RemoveFromEnd",

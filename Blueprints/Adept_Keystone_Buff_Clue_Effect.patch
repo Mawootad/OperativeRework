@@ -183,8 +183,8 @@
                     "Property": "PerceptionBonus"
                   },
                   {
-                    "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-                    "name": "$ContextValueGetter$b6e6ebd7d0ce495995ab4e49a17b2d75",
+                    "$type": "632487675d6d954fbec7898dbd252e97, CurrentRankGetter",
+                    "name": "$CurrentRankGetter$70fde08d60ee42ccab15fc2129cec433",
                     "Settings": {
                       "Progression": "AsIs",
                       "m_CustomProgression": [],
@@ -194,41 +194,23 @@
                       "Limit": "None",
                       "Min": 0,
                       "Max": 0
-                    },
-                    "Value": {
-                      "ValueType": "TargetBuffRank",
-                      "Value": 1,
-                      "ValueRank": "Default",
-                      "ValueShared": "Damage",
-                      "Property": "None",
-                      "m_CustomProperty": null,
-                      "PropertyName": "Value1"
                     }
                   }
                 ]
               }
             },
             {
-              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-              "name": "$ContextValueGetter$d52557b9d6964e91911f804836cc25e4",
+              "$type": "632487675d6d954fbec7898dbd252e97, CurrentRankGetter",
+              "name": "$CurrentRankGetter$2b76c1307a96438db254394cb330f1c5",
               "Settings": {
-                "Progression": "AsIs",
+                "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 0,
+                "m_StepLevel": 5,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
                 "Max": 0
-              },
-              "Value": {
-                "ValueType": "TargetBuffRank",
-                "Value": 5,
-                "ValueRank": "Default",
-                "ValueShared": "Damage",
-                "Property": "None",
-                "m_CustomProperty": null,
-                "PropertyName": "Value1"
               }
             }
           ]
