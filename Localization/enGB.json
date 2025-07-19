@@ -6,7 +6,7 @@
     },
     "63599150-19f3-467d-8085-9a79a94557ac": {
       "Offset": 0,
-      "Text": "At the start of each turn, the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} inflicts +1 stack of the {g|Encyclopedia:Exploit}exploit{/g} {g|Encyclopedia:CommonStatusesGlossary}effect{/g} on all enemies in the Operative's {g|Encyclopedia:LineOfSight}line of sight{/g}.\nEnemies suffer +5% more damage for each stack of exploit. Enemies damaged by the Operative suffer +<u>{uip|damage|6cfd9b9830ea403db07a816843a8e39a}</u>% more damage for each stack instead."
+      "Text": "At the start of each turn, the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} inflicts +1 stack of the {g|Encyclopedia:Exploit}exploit{/g} {g|Encyclopedia:CommonStatusesGlossary}effect{/g} on all enemies in the Operative's {g|Encyclopedia:LineOfSight}line of sight{/g}.\nEnemies suffer +5% more damage for each stack of exploit. Enemies damaged by the Operative suffer +<u>{uip|damage|6cfd9b9830ea403db07a816843a8e39a}</u>% more damage for each stack instead.\nExploits applied by multiple Operatives stack, but the Operative's abilities that remove exploits only work with exploits they applied."
     },
     "f7d0c492-d327-4200-9339-d498eb1f63c9": {
       "Offset": 0,
@@ -26,7 +26,7 @@
     },
     "e034f512-4a52-471d-98b8-b5bc5aeea652": {
       "Offset": 0,
-      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} removes all {g|Encyclopedia:Exploit}exploits{/g} from the target and revealing that many weaknesses, decreasing the target's {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockGlossary}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g} by 5% and increasing the damage they take by 5% per stack. Multiple uses stack but do not change duration.\nThe next attack made against the target by the Operative deals +<u>({uip|damagebase|fbdba5fe2a264c25bada29aecd64049a} + weaknesses x {unit_stat|WarhammerPerception|bonus})</u>% more damage and gains additional effects based on the number of stacks:\n-<indent=5%>At least 3: The attack always hits.</indent>\n-<indent=5%>At least 7: The attack always crits and ignores deflection.</indent>\n-<indent=5%>At least 12: The operative regains 2 AP and can make an additional attack this turn.</indent>"
+      "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} removes all {g|Encyclopedia:Exploit}exploits{/g} from the target and revealing that many weaknesses, decreasing the target's {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockGlossary}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g} by 5% and increasing the damage they take by 5% per stack. Multiple uses stack but do not change duration.\nThe next attack made against the target by the Operative deals +<u>({uip|damagebase|fbdba5fe2a264c25bada29aecd64049a} + weaknesses x {unit_stat|WarhammerPerception|bonus})</u>% more damage and gains additional effects based on the number of stacks:\n-<indent=5%>At least 3: The attack always hits.</indent>\n-<indent=5%>At least 6: The attack always crits and ignores deflection.</indent>\n-<indent=5%>At least 10: The operative regains 2 AP and can make an additional attack this turn.</indent>"
     },
     "3d5d194e-8a6f-4fea-8090-ae08e7991f1a": {
       "Offset": 0,

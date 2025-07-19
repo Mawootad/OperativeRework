@@ -1,7 +1,7 @@
 {
   "Components": [
     {
-      "PatchType": "Insert",
+      "PatchType": "Prepend",
       "NewElement": {
         "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
         "name": "$AbilityEffectRunAction$71acd198-0da7-488e-b483-97984c2e6776",
@@ -35,29 +35,25 @@
                       "m_CustomProperty": null,
                       "PropertyName": "Value1"
                     },
-                    "BuffFromCaster": false
+                    "BuffFromCaster": true
                   }
                 ]
               },
               "IfTrue": {
                 "Actions": [
                   {
-                    "$type": "23ddfb172c2d3c144ab007dec380d712, ContextActionRemoveBuff",
-                    "name": "$ContextActionRemoveBuff$675863e740f24ead93a494c582946330",
-                    "m_Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
-                    "RemoveRank": true,
-                    "RemoveSeveralRanks": false,
-                    "RankNumber": {
+                    "$type": "d08c6f8712f9ceb821185aa7f4cbf05c, RemoveBuffStacksByCaster",
+                    "name": "$RemoveBuffStacksByCaster$7e6678f1b81e4ed5b2f95f8fbb2e9238",
+                    "Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "StackCount": {
                       "ValueType": "Simple",
-                      "Value": 0,
+                      "Value": 1,
                       "ValueRank": "Default",
                       "ValueShared": "Damage",
                       "Property": "None",
                       "m_CustomProperty": null,
                       "PropertyName": "Value1"
-                    },
-                    "m_CasterRanksRemovalPolicy": "Default",
-                    "ToCaster": false
+                    }
                   },
                   {
                     "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
@@ -182,8 +178,60 @@
             }
           ]
         }
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f8f9261ab3994be68bd4c1d12459402d, AbilityTargetsInPattern",
+        "name": "$AbilityTargetsInPattern$d73f9b80-4339-4661-9025-35d066ccc4f4",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_PatternSettings": {
+          "Pattern": {
+            "m_Type": "Circle",
+            "m_Blueprint": null,
+            "m_Radius": 0,
+            "m_Angle": 0
+          },
+          "Targets": "Enemy",
+          "CastOnSameLevel": false,
+          "m_IgnoreLos": false,
+          "m_UseMeleeLos": false,
+          "m_IgnoreLevelDifference": false,
+          "m_Directional": false,
+          "CalculateAttackFromPatternCentre": false
+        },
+        "m_IncludeDead": false,
+        "m_IncludeCaster": false,
+        "m_IncludeNonUnitTargets": false,
+        "m_Condition": {
+          "Operation": "And",
+          "Conditions": [
+            {
+              "$type": "6c00fcc900e9e82499d86ef9e35ea70d, ContextConditionBuffRank",
+              "name": "$ContextConditionBuffRank$b09b846803fc42feb44a800272efd1dd",
+              "Not": false,
+              "Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+              "RankValue": {
+                "ValueType": "Simple",
+                "Value": 1,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "BuffFromCaster": true
+            }
+          ]
+        }
       },
-      "InsertAfterTarget": "$AbilityTargetsInPattern$6cc4e7ee-01ce-4bbb-baae-a6f2d6daa4ee"
+      "InsertAfterTarget": "$AbilityEffectRunAction$71acd198-0da7-488e-b483-97984c2e6776"
     },
     {
       "PatchType": "RemoveFromEnd",
@@ -192,6 +240,10 @@
     {
       "PatchType": "RemoveFromEnd",
       "Target": "$AbilityEffectRunAction$6270ee5b-ff56-4bbc-8d7c-180c62ca319b"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityTargetsInPattern$6cc4e7ee-01ce-4bbb-baae-a6f2d6daa4ee"
     }
   ],
   "Author": "Unknown",

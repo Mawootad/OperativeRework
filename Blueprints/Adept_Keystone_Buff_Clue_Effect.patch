@@ -164,8 +164,8 @@
                     },
                     "m_Fact": "!bp_6cfd9b9830ea403db07a816843a8e39a",
                     "Aggregation": "Max",
-                    "BuffWithCasterFromTargetType": false,
-                    "Target": "CurrentEntity"
+                    "BuffWithCasterFromTargetType": true,
+                    "Target": "ContextCaster"
                   },
                   {
                     "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",

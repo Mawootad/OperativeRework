@@ -189,8 +189,8 @@
         "ActionsOnTargetHit": {
           "Actions": [
             {
-              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-              "name": "$ContextActionApplyBuff$179e1670144048ba9602a798bf49a8e7",
+              "$type": "7948892518980b855c341fdadac45263, ApplyBuffStackedByCaster",
+              "name": "$ApplyBuffStackedByCaster$daedcbbee6654bcab28f6d84139cab83",
               "m_Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
@@ -290,8 +290,8 @@
               "IfTrue": {
                 "Actions": [
                   {
-                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-                    "name": "$ContextActionApplyBuff$83eddf6118474adeb396c685503934eb",
+                    "$type": "7948892518980b855c341fdadac45263, ApplyBuffStackedByCaster",
+                    "name": "$ApplyBuffStackedByCaster$0f575fee75654825931bf48dad7ed590",
                     "m_Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
                     "BuffEndCondition": "CombatEnd",
                     "Permanent": true,
