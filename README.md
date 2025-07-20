@@ -17,7 +17,7 @@ All of the Operative's abilities and many of their talents have also been update
 ## Full changelist
 
 - Exploit: No longer removed on hit. Stacks increase all damage taken by 5%, including for damage over time and from allies. The operative deals +5 + PER% per stack instead. Exploits from multiple Operatives still stack on the same enemy, however Operative's only gain the +PER% damage vs their own exploits and cannot consume exploits from other Operatives through Expose Weakness or Tactical Knowledge.
-- Expose Weakness: Now increases damage by 5% per stack, debuff scaling changed to a flat -5% armor, parry, block, and dodge. Casts of Expose Weakness now stack between uses by the same Operative, although duration is not increased by subsequent casts. After using Expose Weakness, the Operative's next attack vs the target deals an additional +(10 + stacks) x PER% damage and provides further boosts based on the number of stacks removed:
+- Expose Weakness: Now increases damage by 5% per stack, debuff scaling changed to a flat -5% armor, parry, block, and dodge. Casts of Expose Weakness now stack between uses by the same Operative, although duration is not increased by subsequent casts. After using Expose Weakness, the Operative's next attack vs the target deals an additional +(10 + stacks) x PER% damage and provides further boosts based on the number of stacks of weakness on the target:
 
   - 3+ stacks: The attack auto-hits
   - 6+ stacks: The attack auto-crits and ignores deflection
