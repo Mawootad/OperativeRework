@@ -229,7 +229,7 @@ namespace OperativeRework
 	}
 
 	[TypeId("a38f30053d7a26d8cf92f598d2346ebc")]
-	public class ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster : UnitFactComponentDelegate, IContinueTurnHandler, ITurnStartHandler, IInterruptTurnStartHandler, IUnitBuffHandler
+	public class ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster : UnitFactComponentDelegate, IContinueTurnHandler, ITurnStartHandler, IInterruptTurnStartHandler, IUnitBuffHandler, IInterruptTurnContinueHandler
 	{
 		[SerializeField]
 		private BlueprintBuffReference UiOnBuff;
@@ -273,6 +273,8 @@ namespace OperativeRework
 		public void HandleUnitContinueTurn(bool isTurnBased) => UpdateBuffs();
 
 		public void HandleUnitStartInterruptTurn(InterruptionData interruptionData) => UpdateBuffs();
+
+		public void HandleUnitContinueInterruptTurn() => UpdateBuffs();
 
 		public void HandleUnitStartTurn(bool isTurnBased) => UpdateBuffs();
 
