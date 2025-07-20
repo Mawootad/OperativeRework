@@ -1,3 +1,156 @@
 {
-  "Author": "Unknown"
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "b3c64e68baa2498bbe1de319d0259e3a, WarhammerKillTargetTrigger",
+        "name": "$WarhammerKillTargetTrigger$450910de-679f-4ec7-9460-06d1b1f3301d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "ContextCaster",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
+                "name": "$CheckAbilityAttackTypeGetter$258972a9-dbc7-446b-9fe3-f39e18c791e0",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Type": "SingleShot"
+              }
+            ]
+          }
+        },
+        "ActionsOnKiller": {
+          "Actions": []
+        },
+        "ActionsOnCaster": {
+          "Actions": []
+        },
+        "ActionsOnTarget": {
+          "Actions": [
+            {
+              "$type": "b45b69ed39bb4d9eae68c2927e09cb33, ContextActionRunActionOnNearestUnit",
+              "name": "$ContextActionRunActionOnNearestUnit$2f1951fd-0401-465a-a827-842b9f18f0a4",
+              "Condition": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "b0c4370c781db0142b035f14ca13a6a5, ContextConditionIsEnemy",
+                    "name": "$ContextConditionIsEnemy$a3d68e97-6bf3-4dfd-8226-cb4c11e547d7",
+                    "Not": false
+                  },
+                  {
+                    "$type": "18b4005ab45ded44dbacab84cab0b247, ContextConditionIsMainTarget",
+                    "name": "$ContextConditionIsMainTarget$112d19aa-702f-468a-9018-243882753af4",
+                    "Not": true
+                  }
+                ]
+              },
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "7948892518980b855c341fdadac45263, ApplyBuffStackedByCaster",
+                    "name": "$ApplyBuffStackedByCaster$b9328c11c9514116b8c2b0a39e00bd71",
+                    "m_Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "BuffEndCondition": "CombatEnd",
+                    "Permanent": true,
+                    "DurationValue": {
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      },
+                      "RoundsValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    },
+                    "ToCaster": false,
+                    "AsChild": false,
+                    "SameDuration": false,
+                    "Ranks": {
+                      "ValueType": "Simple",
+                      "Value": 1,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "ActionsOnApply": {
+                      "Actions": []
+                    },
+                    "ActionsOnImmune": {
+                      "Actions": []
+                    },
+                    "AddFactSource": false
+                  }
+                ]
+              },
+              "RunOnAllTargets": false
+            }
+          ]
+        },
+        "ConditionsOnTarget": {
+          "Operation": "And",
+          "Conditions": [
+            {
+              "$type": "72a5648a7abcbd748b5d2a601acb616d, ContextConditionHasBuff",
+              "name": "$ContextConditionHasBuff$42532e7e304e4de78f3e374853e6fc7f",
+              "Not": false,
+              "m_Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d"
+            }
+          ]
+        },
+        "ConditionsOnKiller": {
+          "Operation": "And",
+          "Conditions": [
+            {
+              "$type": "f310985bf2724df4a97b165f74b806e8, HasFact",
+              "name": "$HasFact$a18b7d84-e3e4-4afb-8fba-afd632dd7178",
+              "Not": false,
+              "Unit": {
+                "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                "name": "$CasterUnit$1a45b11f-6b75-4fb7-856e-991d7c2ba6e6"
+              },
+              "m_Fact": "!bp_fcb60c7a38c541e78d8591a14e329413"
+            }
+          ]
+        },
+        "ConditionsOnCaster": {
+          "Operation": "And",
+          "Conditions": []
+        }
+      }
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerKillTargetTrigger$450910de-679f-4ec7-9460-06d1b1f3301c"
+    }
+  ]
 }
