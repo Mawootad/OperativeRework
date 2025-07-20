@@ -110,7 +110,7 @@
     },
 	"5181bb6a-f7e8-4866-aa8d-2bd9dcf62fb6": {
       "Offset": 0,
-      "Text": "Whenever an enemy with an {g|Encyclopedia:Exploit}exploit{/g} dies, the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} gains +2  {g|Encyclopedia:WarhammerIntelligence}Intelligence{/g} until the end of combat. Stacks."
+      "Text": "Whenever an enemy with an {g|Encyclopedia:Exploit}exploit{/g} dies, the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} gains +1  {g|Encyclopedia:WarhammerIntelligence}Intelligence{/g} until the end of combat. Stacks."
     },
 	"4670a313-ac58-4c74-a789-b4249ff00ece": {
       "Offset": 0,
