@@ -1,0 +1,136 @@
+{
+  "strings": {
+    "93878892-b607-4305-90e8-5ce9f81cd9da": {
+      "Offset": 0,
+      "Text": "<u>(5 + бонус {g|Encyclopedia:WarhammerPerception}ВОС{/g})</u>"
+    },
+    "63599150-19f3-467d-8085-9a79a94557ac": {
+      "Offset": 0,
+      "Text": "В начале каждого хода {g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} накладывает +1 уровень {g|Encyclopedia:CommonStatusesGlossary}эффекта{/g} {g|Encyclopedia:Exploit}уязвимости{/g} на всех врагов в {g|Encyclopedia:LineOfSight}зоне видимости{/g} Оперативника.\nВраги получают на 5% больше урона за каждый уровень уязвимости. Враги, получившие урон от Оперативника, вместо этого получают на <u>{uip|damage|6cfd9b9830ea403db07a816843a8e39a}</u>% больше урона за каждый уровень эффекта.\nУязвимости, наложенные несколькими {g|Encyclopedia:CareerAdeptGlossary}Оперативниками{/g}, суммируются, но способности Оперативника по удалению уязвимостей действуют только на те уязвимости, что он наложил сам."
+    },
+    "f7d0c492-d327-4200-9339-d498eb1f63c9": {
+      "Offset": 0,
+      "Text": "До следующего {g|Encyclopedia:Turn}хода{/g} {g|Encyclopedia:CareerAdeptGlossary}Оперативника{/g} первая атака по каждому врагу наносит дополнительный урон в размере {unit_stat|WarhammerIntelligence|bonus} и накладывает {g|Encyclopedia:Exploit}уязвимость{/g}."
+    },
+    "0ab59101-6bb2-4daa-ae9f-1d27698ad99e": {
+      "Offset": 0,
+      "Text": "<u>(10 + 2 × бонус {g|Encyclopedia:WarhammerPerception}ВОС{/g})</u>"
+    },
+    "692275c6-d3e2-4b96-ad40-a5183593815a": {
+      "Offset": 0,
+      "Text": "<u>(10 x бонус {g|Encyclopedia:WarhammerPerception}ВОС{/g})</u>"
+    },
+    "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
+      "Offset": 0,
+      "Text": "<u>(1 + бонус {g|Encyclopedia:WarhammerPerception}ВОС{/g} / 2)</u>"
+    },
+    "e034f512-4a52-471d-98b8-b5bc5aeea652": {
+      "Offset": 0,
+      "Text": "{g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} снимает все {g|Encyclopedia:Exploit}уязвимости{/g} с цели, выявляя соответствующее число слабостей и снижая её показатели {g|Encyclopedia:WarhammerArmourGlossary}брони{/g}, {g|Encyclopedia:BlockChance}блока{/g}, {g|Encyclopedia:DodgeGlossary}уклонения{/g} и {g|Encyclopedia:Parry}парирования{/g} на 5%, а также увеличивая получаемый целью урон на 5% за каждую уязвимость. Повторное применение усиливает эффект, но не увеличивает его длительность.\nСледующая атака Оперативника по цели наносит на <u>({uip|damagebase|fbdba5fe2a264c25bada29aecd64049a} + слабости × {unit_stat|WarhammerPerception|bonus})</u>% больше урона и получает дополнительные эффекты в зависимости от количества уровней:\n-<indent=5%>Не менее 3: атака всегда попадает.</indent>\n-<indent=5%>Не менее 6: атака всегда наносит критический урон и игнорирует отклонение.</indent>\n-<indent=5%>Не менее 10: Оперативник восстанавливает 2 ОД и может провести дополнительную атаку в этот ход.</indent>"
+    },
+    "3d5d194e-8a6f-4fea-8090-ae08e7991f1a": {
+      "Offset": 0,
+      "Text": "<u>(10 + 2 x бонус {g|Encyclopedia:WarhammerPerception}ВОС{/g})</u>"
+    },
+    "17341334-2892-4499-b985-19ec89ca53fa": {
+      "Offset": 0,
+      "Text": "Следующая атака {g|Encyclopedia:CareerAdeptGlossary}Оперативника{/g} получает +<u>{uip|hitchance|d9e00160ce96479281c1abe9a26ac4e5}</u>% к шансу попадания и снижению уклонения, уменьшает эффективность {g|Encyclopedia:DetailsOfTheCoverGlossary}укрытия{/g} и показатель блока цели на <u>{uip|hitchance|d9e00160ce96479281c1abe9a26ac4e5}</u>% и накладывает два уровня {g|Encyclopedia:Exploit}уязвимости{/g}."
+    },
+    "95b8c0cd-4699-48f2-864a-1b82b3655c65": {
+      "Offset": 0,
+      "Text": "{g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} снимает по 1 {g|Encyclopedia:Exploit}уязвимости{/g} с каждого врага в радиусе 5 клеток от выбранной точки в пределах 10 клеток от себя и получает по одной единице <b>Понимания тактики</b> за каждую снятую уязвимость.\nВсе союзники получают <u>{uip|armor|9f2261fcdb7a494eb4a59966ac59c795}</u>% {g|Encyclopedia:WarhammerArmourGlossary}брони{/g} за каждый уровень Понимания тактики. Если у Оперативника более 4 единиц Понимания тактики, он наносит на  <u>{uip|damage|9f2261fcdb7a494eb4a59966ac59c795}</u>% {g|Encyclopedia:DamageGlossary}урона{/g} больше за каждый уровень Понимания тактики."
+    },
+    "bd06750d-f34d-46af-bbba-a2eb7a1b58ee": {
+      "Offset": 0,
+      "Text": "<u>(1 + бонус {g|Encyclopedia:WarhammerIntelligence}ИНТ{/g} / 5)</u>"
+    },
+    "d0ee2a50-0e58-43ea-8def-4ea5c454eb84": {
+      "Offset": 0,
+      "Text": "<u>(2 + бонус {g|Encyclopedia:WarhammerIntelligence}ИНТ{/g} / 2)</u>"
+    },
+    "4d6fa8e7-29f7-43cf-9680-114a0e03ba60": {
+      "Offset": 0,
+      "Text": "Следующая атака {g|Encyclopedia:CareerAdeptGlossary}Оперативника{/g} не {g|Encyclopedia:AreaOfEffect}по области{/g} накладывает эффект запугивания на первую цель, которую она {g|Encyclopedia:HitSequenceGlossary}поражает{/g}, а также на всех врагов в радиусе 5 клеток от неё.\n{g|Encyclopedia:DamageGlossary}Урон{/g}, наносимый запуганными врагами, снижается на <u>{uip|damage|ec872eda7b1b40a08122b6330262a903}</u>% и они теряют 3 {g|Encyclopedia:MovementPoints}ОП{/g} до следующего хода Оперативника."
+    },
+    "6839b085-1dd6-4107-bb95-b014b2c48206": {
+      "Offset": 0,
+      "Text": "<u>(15 + бонус {g|Encyclopedia:WarhammerPerception}ВОС{/g})</u>"
+    },
+    "3e3fab18-18c4-4ac9-8d34-0b70cafb30cd": {
+      "Offset": 0,
+      "Text": "Если <b>Устрашение</b> убивает цель, <b>Устрашение</b> применяется ко всем врагам, которые видят эту цель, а снижение урона увеличивается на <u>{uip|DamagePenalty|dde11f867df84e61a67c2a444fe87a68}</u>%."
+    },
+    "21c32bfe-7886-4f55-9899-494f4a929729": {
+      "Offset": 0,
+      "Text": "Каждый раз, когда {g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} {g|Encyclopedia:HitSequenceGlossary}попадает{/g} по врагу, находящемуся под эффектом <b>Выявление слабостей</b>, этот враг теряет 3 {g|Encyclopedia:MovementPoints}ОП{/g}, а его {g|Encyclopedia:DamageGlossary}урон{/g} на следующем {g|Encyclopedia:Turn}ходу{/g} уменьшается на 10%."
+    },
+    "de578abd-c1e5-42da-b022-e431e335a598": {
+      "Offset": 0,
+      "Text": "Если {g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} наносит критический удар с помощью <b>Выверенной атаки</b>, он накладывает дополнительную {g|Encyclopedia:Exploit}уязвимость{/g}. Если на цели <b>Выверенной атаки</b> уже есть {uip|MinimumStacks|5be08b3ea6fa4b82a3473de749e68488} или больше уязвимостей, атака становится {g|Encyclopedia:CritChancesAndCritDamageGlossary}критической{/g}."
+    },
+    "3fdfc7a5-6bce-4aa3-b263-e48f99cfed63": {
+      "Offset": 0,
+      "Text": "<u>(6 − бонус {g|Encyclopedia:WarhammerIntelligence}ИНТ{/g} / 2)</u>"
+    },
+    "4680c9c2-daae-4b01-adfd-ce9bc57fb424": {
+      "Offset": 0,
+      "Text": "<b>Выверенная атака</b> даёт {g|Encyclopedia:CareerAdeptGlossary}Оперативнику{/g} +5 к {g|Encyclopedia:WarhammerPerception}Восприятию{/g} до конца боя. Эффект суммируется."
+    },
+    "a041c969-b3d2-427b-9592-64f62b5c868f": {
+      "Offset": 0,
+      "Text": "<u>(2 + бонус {g|Encyclopedia:WarhammerIntelligence}ИНТ{/g} / 2)</u>"
+    },
+	"b3653ca6-4344-436a-ac27-14e575b890d2": {
+      "Offset": 0,
+      "Text": "Если враг в пределах 5 клеток от {g|Encyclopedia:CareerAdeptGlossary}Оперативника{/g} атакует Оперативника или его союзника, он получает 1 дополнительную  {g|Encyclopedia:Exploit}уязвимость{/g}."
+    },
+	"d9fe0ee9-f347-417a-9bdc-380fb74c9318": {
+      "Offset": 0,
+      "Text": "Каждый раз, когда {g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} снимает {g|Encyclopedia:Exploit}уязвимости{/g} с врага или убивает врага с уязвимостью, он получает +1 к урону и +2% к {g|Encyclopedia:ArmourPenetration}пробиванию брони{/g} до конца боя. Эффект суммируется."
+    },
+	"eb67a351-701e-4641-a4e3-c0e4a67456ce": {
+      "Offset": 0,
+      "Text": "{g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} получает +25% к эффективности {g|Encyclopedia:DetailsOfTheCoverGlossary}укрытия{/g} (если находится в укрытии), +15 к {g|Encyclopedia:WarhammerPerception}Восприятию{/g} и +15 к {g|Encyclopedia:WarhammerBallisticSkill}Дальнему Бою{/g} пока он не двигается. Эффект не суммируется.\nЕсли <i>Идеальная позиция</i> всё ещё активна на начало хода Оперативника, он накладывает по одному уровню {g|Encyclopedia:Exploit}уязвимости{/g} на каждого врага в зоне видимости."
+    },
+	"f6bfca6c-526b-4ac6-83c1-9659aa645517": {
+      "Offset": 0,
+      "Text": "Оперативник немедленно накладывает 1 {g|Encyclopedia:Exploit}уязвимость{/g} на всех врагов в бою и 6 уровней <b>Выявление слабостей</b> на цель, после чего совершает бесплатную атаку по этой цели. Эта атака всегда {g|Encyclopedia:HitSequenceGlossary}попадает{/g}.\nЭффект <b>Выявление слабостей</b> сохраняется на цели до конца боя."
+    },
+	"ac457028-f741-493e-b1f8-1c016a7a14a1": {
+      "Offset": 0,
+      "Text": "Оперативник немедленно накладывает 1 {g|Encyclopedia:Exploit}уязвимость{/g} на всех врагов в бою и 6 уровней <b>Выявление слабостей</b> на цель, после чего совершает бесплатную атаку по этой цели. Эта атака всегда {g|Encyclopedia:HitSequenceGlossary}попадает{/g}.\n-<indent=5%>Эффект <b>Выявление слабостей</b> сохраняется на цели до конца боя.</indent>\n-<indent=5%>До конца боя атаки Оперативника стоят на 1 {g|Encyclopedia:ActionPoints}ОД{/g} больше.</indent>"
+    },
+	"a5b28dd7-93e6-4447-be67-7e5dc068c065": {
+      "Offset": 0,
+      "Text": "{g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} также накладывает {g|Encyclopedia:Exploit}уязвимости{/g} в начале боя и в начале каждого своего {g|Encyclopedia:ExtraTurn}дополнительного хода{/g}."
+    },
+	"51fab033-018b-4212-9b58-3a64e137551e": {
+      "Offset": 0,
+      "Text": "<b>Анализ целей</b> также распределяет в два раза меньше {g|Encyclopedia:Exploit}уязвимостей{/g} среди врагов в радиусе 5 клеток от цели. Если врагов в радиусе 5 клеток нет, то это количество уязвимостей добавляется непосредственно цели."
+    },
+	"5181bb6a-f7e8-4866-aa8d-2bd9dcf62fb6": {
+      "Offset": 0,
+      "Text": "Каждый раз, когда враг с {g|Encyclopedia:Exploit}уязвимостью{/g} умирает, {g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} получает +1 к {g|Encyclopedia:WarhammerIntelligence}Интеллекту{/g} до конца боя. Эффект суммируется."
+    },
+	"4670a313-ac58-4c74-a789-b4249ff00ece": {
+      "Offset": 0,
+      "Text": "Если {g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} не перемещался в этот {g|Encyclopedia:Turn}ход{/g}, он наносит +{uip|DamageBonus|9a0e7e64902e491baa29d60469eae188} урона за каждые 4 клетки между ним и целью и получает +{unit_stat|WarhammerPerception|bonus} к {g|Encyclopedia:WarhammerBallisticSkill}Дальнему Бою{/g}. Действует только на первую атаку или снаряд в атаке {g|Encyclopedia:BurstAttacksGlossary}очередью{/g}."
+    },
+	"2d57f87a-968c-499f-82e3-be446306bb91": {
+      "Offset": 0,
+      "Text": "Критические попадания {g|Encyclopedia:DeadeyeShot}прицельного выстрела{/g} увеличивают длительность <b>Выявление слабостей</b> на 1 раунд."
+    },
+	"8922a79d-b8eb-4e09-bfb6-dca7736b6500": {
+      "Offset": 0,
+      "Text": "Каждый раз, когда союзник накладывает {g|Encyclopedia:Exploit}уязвимость{/g} с помощью <b>Поделиться знаниями</b>, владелец получает +5 к {g|Encyclopedia:WarhammerPerception}Восприятию{/g}."
+    },
+	"512f08c5-c5b3-4718-9693-4d67fa4de4a3": {
+      "Offset": 0,
+      "Text": "Атаки этого топора накладывают <b>Выявление слабостей</b>. Если цель уже под воздействием <b>Выявление слабостей</b>, весь {g|Encyclopedia:EnergyDamage}энергетический урон{/g}, наносимый по ней, увеличивается на +{uip|Debuff|6ceac4db06434d3eae9c7839290aaf1d}% до конца боя."
+    },
+	"94e06216-60e0-40ec-bbba-b214cfbf1182": {
+      "Offset": 0,
+      "Text": "{g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} получает +1 уровень <b>Понимания тактики</b> в начале боя и каждый раз при использовании <b>Понимания тактики</b>."
+    },
+  }
+}
