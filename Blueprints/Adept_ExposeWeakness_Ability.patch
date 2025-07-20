@@ -96,32 +96,6 @@
       }
     },
     {
-      "PatchType": "Relocate",
-      "Target": "$AbilityTargetHasFact$c03cf466-31ef-4f3e-921d-24dcc3fbdae2",
-      "InsertAfterTarget": "$PropertyCalculatorComponent$1355b2d2-ec98-4460-8678-ae5157a378c5"
-    },
-    {
-      "PatchType": "PatchElement",
-      "Target": "$AbilityTargetHasFact$c03cf466-31ef-4f3e-921d-24dcc3fbdae2",
-      "ElementPatch": {
-        "m_CheckedFacts": [
-          {
-            "PatchType": "Prepend",
-            "NewElement": "!bp_1a2559279c204bce9ec9f070f82b537e"
-          },
-          {
-            "PatchType": "Relocate",
-            "Target": "!bp_215d9f42b7e6435e9ed77337156e0fc3",
-            "InsertAfterTarget": "!bp_1a2559279c204bce9ec9f070f82b537e"
-          },
-          {
-            "PatchType": "RemoveFromEnd",
-            "Target": "!bp_66e7b370e32b43118315ab0fd24a7f0d"
-          }
-        ]
-      }
-    },
-    {
       "PatchType": "Insert",
       "NewElement": {
         "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
@@ -313,7 +287,94 @@
           ]
         }
       },
-      "InsertAfterTarget": "$AbilityTargetHasFact$c03cf466-31ef-4f3e-921d-24dcc3fbdae2"
+      "InsertAfterTarget": "$PropertyCalculatorComponent$1355b2d2-ec98-4460-8678-ae5157a378c5"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f8f9261ab3994be68bd4c1d12459402d, AbilityTargetsInPattern",
+        "name": "$AbilityTargetsInPattern$57736536-52e3-4c72-bd7e-37fb5ce2c737",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_PatternSettings": {
+          "Pattern": {
+            "m_Type": "Circle",
+            "m_Blueprint": null,
+            "m_Radius": 0,
+            "m_Angle": 0
+          },
+          "Targets": "Enemy",
+          "CastOnSameLevel": false,
+          "m_IgnoreLos": false,
+          "m_UseMeleeLos": false,
+          "m_IgnoreLevelDifference": false,
+          "m_Directional": false,
+          "CalculateAttackFromPatternCentre": false
+        },
+        "m_IncludeDead": false,
+        "m_IncludeCaster": false,
+        "m_IncludeNonUnitTargets": false,
+        "m_Condition": {
+          "Operation": "And",
+          "Conditions": [
+            {
+              "$type": "d271cb15605a459ca6188e939a2d5d72, ContextConditionProperty",
+              "name": "$ContextConditionProperty$c59faa96-b84e-40ae-b1c2-c68996a4a280",
+              "Not": false,
+              "Property": {
+                "Operation": "BoolOr",
+                "TargetType": "CurrentTarget",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": [
+                  {
+                    "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                    "name": "$FactRankGetter$4140ed9d-968c-4415-85ad-2d30bdc76512",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "Aggregation": "Max",
+                    "BuffWithCasterFromTargetType": true,
+                    "Target": "ContextCaster"
+                  },
+                  {
+                    "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                    "name": "$FactRankGetter$a9e181e4424c4d53ac50c12f31c7d01d",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "m_Fact": "!bp_215d9f42b7e6435e9ed77337156e0fc3",
+                    "Aggregation": "Max",
+                    "BuffWithCasterFromTargetType": false,
+                    "Target": "CurrentEntity"
+                  }
+                ]
+              },
+              "NegativeDoesNotCount": false
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$AbilityEffectRunAction$d948c269-d31e-41b0-8393-b3fd0c09fef0"
     },
     {
       "PatchType": "RemoveFromEnd",
@@ -322,6 +383,10 @@
     {
       "PatchType": "RemoveFromEnd",
       "Target": "$PropertyCalculatorComponent$e7dba43c-c8ba-4f1e-bea2-6368ec63afd3"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityTargetHasFact$c03cf466-31ef-4f3e-921d-24dcc3fbdae2"
     },
     {
       "PatchType": "RemoveFromEnd",
