@@ -311,7 +311,7 @@
                   "Max": 0
                 },
                 "Value": {
-                  "ValueType": "ContextProperty",
+                  "ValueType": "CasterNamedProperty",
                   "Value": 0,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
