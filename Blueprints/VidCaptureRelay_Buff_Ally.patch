@@ -1,29 +1,8 @@
 {
   "Components": [
     {
-      "PatchType": "PatchElement",
-      "Target": "$WarhammerWeaponHitTriggerInitiator$3683a727-96e8-43b2-9fe8-ff25a20be486",
-      "ElementPatch": {
-        "Restrictions": {
-          "Property": {
-            "Operation": "Sum",
-            "Getters": [
-              {
-                "PatchType": "PatchElement",
-                "Target": "$FactRankGetter$8a895511dde141f2a6eb3de4bbcc8257",
-                "ElementPatch": {
-                  "m_Fact": "!bp_b17b2e8b16b54e8fa77c813f6ea6b77e"
-                }
-              },
-              {
-                "PatchType": "RemoveFromEnd",
-                "Target": "$ContextValueGetter$48b3ad717b2c4a8cb39ffc764745f97b"
-              }
-            ]
-          }
-        }
-      }
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerWeaponHitTriggerInitiator$3683a727-96e8-43b2-9fe8-ff25a20be486"
     }
-  ],
-  "Author": "Unknown"
+  ]
 }
