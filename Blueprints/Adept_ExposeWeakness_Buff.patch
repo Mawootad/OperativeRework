@@ -32,7 +32,7 @@
         },
         "Properties": "BlockChance",
         "BlockChance": {
-          "ValueType": "ContextProperty",
+          "ValueType": "CasterNamedProperty",
           "Value": -5,
           "ValueRank": "Default",
           "ValueShared": "Damage",
