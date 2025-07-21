@@ -10,7 +10,8 @@
       "Target": "$WarhammerDodgeChanceModifierDefender$cade46d8-8c07-4ea3-bccb-72c3d7343d49",
       "ElementPatch": {
         "DodgeChance": {
-          "ValueType": "CasterNamedProperty"
+          "ValueType": "CasterNamedProperty",
+          "PropertyName": "Bonus1"
         }
       }
     },
@@ -24,7 +25,8 @@
       "Target": "$WarhammerParryChanceModifierDefender$694a4c2f-20ab-4ce5-ab3d-2e72e6231081",
       "ElementPatch": {
         "ParryChance": {
-          "ValueType": "CasterNamedProperty"
+          "ValueType": "CasterNamedProperty",
+          "PropertyName": "Bonus1"
         }
       }
     },
@@ -33,7 +35,8 @@
       "Target": "$WarhammerArmorBonus$12d16780-93de-4db6-9aef-70be46f9693b",
       "ElementPatch": {
         "BonusAbsorptionValue": {
-          "ValueType": "CasterNamedProperty"
+          "ValueType": "CasterNamedProperty",
+          "PropertyName": "Bonus1"
         }
       }
     },
@@ -65,7 +68,7 @@
           "ValueShared": "Damage",
           "Property": "None",
           "m_CustomProperty": null,
-          "PropertyName": "Value1"
+          "PropertyName": "Bonus1"
         },
         "BlockChanceMultiplierValue": {
           "ValueType": "Simple",
@@ -552,17 +555,17 @@
           "name": ""
         },
         "m_Overrides": [],
-        "Name": "Value1",
+        "Name": "Bonus1",
         "SaveToContext": "No",
         "Value": {
           "Operation": "Sum",
-          "TargetType": "CurrentEntity",
+          "TargetType": "CurrentTarget",
           "TargetEvaluator": null,
           "FailSilentlyIfNoTarget": false,
           "Getters": [
             {
-              "$type": "632487675d6d954fbec7898dbd252e97, CurrentRankGetter",
-              "name": "$CurrentRankGetter$60a977f320b94cb2a07773df904a8b5c",
+              "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+              "name": "$FactRankGetter$dc2b3deaeda4439c9d46162086a39d04",
               "Settings": {
                 "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
@@ -572,7 +575,11 @@
                 "Limit": "None",
                 "Min": 0,
                 "Max": 0
-              }
+              },
+              "m_Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+              "Aggregation": "Max",
+              "BuffWithCasterFromTargetType": true,
+              "Target": "ContextCaster"
             }
           ]
         }
@@ -594,7 +601,7 @@
         "SaveToContext": "No",
         "Value": {
           "Operation": "Sum",
-          "TargetType": "CurrentEntity",
+          "TargetType": "ContextCaster",
           "TargetEvaluator": null,
           "FailSilentlyIfNoTarget": false,
           "Getters": [
