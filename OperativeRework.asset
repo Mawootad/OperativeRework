@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Manifest:
     UniqueName: OperativeRework
-    Version: 0.3.3
+    Version: 0.3.4
     DisplayName: Operative Rework
     Description: Reworks the Operative archetype to improve performance
     Author: Mawootad
