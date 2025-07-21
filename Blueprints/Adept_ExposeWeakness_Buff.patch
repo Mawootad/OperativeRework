@@ -6,9 +6,36 @@
       "InsertAfterTarget": null
     },
     {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDodgeChanceModifierDefender$cade46d8-8c07-4ea3-bccb-72c3d7343d49",
+      "ElementPatch": {
+        "DodgeChance": {
+          "ValueType": "CasterNamedProperty"
+        }
+      }
+    },
+    {
       "PatchType": "Relocate",
       "Target": "$WarhammerParryChanceModifierDefender$694a4c2f-20ab-4ce5-ab3d-2e72e6231081",
       "InsertAfterTarget": "$WarhammerDodgeChanceModifierDefender$cade46d8-8c07-4ea3-bccb-72c3d7343d49"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerParryChanceModifierDefender$694a4c2f-20ab-4ce5-ab3d-2e72e6231081",
+      "ElementPatch": {
+        "ParryChance": {
+          "ValueType": "CasterNamedProperty"
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerArmorBonus$12d16780-93de-4db6-9aef-70be46f9693b",
+      "ElementPatch": {
+        "BonusAbsorptionValue": {
+          "ValueType": "CasterNamedProperty"
+        }
+      }
     },
     {
       "PatchType": "Insert",
