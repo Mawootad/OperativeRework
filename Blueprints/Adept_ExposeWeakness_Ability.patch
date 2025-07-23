@@ -68,6 +68,9 @@
               "PatchType": "PatchElement",
               "Target": "$PropertyCalculatorGetter$8536fe39d2ae4cb6932fb7e0ba400da5",
               "ElementPatch": {
+                "Settings": {
+                  "Negate": false
+                },
                 "Value": {
                   "Getters": [
                     {
