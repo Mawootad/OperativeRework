@@ -39,7 +39,6 @@ class ClassesWithGuid
 			(typeof(ApplyBuffStackedByCaster), "7948892518980b855c341fdadac45263"),
 			(typeof(RemoveBuffStacksByCaster), "d08c6f8712f9ceb821185aa7f4cbf05c"),
 			(typeof(ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster), "a38f30053d7a26d8cf92f598d2346ebc"),
-			(typeof(CurrentRankGetter), "632487675d6d954fbec7898dbd252e97"),
 		};
 }
 
@@ -301,18 +300,5 @@ namespace OperativeRework
 		{
 			if (buff == (Fact as Buff)) UpdateBuffs();
 		}
-	}
-
-	[TypeId("632487675d6d954fbec7898dbd252e97")]
-	public class CurrentRankGetter : MechanicEntityPropertyGetter, PropertyContextAccessor.IOptionalFact
-	{
-
-		protected override int GetBaseValue()
-		{
-			Buff buff = this.GetFact() as Buff;
-			return buff?.Rank ?? 0;
-		}
-
-		protected override string GetInnerCaption(bool useLineBreaks) => "Rank of current buff";
 	}
 }
