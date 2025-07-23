@@ -649,6 +649,73 @@
       "InsertAfterTarget": "$UIPropertiesComponent$5baf4ee2-39f1-4149-87b8-dbc4bc9fad6e"
     },
     {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "5a95724975c24882a5efb0c5aed8c2ab, GlobalCombatStateTrigger",
+        "name": "$GlobalCombatStateTrigger$5c167ba7-7d63-4798-b58e-f7d6dba46da1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "ActionsOnEnter": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$7874bb89070c4328b954259ed60ffc8a",
+              "m_Buff": "!bp_ef73877eef774bedbba19b0300ec099f",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "ActionsOnLeave": {
+          "Actions": []
+        }
+      },
+      "InsertAfterTarget": "$TurnBasedModeEventsTrigger$1665a667-6f4f-43d8-84c8-f3c1f3826cc5"
+    },
+    {
       "PatchType": "RemoveFromEnd",
       "Target": "$WarhammerWeaponHitTriggerInitiator$438e1a43-ff4d-4744-a197-6f4697fefbb4"
     },

@@ -1,225 +1,7 @@
 {
   "Components": [
     {
-      "PatchType": "Relocate",
-      "Target": "$BuffOverrideUIOrder$83c940b4-0e6d-41b9-af30-e55945e18e35",
-      "InsertAfterTarget": null
-    },
-    {
-      "PatchType": "Insert",
-      "NewElement": {
-        "$type": "aac928a1f314a4144923e7e3850a24ba, WarhammerDamageModifierTarget",
-        "name": "$WarhammerDamageModifierTarget$f4433f7e-f7db-4466-abbb-96e82b38dc68",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "Restrictions": {
-          "Property": {
-            "Operation": "Sum",
-            "TargetType": "CurrentEntity",
-            "TargetEvaluator": null,
-            "FailSilentlyIfNoTarget": false,
-            "Getters": []
-          }
-        },
-        "MinimumDamage": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": false
-        },
-        "MaximumDamage": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": false
-        },
-        "PenetrationMod": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": false
-        },
-        "PercentDamageModifier": {
-          "ValueType": "CasterNamedProperty",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": true
-        },
-        "AbsorptionPenetration": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": false
-        },
-        "DeflectionPenetration": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": false
-        },
-        "UnmodifiableFlatDamageModifier": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": false
-        },
-        "UnmodifiablePercentDamageModifier": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": false
-        },
-        "ModifierDescriptor": "None",
-        "ModifyEvenDirectDamage": false,
-        "ModifyEvenDamageOverTime": true
-      },
-      "InsertAfterTarget": "$BuffOverrideUIOrder$83c940b4-0e6d-41b9-af30-e55945e18e35"
-    },
-    {
-      "PatchType": "Insert",
-      "NewElement": {
-        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
-        "name": "$PropertyCalculatorComponent$c26d3255-6a6d-468b-bbca-e645f157c40a",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "Name": "Value1",
-        "SaveToContext": "No",
-        "Value": {
-          "Operation": "Sum",
-          "TargetType": "CurrentEntity",
-          "TargetEvaluator": null,
-          "FailSilentlyIfNoTarget": false,
-          "Getters": [
-            {
-              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-              "name": "$PropertyCalculatorGetter$a93dbbdfd8e94cc782c642482f48857e",
-              "Settings": {
-                "Progression": "AsIs",
-                "m_CustomProgression": [],
-                "m_StartLevel": 0,
-                "m_StepLevel": 0,
-                "Negate": false,
-                "Limit": "None",
-                "Min": 0,
-                "Max": 0
-              },
-              "Value": {
-                "Operation": "Mul",
-                "TargetType": "RuleInitiator",
-                "TargetEvaluator": null,
-                "FailSilentlyIfNoTarget": false,
-                "Getters": [
-                  {
-                    "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                    "name": "$FactRankGetter$932d5e3373664c7c8bf4eb9a3166a600",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    },
-                    "m_Fact": "!bp_6cfd9b9830ea403db07a816843a8e39a",
-                    "Aggregation": "Max",
-                    "BuffWithCasterFromTargetType": true,
-                    "Target": "ContextCaster"
-                  },
-                  {
-                    "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
-                    "name": "$SimplePropertyGetter$80ae2e2a68ee463887a036dab1c7fb68",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    },
-                    "Property": "PerceptionBonus"
-                  },
-                  {
-                    "$type": "632487675d6d954fbec7898dbd252e97, CurrentRankGetter",
-                    "name": "$CurrentRankGetter$70fde08d60ee42ccab15fc2129cec433",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "$type": "632487675d6d954fbec7898dbd252e97, CurrentRankGetter",
-              "name": "$CurrentRankGetter$2b76c1307a96438db254394cb330f1c5",
-              "Settings": {
-                "Progression": "MultiplyByModifier",
-                "m_CustomProgression": [],
-                "m_StartLevel": 0,
-                "m_StepLevel": 5,
-                "Negate": false,
-                "Limit": "None",
-                "Min": 0,
-                "Max": 0
-              }
-            }
-          ]
-        }
-      },
-      "InsertAfterTarget": "$WarhammerDamageModifierTarget$f4433f7e-f7db-4466-abbb-96e82b38dc68"
-    },
-    {
-      "PatchType": "Insert",
+      "PatchType": "Prepend",
       "NewElement": {
         "$type": "a38f30053d7a26d8cf92f598d2346ebc, ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster",
         "name": "$ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster$d26abd21-39dc-4966-9329-153a80f45dd4",
@@ -232,8 +14,11 @@
         "UiOnBuff": "!bp_1a2559279c204bce9ec9f070f82b537e",
         "UiOffBuff": "!bp_66a04247ca1247e59ac6f50b6a99025f",
         "FeatureTrigger": "!bp_6cfd9b9830ea403db07a816843a8e39a"
-      },
-      "InsertAfterTarget": "$PropertyCalculatorComponent$c26d3255-6a6d-468b-bbca-e645f157c40a"
+      }
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$BuffOverrideUIOrder$83c940b4-0e6d-41b9-af30-e55945e18e35"
     },
     {
       "PatchType": "RemoveFromEnd",
@@ -246,6 +31,6 @@
       "stringkey": "63599150-19f3-467d-8085-9a79a94557ac"
     }
   },
-  "m_Flags": "HiddenInUi, StayOnDeath",
+  "m_Flags": "HiddenInUi",
   "Stacking": "Stack"
 }
