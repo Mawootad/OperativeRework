@@ -477,7 +477,7 @@
                     },
                     "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
                     "Aggregation": "Max",
-                    "BuffWithCasterFromTargetType": true,
+                    "BuffWithCasterFromTargetType": false,
                     "Target": "RuleInitiator"
                   },
                   {
