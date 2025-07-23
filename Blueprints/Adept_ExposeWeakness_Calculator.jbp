@@ -42,7 +42,7 @@
                 "ValueShared": "Damage",
                 "Property": "None",
                 "m_CustomProperty": null,
-                "PropertyName": "DamageDice1"
+                "PropertyName": "DamageBonus1"
               }
             }
           ]
