@@ -259,10 +259,17 @@ namespace OperativeRework
 		private void UpdateBuffs()
 		{
 			if (Owner.IsPreviewUnit) return;
-			var entity = EventInvokerExtensions.MechanicEntity;
-			if (entity == null) return;
-			bool uiOn = !entity.Facts.Contains(FeatureTrigger.Get()) || Fact.MaybeContext?.MaybeCaster == entity;
+
+			var turnController = Game.Instance.TurnController;
+			if (turnController?.TbActive != true) return;
+
+			var turnUnit = turnController.CurrentUnit;
+			if (turnUnit == null) return;
+
+			bool uiOn = !turnUnit.Facts.Contains(FeatureTrigger.Get()) || Fact.MaybeContext?.MaybeCaster == turnUnit;
+
 			RemoveBuffs();
+
 			if (Buffs == null || Fact is not Buff data) return;
 			Rounds? duration = data.IsPermanent ? null : new Rounds(data.DurationInRounds);
 			var buff = Buffs.Add(uiOn ? UiOnBuff.Get() : UiOffBuff.Get(), Context, new(duration));
