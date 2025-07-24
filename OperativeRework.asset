@@ -18,8 +18,8 @@ MonoBehaviour:
     DisplayName: Operative Rework
     Description: Reworks the Operative archetype to improve performance
     Author: Mawootad
-    Repository: 
-    HomePage: 
+    Repository: https://github.com/Mawootad/OperativeRework
+    HomePage: https://www.nexusmods.com/warhammer40kroguetrader/mods/287
     Dependencies: []
   Settings:
     RelativeThumbnailPath: 
