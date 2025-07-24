@@ -246,8 +246,8 @@
               "Target": "RuleInitiator"
             },
             {
-              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-              "name": "$PropertyCalculatorGetter$b27df21a79d64da1bd33766569aba211",
+              "$type": "2b7102ebfff042409c7f1493b16125a9, ConditionalGetter",
+              "name": "$ConditionalGetter$57cdadadfb5d40d0aba6d0e913438bd4",
               "Settings": {
                 "Progression": "AsIs",
                 "m_CustomProgression": [],
@@ -258,33 +258,15 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Value": {
-                "Operation": "Mul",
+              "Condition": {
+                "Operation": "Sum",
                 "TargetType": "CurrentEntity",
                 "TargetEvaluator": null,
                 "FailSilentlyIfNoTarget": false,
                 "Getters": [
                   {
                     "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                    "name": "$FactRankGetter$3e70c4fa106e4bd8abfd45592ebb8ec0",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "Max",
-                      "Min": 0,
-                      "Max": 1
-                    },
-                    "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
-                    "Aggregation": "Max",
-                    "BuffWithCasterFromTargetType": false,
-                    "Target": "CurrentEntity"
-                  },
-                  {
-                    "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-                    "name": "$PropertyCalculatorGetter$7966321714694c5f848b4d494a3033a3",
+                    "name": "$FactRankGetter$28f54020789b4995beeb54925d364e8b",
                     "Settings": {
                       "Progression": "AsIs",
                       "m_CustomProgression": [],
@@ -293,97 +275,43 @@
                       "Negate": false,
                       "Limit": "None",
                       "Min": 0,
+                      "Max": 1
+                    },
+                    "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "Aggregation": "Max",
+                    "BuffWithCasterFromTargetType": false,
+                    "Target": "CurrentEntity"
+                  }
+                ]
+              },
+              "True": {
+                "Operation": "Sum",
+                "TargetType": "RuleInitiator",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": [
+                  {
+                    "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                    "name": "$PropertyCalculatorGetter$65162b916a0944b49b5ebf736c5c3002",
+                    "Settings": {
+                      "Progression": "MultiplyByModifier",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 2,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
                       "Max": 0
                     },
                     "Value": {
-                      "Operation": "Sum",
+                      "Operation": "Mul",
                       "TargetType": "RuleInitiator",
                       "TargetEvaluator": null,
                       "FailSilentlyIfNoTarget": false,
                       "Getters": [
                         {
-                          "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-                          "name": "$PropertyCalculatorGetter$8c5562187c9f470f97d0e1ec7314580f",
-                          "Settings": {
-                            "Progression": "MultiplyByModifier",
-                            "m_CustomProgression": [],
-                            "m_StartLevel": 0,
-                            "m_StepLevel": 2,
-                            "Negate": false,
-                            "Limit": "None",
-                            "Min": 0,
-                            "Max": 0
-                          },
-                          "Value": {
-                            "Operation": "Mul",
-                            "TargetType": "RuleInitiator",
-                            "TargetEvaluator": null,
-                            "FailSilentlyIfNoTarget": false,
-                            "Getters": [
-                              {
-                                "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                                "name": "$FactRankGetter$b2be361f4919455b9debf1c28fd04fe5",
-                                "Settings": {
-                                  "Progression": "AsIs",
-                                  "m_CustomProgression": [],
-                                  "m_StartLevel": 0,
-                                  "m_StepLevel": 0,
-                                  "Negate": false,
-                                  "Limit": "None",
-                                  "Min": 0,
-                                  "Max": 0
-                                },
-                                "m_Fact": "!bp_242e8fe76ec4493ebb0c229d8183e868",
-                                "Aggregation": "Max",
-                                "BuffWithCasterFromTargetType": false,
-                                "Target": "CurrentEntity"
-                              },
-                              {
-                                "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-                                "name": "$PropertyCalculatorGetter$89d14153649c4a56ad1fd3dafceee32e",
-                                "Settings": {
-                                  "Progression": "AsIs",
-                                  "m_CustomProgression": [],
-                                  "m_StartLevel": 0,
-                                  "m_StepLevel": 0,
-                                  "Negate": false,
-                                  "Limit": "None",
-                                  "Min": 0,
-                                  "Max": 0
-                                },
-                                "Value": {
-                                  "Operation": "Sum",
-                                  "TargetType": "RuleTarget",
-                                  "TargetEvaluator": null,
-                                  "FailSilentlyIfNoTarget": false,
-                                  "Getters": [
-                                    {
-                                      "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                                      "name": "$FactRankGetter$5bf93a3d42f142c388abaa8c2e3bacba",
-                                      "Settings": {
-                                        "Progression": "AsIs",
-                                        "m_CustomProgression": [],
-                                        "m_StartLevel": 0,
-                                        "m_StepLevel": 0,
-                                        "Negate": false,
-                                        "Limit": "None",
-                                        "Min": 0,
-                                        "Max": 0
-                                      },
-                                      "m_Fact": "!bp_3e0523f3c0484506818a4ff1f179ff36",
-                                      "Aggregation": "Max",
-                                      "BuffWithCasterFromTargetType": false,
-                                      "Target": "CurrentEntity"
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
-                        },
-                        {
                           "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                          "name": "$FactRankGetter$942305e3a9d84f9ba1ba0971dc78d036",
+                          "name": "$FactRankGetter$b2be361f4919455b9debf1c28fd04fe5",
                           "Settings": {
                             "Progression": "AsIs",
                             "m_CustomProgression": [],
@@ -394,15 +322,80 @@
                             "Min": 0,
                             "Max": 0
                           },
-                          "m_Fact": "!bp_4db5feb706ee4b6796be176b8305c2e7",
+                          "m_Fact": "!bp_242e8fe76ec4493ebb0c229d8183e868",
                           "Aggregation": "Max",
                           "BuffWithCasterFromTargetType": false,
                           "Target": "CurrentEntity"
+                        },
+                        {
+                          "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                          "name": "$PropertyCalculatorGetter$89d14153649c4a56ad1fd3dafceee32e",
+                          "Settings": {
+                            "Progression": "AsIs",
+                            "m_CustomProgression": [],
+                            "m_StartLevel": 0,
+                            "m_StepLevel": 0,
+                            "Negate": false,
+                            "Limit": "None",
+                            "Min": 0,
+                            "Max": 0
+                          },
+                          "Value": {
+                            "Operation": "Sum",
+                            "TargetType": "RuleTarget",
+                            "TargetEvaluator": null,
+                            "FailSilentlyIfNoTarget": false,
+                            "Getters": [
+                              {
+                                "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                                "name": "$FactRankGetter$5bf93a3d42f142c388abaa8c2e3bacba",
+                                "Settings": {
+                                  "Progression": "AsIs",
+                                  "m_CustomProgression": [],
+                                  "m_StartLevel": 0,
+                                  "m_StepLevel": 0,
+                                  "Negate": false,
+                                  "Limit": "None",
+                                  "Min": 0,
+                                  "Max": 0
+                                },
+                                "m_Fact": "!bp_3e0523f3c0484506818a4ff1f179ff36",
+                                "Aggregation": "Max",
+                                "BuffWithCasterFromTargetType": false,
+                                "Target": "CurrentEntity"
+                              }
+                            ]
+                          }
                         }
                       ]
                     }
+                  },
+                  {
+                    "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                    "name": "$FactRankGetter$5dd2802a1dcc44b0b46adc8af4201942",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "m_Fact": "!bp_4db5feb706ee4b6796be176b8305c2e7",
+                    "Aggregation": "Max",
+                    "BuffWithCasterFromTargetType": false,
+                    "Target": "CurrentEntity"
                   }
                 ]
+              },
+              "False": {
+                "Operation": "Sum",
+                "TargetType": "CurrentEntity",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": []
               }
             }
           ]
@@ -444,8 +437,8 @@
               "Target": "RuleInitiator"
             },
             {
-              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-              "name": "$PropertyCalculatorGetter$0f188274-bbad-440f-9104-2808eba5c78d",
+              "$type": "2b7102ebfff042409c7f1493b16125a9, ConditionalGetter",
+              "name": "$ConditionalGetter$7c599dc52ce34728994f5299748a801d",
               "Settings": {
                 "Progression": "AsIs",
                 "m_CustomProgression": [],
@@ -456,33 +449,15 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Value": {
-                "Operation": "Mul",
+              "Condition": {
+                "Operation": "Sum",
                 "TargetType": "CurrentEntity",
                 "TargetEvaluator": null,
                 "FailSilentlyIfNoTarget": false,
                 "Getters": [
                   {
                     "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                    "name": "$FactRankGetter$0f9aaf1c-8b18-4765-b1bc-e17c6e1aa512",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "Max",
-                      "Min": 0,
-                      "Max": 1
-                    },
-                    "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
-                    "Aggregation": "Max",
-                    "BuffWithCasterFromTargetType": false,
-                    "Target": "RuleInitiator"
-                  },
-                  {
-                    "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-                    "name": "$PropertyCalculatorGetter$c9f48a68-6d45-42e0-80d0-b8d4f2ea2efe",
+                    "name": "$FactRankGetter$28f54020789b4995beeb54925d364e8b",
                     "Settings": {
                       "Progression": "AsIs",
                       "m_CustomProgression": [],
@@ -491,97 +466,43 @@
                       "Negate": false,
                       "Limit": "None",
                       "Min": 0,
+                      "Max": 1
+                    },
+                    "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "Aggregation": "Max",
+                    "BuffWithCasterFromTargetType": false,
+                    "Target": "CurrentEntity"
+                  }
+                ]
+              },
+              "True": {
+                "Operation": "Sum",
+                "TargetType": "RuleInitiator",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": [
+                  {
+                    "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                    "name": "$PropertyCalculatorGetter$65162b916a0944b49b5ebf736c5c3002",
+                    "Settings": {
+                      "Progression": "MultiplyByModifier",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 2,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
                       "Max": 0
                     },
                     "Value": {
-                      "Operation": "Sum",
+                      "Operation": "Mul",
                       "TargetType": "RuleInitiator",
                       "TargetEvaluator": null,
                       "FailSilentlyIfNoTarget": false,
                       "Getters": [
                         {
-                          "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-                          "name": "$PropertyCalculatorGetter$b1959388-605c-46b2-a6cc-01d875e4b26a",
-                          "Settings": {
-                            "Progression": "MultiplyByModifier",
-                            "m_CustomProgression": [],
-                            "m_StartLevel": 0,
-                            "m_StepLevel": 2,
-                            "Negate": false,
-                            "Limit": "None",
-                            "Min": 0,
-                            "Max": 0
-                          },
-                          "Value": {
-                            "Operation": "Mul",
-                            "TargetType": "RuleInitiator",
-                            "TargetEvaluator": null,
-                            "FailSilentlyIfNoTarget": false,
-                            "Getters": [
-                              {
-                                "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                                "name": "$FactRankGetter$6be75cb4-22d8-4d0c-a003-ee8793651145",
-                                "Settings": {
-                                  "Progression": "AsIs",
-                                  "m_CustomProgression": [],
-                                  "m_StartLevel": 0,
-                                  "m_StepLevel": 0,
-                                  "Negate": false,
-                                  "Limit": "None",
-                                  "Min": 0,
-                                  "Max": 0
-                                },
-                                "m_Fact": "!bp_242e8fe76ec4493ebb0c229d8183e868",
-                                "Aggregation": "Max",
-                                "BuffWithCasterFromTargetType": false,
-                                "Target": "CurrentEntity"
-                              },
-                              {
-                                "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-                                "name": "$PropertyCalculatorGetter$f2dabd56-f60f-41ab-9c70-94c4a660b019",
-                                "Settings": {
-                                  "Progression": "AsIs",
-                                  "m_CustomProgression": [],
-                                  "m_StartLevel": 0,
-                                  "m_StepLevel": 0,
-                                  "Negate": false,
-                                  "Limit": "None",
-                                  "Min": 0,
-                                  "Max": 0
-                                },
-                                "Value": {
-                                  "Operation": "Sum",
-                                  "TargetType": "RuleTarget",
-                                  "TargetEvaluator": null,
-                                  "FailSilentlyIfNoTarget": false,
-                                  "Getters": [
-                                    {
-                                      "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                                      "name": "$FactRankGetter$e4cca585-e6bd-40a3-870d-657407a63e92",
-                                      "Settings": {
-                                        "Progression": "AsIs",
-                                        "m_CustomProgression": [],
-                                        "m_StartLevel": 0,
-                                        "m_StepLevel": 0,
-                                        "Negate": false,
-                                        "Limit": "None",
-                                        "Min": 0,
-                                        "Max": 0
-                                      },
-                                      "m_Fact": "!bp_3e0523f3c0484506818a4ff1f179ff36",
-                                      "Aggregation": "Max",
-                                      "BuffWithCasterFromTargetType": false,
-                                      "Target": "CurrentEntity"
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
-                        },
-                        {
                           "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                          "name": "$FactRankGetter$344a348f-0743-432e-8ce8-3920f2286f15",
+                          "name": "$FactRankGetter$b2be361f4919455b9debf1c28fd04fe5",
                           "Settings": {
                             "Progression": "AsIs",
                             "m_CustomProgression": [],
@@ -592,15 +513,80 @@
                             "Min": 0,
                             "Max": 0
                           },
-                          "m_Fact": "!bp_4db5feb706ee4b6796be176b8305c2e7",
+                          "m_Fact": "!bp_242e8fe76ec4493ebb0c229d8183e868",
                           "Aggregation": "Max",
                           "BuffWithCasterFromTargetType": false,
                           "Target": "CurrentEntity"
+                        },
+                        {
+                          "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                          "name": "$PropertyCalculatorGetter$89d14153649c4a56ad1fd3dafceee32e",
+                          "Settings": {
+                            "Progression": "AsIs",
+                            "m_CustomProgression": [],
+                            "m_StartLevel": 0,
+                            "m_StepLevel": 0,
+                            "Negate": false,
+                            "Limit": "None",
+                            "Min": 0,
+                            "Max": 0
+                          },
+                          "Value": {
+                            "Operation": "Sum",
+                            "TargetType": "RuleTarget",
+                            "TargetEvaluator": null,
+                            "FailSilentlyIfNoTarget": false,
+                            "Getters": [
+                              {
+                                "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                                "name": "$FactRankGetter$5bf93a3d42f142c388abaa8c2e3bacba",
+                                "Settings": {
+                                  "Progression": "AsIs",
+                                  "m_CustomProgression": [],
+                                  "m_StartLevel": 0,
+                                  "m_StepLevel": 0,
+                                  "Negate": false,
+                                  "Limit": "None",
+                                  "Min": 0,
+                                  "Max": 0
+                                },
+                                "m_Fact": "!bp_3e0523f3c0484506818a4ff1f179ff36",
+                                "Aggregation": "Max",
+                                "BuffWithCasterFromTargetType": false,
+                                "Target": "CurrentEntity"
+                              }
+                            ]
+                          }
                         }
                       ]
                     }
+                  },
+                  {
+                    "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                    "name": "$FactRankGetter$5dd2802a1dcc44b0b46adc8af4201942",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "m_Fact": "!bp_4db5feb706ee4b6796be176b8305c2e7",
+                    "Aggregation": "Max",
+                    "BuffWithCasterFromTargetType": false,
+                    "Target": "CurrentEntity"
                   }
                 ]
+              },
+              "False": {
+                "Operation": "Sum",
+                "TargetType": "CurrentEntity",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": []
               }
             }
           ]
