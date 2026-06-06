@@ -375,7 +375,7 @@
         },
         "DeflectionPenetration": {
           "ValueType": "Simple",
-          "Value": -100,
+          "Value": 100,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
