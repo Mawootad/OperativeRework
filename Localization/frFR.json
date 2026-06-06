@@ -1,0 +1,136 @@
+{
+  "strings": {
+    "93878892-b607-4305-90e8-5ce9f81cd9da": {
+      "Offset": 0,
+      "Text": "<u>(5 + bonus de {g|Encyclopedia:WarhammerPerception}PER{/g})</u>"
+    },
+    "63599150-19f3-467d-8085-9a79a94557ac": {
+      "Offset": 0,
+      "Text": "Au début de chaque tour, l'agent inflige +1 cumul de l'{g|Encyclopedia:CommonStatusesGlossary}effet{/g} {g|Encyclopedia:Exploit}Vulnérabilité{/g} à tous les ennemis dans sa {g|Encyclopedia:LineOfSight}ligne de mire{/g}.\nLes ennemis subissent +5% de dégâts supplémentaires par cumul de vulnérabilité. Les ennemis blessés par l'agent subissent +<u>{uip|damage|6cfd9b9830ea403db07a816843a8e39a}</u>% de dégâts supplémentaires par cumul.\nLes vulnérabilités appliquées par plusieurs agents se cumulent, mais les capacités de l'agent qui retirent des vulnérabilités ne fonctionnent qu'avec celles qu'il a lui-même appliquées."
+    },
+    "f7d0c492-d327-4200-9339-d498eb1f63c9": {
+      "Offset": 0,
+      "Text": "Jusqu'au prochain {g|Encyclopedia:Turn}tour{/g} de l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g}, la prochaine fois que chaque ennemi est attaqué, l'attaque inflige +{unit_stat|WarhammerIntelligence|bonus} de {g|Encyclopedia:DamageGlossary}dégâts{/g} et applique une {g|Encyclopedia:Exploit}vulnérabilité{/g}."
+    },
+    "0ab59101-6bb2-4daa-ae9f-1d27698ad99e": {
+      "Offset": 0,
+      "Text": "<u>(10 + 2 × bonus de {g|Encyclopedia:WarhammerPerception}PER{/g})</u>"
+    },
+    "692275c6-d3e2-4b96-ad40-a5183593815a": {
+      "Offset": 0,
+      "Text": "<u>(10 × bonus de {g|Encyclopedia:WarhammerPerception}PER{/g})</u>"
+    },
+    "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
+      "Offset": 0,
+      "Text": "<u>(1 + bonus de {g|Encyclopedia:WarhammerPerception}PER{/g} / 2)</u>"
+    },
+    "e034f512-4a52-471d-98b8-b5bc5aeea652": {
+      "Offset": 0,
+      "Text": "L'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} retire toutes les {g|Encyclopedia:Exploit}vulnérabilités{/g} de la cible et révèle autant de faiblesses, réduisant son {g|Encyclopedia:WarhammerArmourGlossary}armure{/g}, son {g|Encyclopedia:BlockGlossary}blocage{/g}, son {g|Encyclopedia:DodgeGlossary}esquive{/g} et sa {g|Encyclopedia:Parry}parade{/g} de 5%, et augmentant les dégâts qu'elle subit de 5% par cumul. Les utilisations multiples se cumulent mais n'affectent pas la durée.\nLa prochaine attaque de l'agent contre la cible inflige +<u>({uip|damagebase|fbdba5fe2a264c25bada29aecd64049a} + faiblesses × {unit_stat|WarhammerPerception|bonus})</u>% de dégâts et gagne des effets supplémentaires selon le nombre de cumuls :\n-<indent=5%>Au moins 3 : l'attaque touche toujours.</indent>\n-<indent=5%>Au moins 6 : l'attaque est toujours critique et ignore la déviation.</indent>\n-<indent=5%>Au moins 10 : l'agent récupère 2 PA et peut effectuer une attaque supplémentaire ce tour.</indent>"
+    },
+    "3d5d194e-8a6f-4fea-8090-ae08e7991f1a": {
+      "Offset": 0,
+      "Text": "<u>(10 + 2 × bonus de {g|Encyclopedia:WarhammerPerception}PER{/g})</u>"
+    },
+    "17341334-2892-4499-b985-19ec89ca53fa": {
+      "Offset": 0,
+      "Text": "La prochaine attaque de l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} gagne +<u>{uip|hitchance|d9e00160ce96479281c1abe9a26ac4e5}</u>% de chance de toucher et de réduction d'esquive, réduit l'{g|Encyclopedia:DetailsOfTheCoverGlossary}efficacité de couverture{/g} et le blocage de la cible de −<u>{uip|hitchance|d9e00160ce96479281c1abe9a26ac4e5}</u>%, et applique deux cumuls de {g|Encyclopedia:Exploit}vulnérabilité{/g}."
+    },
+    "95b8c0cd-4699-48f2-864a-1b82b3655c65": {
+      "Offset": 0,
+      "Text": "L'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} retire −1 {g|Encyclopedia:Exploit}vulnérabilité{/g} à chaque ennemi dans un rayon de 5 cases autour d'un point à 10 cases de lui et gagne un cumul de <b>Connaissance tactique</b> par vulnérabilité retirée.\nTous les alliés gagnent +<u>{uip|armor|9f2261fcdb7a494eb4a59966ac59c795}</u>% d'{g|Encyclopedia:WarhammerArmourGlossary}armure{/g} par cumul de connaissance. Si l'agent possède plus de 4 cumuls de connaissance, il inflige +<u>{uip|damage|9f2261fcdb7a494eb4a59966ac59c795}</u>% de {g|Encyclopedia:DamageGlossary}dégâts{/g} par cumul."
+    },
+    "bd06750d-f34d-46af-bbba-a2eb7a1b58ee": {
+      "Offset": 0,
+      "Text": "<u>(1 + bonus de {g|Encyclopedia:WarhammerIntelligence}INT{/g} / 5)</u>"
+    },
+    "d0ee2a50-0e58-43ea-8def-4ea5c454eb84": {
+      "Offset": 0,
+      "Text": "<u>(2 + bonus de {g|Encyclopedia:WarhammerIntelligence}INT{/g} / 2)</u>"
+    },
+    "4d6fa8e7-29f7-43cf-9680-114a0e03ba60": {
+      "Offset": 0,
+      "Text": "L'attaque suivante de l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g}, à condition qu'il ne s'agisse pas d'une {g|Encyclopedia:AreaOfEffect}attaque de zone{/g}, inflige l'effet Intimidation à la première cible {g|Encyclopedia:HitSequenceGlossary}touchée{/g} et à tous les ennemis présents dans un rayon de 5 cases autour de cette cible.\nLes {g|Encyclopedia:DamageGlossary}dégâts{/g} qu'infligent les ennemis frappés par l'effet Intimidation sont réduits de −<u>{uip|damage|ec872eda7b1b40a08122b6330262a903}</u>% de {g|Encyclopedia:DamageGlossary}dégâts{/g} et perdent −3 {g|Encyclopedia:MovementPoints}PD{/g} jusqu'au prochain tour de l'agent."
+    },
+    "6839b085-1dd6-4107-bb95-b014b2c48206": {
+      "Offset": 0,
+      "Text": "<u>(15 + bonus de {g|Encyclopedia:WarhammerPerception}PER{/g})</u>"
+    },
+    "3e3fab18-18c4-4ac9-8d34-0b70cafb30cd": {
+      "Offset": 0,
+      "Text": "Si <b>Intimidation</b> tue la cible, <b>Intimidation</b> est appliquée à tous les ennemis qui peuvent voir la cible et la réduction de dégâts est augmentée de −<u>{uip|DamagePenalty|dde11f867df84e61a67c2a444fe87a68}</u>%."
+    },
+    "21c32bfe-7886-4f55-9899-494f4a929729": {
+      "Offset": 0,
+      "Text": "Chaque fois que l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} {g|Encyclopedia:HitSequenceGlossary}touche{/g} un ennemi affecté par <b>Mise en évidence des points faibles</b>, cet ennemi perd −3 {g|Encyclopedia:MovementPoints}PD{/g} et ses {g|Encyclopedia:DamageGlossary}dégâts{/g} sont réduits de −10% pendant son {g|Encyclopedia:Turn}tour{/g} suivant."
+    },
+    "de578abd-c1e5-42da-b022-e431e335a598": {
+      "Offset": 0,
+      "Text": "Si l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} réussit un {g|Encyclopedia:CritChancesAndCritDamageGlossary}coup critique{/g} avec <b>Attaque précise</b>, il applique un cumul de {g|Encyclopedia:Exploit}vulnérabilité{/g} supplémentaire. Si la cible d'<b>Attaque précise</b> a au moins {uip|MinimumStacks|5be08b3ea6fa4b82a3473de749e68488} vulnérabilités, l'attaque devient un coup critique."
+    },
+    "3fdfc7a5-6bce-4aa3-b263-e48f99cfed63": {
+      "Offset": 0,
+      "Text": "<u>(6 − bonus de {g|Encyclopedia:WarhammerIntelligence}INT{/g} / 2)</u>"
+    },
+    "4680c9c2-daae-4b01-adfd-ce9bc57fb424": {
+      "Offset": 0,
+      "Text": "<b>Attaque précise</b> confère à l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} +5 en {g|Encyclopedia:WarhammerPerception}Perception{/g} jusqu'à la fin du combat. Cumulable."
+    },
+    "a041c969-b3d2-427b-9592-64f62b5c868f": {
+      "Offset": 0,
+      "Text": "<u>(2 + bonus de {g|Encyclopedia:WarhammerIntelligence}INT{/g} / 2)</u>"
+    },
+    "b3653ca6-4344-436a-ac27-14e575b890d2": {
+      "Offset": 0,
+      "Text": "Si un ennemi à 5 cases ou moins de l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} attaque l'agent ou un allié, cet ennemi reçoit +1 {g|Encyclopedia:Exploit}vulnérabilité{/g} supplémentaire."
+    },
+    "d9fe0ee9-f347-417a-9bdc-380fb74c9318": {
+      "Offset": 0,
+      "Text": "Chaque fois que l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} retire des {g|Encyclopedia:Exploit}vulnérabilités{/g} à un ennemi ou tue un ennemi affecté par une vulnérabilité, il gagne +1 dégâts et +2% de {g|Encyclopedia:ArmourPenetration}pénétration d'armure{/g} jusqu'à la fin du combat. Cumulable."
+    },
+    "eb67a351-701e-4641-a4e3-c0e4a67456ce": {
+      "Offset": 0,
+      "Text": "L'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} gagne +25% d'{g|Encyclopedia:DetailsOfTheCoverGlossary}efficacité de couverture{/g} (s'il est à couvert), +15 {g|Encyclopedia:WarhammerPerception}Perception{/g} et +15 {g|Encyclopedia:WarhammerBallisticSkill}Capacité de tir{/g} jusqu'à ce qu'il se déplace. Non cumulable.\nSi <b>Position parfaite</b> est encore active quand le tour de l'agent commence, il applique un cumul de {g|Encyclopedia:Exploit}vulnérabilité{/g} à chaque ennemi dans sa ligne de vue."
+    },
+    "f6bfca6c-526b-4ac6-83c1-9659aa645517": {
+      "Offset": 0,
+      "Text": "L'agent applique immédiatement 1 {g|Encyclopedia:Exploit}vulnérabilité{/g} à tous les ennemis en combat et 6 cumuls de <b>Mise en évidence des points faibles</b> à la cible, puis effectue une attaque gratuite contre elle. Cette attaque {g|Encyclopedia:HitSequenceGlossary}touche{/g} toujours.\nJusqu'à la fin du combat, <b>Mise en évidence des points faibles</b> ne s'estompe pas de la cible."
+    },
+    "ac457028-f741-493e-b1f8-1c016a7a14a1": {
+      "Offset": 0,
+      "Text": "L'agent applique immédiatement 1 {g|Encyclopedia:Exploit}vulnérabilité{/g} à tous les ennemis en combat et 6 cumuls de <b>Mise en évidence des points faibles</b> à la cible, puis effectue une attaque gratuite contre elle. Cette attaque {g|Encyclopedia:HitSequenceGlossary}touche{/g} toujours.\n-<indent=5%>Jusqu'à la fin du combat, <b>Mise en évidence des points faibles</b> ne s'estompe pas de la cible.</indent>\n-<indent=5%>Jusqu'à la fin du combat, les attaques de l'agent coûtent +1 {g|Encyclopedia:ActionPoints}PA{/g}.</indent>"
+    },
+    "a5b28dd7-93e6-4447-be67-7e5dc068c065": {
+      "Offset": 0,
+      "Text": "L'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} applique aussi des {g|Encyclopedia:Exploit}vulnérabilités{/g} au début du combat et à chacun de ses {g|Encyclopedia:ExtraTurn}tours supplémentaires{/g}."
+    },
+    "51fab033-018b-4212-9b58-3a64e137551e": {
+      "Offset": 0,
+      "Text": "<b>Analyse des ennemis</b> distribue également un nombre de {g|Encyclopedia:Exploit}vulnérabilités{/g} égal à la moitié aux ennemis dans un rayon de 5 cases autour de la cible. S'il n'y a aucun ennemi dans ce rayon, autant de vulnérabilités supplémentaires sont ajoutées à la cible."
+    },
+    "5181bb6a-f7e8-4866-aa8d-2bd9dcf62fb6": {
+      "Offset": 0,
+      "Text": "Chaque fois qu'un ennemi avec une {g|Encyclopedia:Exploit}vulnérabilité{/g} meurt, l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} gagne +1 {g|Encyclopedia:WarhammerIntelligence}Intelligence{/g} jusqu'à la fin du combat. Cumulable."
+    },
+    "4670a313-ac58-4c74-a789-b4249ff00ece": {
+      "Offset": 0,
+      "Text": "Si l'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} ne s'est pas déplacé ce {g|Encyclopedia:Turn}tour{/g}, il inflige +{uip|DamageBonus|9a0e7e64902e491baa29d60469eae188} dégâts pour chaque 4 cases entre lui et la cible et gagne +{unit_stat|WarhammerPerception|bonus} en {g|Encyclopedia:WarhammerBallisticSkill}Capacité de tir{/g}. Ne s'applique qu'au premier coup ou projectile d'une attaque en {g|Encyclopedia:BurstAttacksGlossary}rafale{/g}."
+    },
+    "2d57f87a-968c-499f-82e3-be446306bb91": {
+      "Offset": 0,
+      "Text": "Les {g|Encyclopedia:DeadeyeShot}tirs précis{/g} {g|Encyclopedia:CritChancesAndCritDamageGlossary}critiques{/g} du porteur prolongent la durée de <b>Mise en évidence des points faibles</b> d'un tour."
+    },
+    "8922a79d-b8eb-4e09-bfb6-dca7736b6500": {
+      "Offset": 0,
+      "Text": "Chaque fois qu'un allié du porteur applique une {g|Encyclopedia:Exploit}vulnérabilité{/g} via <b>Analyse conjointe</b>, le porteur gagne +5 {g|Encyclopedia:WarhammerPerception}Perception{/g}."
+    },
+    "512f08c5-c5b3-4718-9693-4d67fa4de4a3": {
+      "Offset": 0,
+      "Text": "Les attaques de cette hache appliquent <b>Mise en évidence des points faibles</b> à leurs cibles. Si une cible subit déjà l'effet de <b>Mise en évidence des points faibles</b>, tous les {g|Encyclopedia:EnergyDamage}dégâts énergétiques{/g} qui lui sont infligés augmentent de +{uip|Debuff|6ceac4db06434d3eae9c7839290aaf1d}% jusqu'à la fin du combat."
+    },
+    "94e06216-60e0-40ec-bbba-b214cfbf1182": {
+      "Offset": 0,
+      "Text": "L'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} gagne +1 cumul de <b>Connaissance tactique</b> au début du combat et chaque fois que <b>Connaissance tactique</b> est utilisée."
+    }
+  }
+}
