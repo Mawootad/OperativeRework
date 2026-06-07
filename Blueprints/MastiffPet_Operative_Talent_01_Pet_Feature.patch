@@ -1,0 +1,26 @@
+{
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "b32e336dff316d6408375f78ba79d8f6, AddBuffOnCombatStart",
+        "name": "$AddBuffOnCombatStart$f5862816-d9ef-4716-8102-51950e1336ff",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "CheckParty": false,
+        "m_Feature": "!bp_7d37f65f891d4b2abc9ff1d45442ca80"
+      }
+    }
+  ],
+  "Author": "Unknown",
+  "m_Description": {
+    "Shared": {
+      "assetguid": "04a2af18b701e734a95d27b56bf19857",
+      "stringkey": "26b41a59-8d8a-4bc8-9a04-6198fe306d74"
+    }
+  }
+}

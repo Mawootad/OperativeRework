@@ -132,5 +132,9 @@
       "Offset": 0,
       "Text": "{g|Encyclopedia:CareerAdeptGlossary}Оперативник{/g} получает +1 уровень <b>Понимания тактики</b> в начале боя и каждый раз при использовании <b>Понимания тактики</b>."
     },
+	"26b41a59-8d8a-4bc8-9a04-6198fe306d74": {
+      "Offset": 0,
+      "Text": "Атаки кибермастифа получают +5% к {g|Encyclopedia:DodgeReduction}снижению уклонения{/g} и +5% к {g|Encyclopedia:ArmourPenetration}пробитию брони{/g} за каждый эффект {g|Encyclopedia:Exploit}уязвимости{/g} на цели."
+    }
   }
 }

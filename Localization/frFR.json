@@ -131,6 +131,10 @@
     "94e06216-60e0-40ec-bbba-b214cfbf1182": {
       "Offset": 0,
       "Text": "L'{g|Encyclopedia:CareerAdeptGlossary}agent{/g} gagne +1 cumul de <b>Connaissance tactique</b> au début du combat et chaque fois que <b>Connaissance tactique</b> est utilisée."
+    },
+	"26b41a59-8d8a-4bc8-9a04-6198fe306d74": {
+      "Offset": 0,
+      "Text": "Les attaques du cyber-mastiff gagnent +5% de {g|Encyclopedia:DodgeReduction}réduction d'esquive{/g} et +5% de {g|Encyclopedia:ArmourPenetration}pénétration d'armure{/g} par {g|Encyclopedia:Exploit}vulnérabilité{/g} sur la cible."
     }
   }
 }
