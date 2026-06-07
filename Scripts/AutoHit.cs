@@ -173,7 +173,10 @@ namespace OperativeRework
 				return;
 			}
 
-			var existingBuff = buffTarget.Buffs.Enumerable.Where(it => it.Blueprint == Buff).FirstOrDefault(it => it.MaybeContext.MaybeCaster == Context.MaybeCaster);
+			var baseUnitEntity = Context.MaybeCaster as BaseUnitEntity;
+			var caster = baseUnitEntity?.Master ?? Context.MaybeCaster;
+
+			var existingBuff = buffTarget.Buffs.Enumerable.Where(it => it.Blueprint == Buff).FirstOrDefault(it => it.MaybeContext.MaybeCaster == caster);
 
 			if (existingBuff == null)
 			{
@@ -217,10 +220,10 @@ namespace OperativeRework
 				return;
 			}
 
-			var buff = Buff.Get();
-			if (buff == null) return;
+			var baseUnitEntity = mechanicEntity as BaseUnitEntity;
+			var caster = baseUnitEntity?.Master ?? mechanicEntity;
 
-			var toRemoveStacks = buffCollection.Enumerable.Where(it => it.Blueprint == buff).FirstOrDefault(it => it.MaybeContext?.MaybeCaster == mechanicEntity);
+			var toRemoveStacks = buffCollection.Enumerable.Where(it => it.Blueprint == buff).FirstOrDefault(it => it.MaybeContext?.MaybeCaster == caster);
 			if (toRemoveStacks == null) return;
 
 			toRemoveStacks.RemoveRank(Math.Max(StackCount.Calculate(Context), 1));
