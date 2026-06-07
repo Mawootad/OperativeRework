@@ -1,8 +1,11 @@
 using Kingmaker;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Attributes;
+using Kingmaker.Blueprints.Facts;
 using Kingmaker.Blueprints.JsonSystem.Helpers;
 using Kingmaker.Designers.Mechanics.Facts.Restrictions;
+using Kingmaker.EntitySystem;
+using Kingmaker.EntitySystem.Properties;
 using Kingmaker.PubSubSystem.Core;
 using Kingmaker.RuleSystem.Rules;
 using Kingmaker.UnitLogic;
@@ -39,6 +42,8 @@ class ClassesWithGuid
 			(typeof(ApplyBuffStackedByCaster), "7948892518980b855c341fdadac45263"),
 			(typeof(RemoveBuffStacksByCaster), "d08c6f8712f9ceb821185aa7f4cbf05c"),
 			(typeof(ToggleUiIfCurrentUiOwnerHasFeatureAndNotCaster), "a38f30053d7a26d8cf92f598d2346ebc"),
+			(typeof(AsOwnerPropertyGetter), "524af663a0e2d0daeca8a4f964fd2d7d"),
+			(typeof(FactRankFromContextOrOwnerGetter), "2d72d175effd733e3855f4bd6d821869"),
 		};
 }
 
@@ -312,6 +317,82 @@ namespace OperativeRework
 		public void HandleBuffRankDecreased(Buff buff)
 		{
 			if (buff == (Fact as Buff)) UpdateBuffs();
+		}
+	}
+
+	[TypeId("524af663a0e2d0daeca8a4f964fd2d7d")]
+	public class AsOwnerPropertyGetter : PropertyGetter
+	{
+		[SerializeField]
+		public EntityProperty Property;
+
+		protected override int GetBaseValue()
+		{
+			var baseUnitEntity = CurrentEntity as BaseUnitEntity;
+
+			return this.Property.GetValue(baseUnitEntity?.Master ?? CurrentEntity);
+		}
+
+		protected override string GetInnerCaption(bool useLineBreaks)
+		{
+			return string.Format("${0} of {1}'s owner", this.Property, FormulaTargetScope.Current);
+		}
+	}
+
+	[TypeId("2d72d175effd733e3855f4bd6d821869")]
+	public class FactRankFromContextOrOwnerGetter : PropertyGetter, PropertyContextAccessor.IOptionalTargetByType
+	{
+		public enum AggregationMode
+		{
+			Sum,
+			Max,
+		}
+
+		[SerializeField]
+		private BlueprintUnitFactReference Fact;
+
+		[SerializeField]
+		public AggregationMode Aggregation;
+
+		[SerializeField]
+		public PropertyTargetType Target;
+
+		protected override int GetBaseValue()
+		{
+			UnitEntity unitEntity = this.GetTargetByType(Target) as UnitEntity;
+			if (unitEntity == null) return 0;
+
+			var entity = unitEntity.Master ?? unitEntity;
+
+			BlueprintUnitFact fact = Fact;
+			int num = 0;
+
+			var ranks = CurrentEntity.Facts.GetAll<EntityFact>().Where(it => it.MaybeContext?.MaybeCaster == entity).Select(it => it.GetRank()).ToList();
+
+			if (ranks.Empty()) return 0;
+
+			if (Aggregation == AggregationMode.Max)
+			{
+				return ranks.Max();
+			}
+			else
+			{
+				return ranks.Aggregate((a, b) => a + b);
+			}
+		}
+
+		protected override string GetInnerCaption(bool useLineBreaks)
+		{
+			string text = " cast by " + Target.Colorized();
+			string[] array = new string[5];
+			array[0] = "Ranks of ";
+			int num = 1;
+			BlueprintUnitFact fact = Fact;
+			array[num] = fact?.ToString() ?? "<null>";
+			array[2] = " on ";
+			array[3] = FormulaTargetScope.Current;
+			array[4] = text;
+			return string.Concat(array);
 		}
 	}
 }
