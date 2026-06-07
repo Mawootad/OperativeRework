@@ -190,8 +190,8 @@
                     }
                   },
                   {
-                    "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
-                    "name": "$SimplePropertyGetter$f5f23d31cf4a4655bb59d79e0714519f",
+                    "$type": "524af663a0e2d0daeca8a4f964fd2d7d, AsOwnerPropertyGetter",
+                    "name": "$AsOwnerPropertyGetter$311a22c82dc844e48fcd4a59ca59a96f",
                     "Settings": {
                       "Progression": "AsIs",
                       "m_CustomProgression": [],
@@ -419,8 +419,8 @@
           "FailSilentlyIfNoTarget": false,
           "Getters": [
             {
-              "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-              "name": "$FactRankGetter$48836387-4c43-4c33-a259-9882830c325f",
+              "$type": "2d72d175effd733e3855f4bd6d821869, FactRankFromContextOrOwnerGetter",
+              "name": "$FactRankFromContextOrOwnerGetter$7de8e79dc5df4f9fb624b865082df2fb",
               "Settings": {
                 "Progression": "AsIs",
                 "m_CustomProgression": [],
@@ -431,9 +431,8 @@
                 "Min": 0,
                 "Max": 0
               },
-              "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+              "Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
               "Aggregation": "Sum",
-              "BuffWithCasterFromTargetType": true,
               "Target": "RuleInitiator"
             },
             {
