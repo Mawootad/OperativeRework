@@ -41,5 +41,6 @@ All of the Operative's abilities and many of their talents have also been update
 - Reactive Study: Doesn't require an exploit to proc (not a change in behavior, in-game tooltip doesn't reflect actual behavior)
 - Sharpshooter: Scaling every 5 tiles -> every 4 tiles. Works only on single shots -> works on all attacks, but only on the first attack of bursts.
 - Tide of Excellence: Gains stacks when hitting a target with an exploit -> gains stacks when removing exploits or killing a target with an exploit.
+- Precise Mauling: Mastiff attacks do not remove exploits -> mastiff gains 5% dodge reduction and armor pen per exploit on target
 - Aeldari Ranger Sight: Doesn't inflict permanent expose weakness, extends the duration of expose weakness by 1 round.
 - Omnissiah's Providence: Inflict 1 exploit and expose weakness after attacking -> cast exploit weakness on targets before attacking
