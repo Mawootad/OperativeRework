@@ -220,6 +220,9 @@ namespace OperativeRework
 				return;
 			}
 
+			var buff = Buff.Get();
+			if (buff == null) return;
+
 			var baseUnitEntity = mechanicEntity as BaseUnitEntity;
 			var caster = baseUnitEntity?.Master ?? mechanicEntity;
 
