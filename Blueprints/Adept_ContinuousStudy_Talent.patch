@@ -74,7 +74,7 @@
   "m_DisplayName": {
     "m_Key": "a9d1e22e-584e-4b6f-a7ea-9d5730875033",
     "m_OwnerString": "c0fa529cfe40414cbf1e71516c1f57a6",
-    "m_JsonPath": "Strings/Mechanics/Blueprints\\Classes\\Adept\\AdeptTalents\\Adept_PassiveLearning_Talent_m_DisplayName.json"
+    "m_JsonPath": "Strings/Mechanics/Blueprints\\Classes\\Adept\\AdeptTalents\\Adept_PassiveLearning_Talent_.DisplayName_String.json"
   },
   "m_Description": {
     "m_Key": "",
