@@ -196,3 +196,9 @@ MonoBehaviour:
   - Guid: 51699198c8c44f448f9d49bb83812376
     Filename: VidCaptureRelay_Item
     PatchType: 2
+  - Guid: 2ea235b44e6b46eea752a91c6b31f5e6
+    Filename: EaglePet_Operative_Talent_01_Ability
+    PatchType: 2
+  - Guid: 1cdc9f50a6a440a28d86b0c239e5b9ff
+    Filename: MastiffPet_Operative_Talent_01_Pet_Feature
+    PatchType: 2
