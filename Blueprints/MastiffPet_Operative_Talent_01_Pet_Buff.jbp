@@ -18,13 +18,13 @@
         "SaveToContext": "No",
         "Value": {
           "Operation": "Sum",
-          "TargetType": "CurrentEntity",
+          "TargetType": "RuleTarget",
           "TargetEvaluator": null,
           "FailSilentlyIfNoTarget": false,
           "Getters": [
             {
-              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-              "name": "$PropertyCalculatorGetter$c1ba9fc8f163481481a8b42c80367d07",
+              "$type": "2d72d175effd733e3855f4bd6d821869, FactRankFromContextOrOwnerGetter",
+              "name": "$FactRankFromContextOrOwnerGetter$48455b2c66db4585a0a1bb0f9be4eb85",
               "Settings": {
                 "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
@@ -35,46 +35,26 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Value": {
-                "Operation": "Sum",
-                "TargetType": "CurrentEntity",
-                "TargetEvaluator": null,
-                "FailSilentlyIfNoTarget": false,
-                "Getters": [
-                  {
-                    "$type": "c0eccc5499aa467e8cfe4ecd65c34147, HasBuffFromMyMasterGetter",
-                    "name": "$HasBuffFromMyMasterGetter$66a09efa6d6741278249ed8fc51e4559",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    },
-                    "m_Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
-                    "Target": "CurrentTarget"
-                  },
-                  {
-                    "$type": "c0eccc5499aa467e8cfe4ecd65c34147, HasBuffFromMyMasterGetter",
-                    "name": "$HasBuffFromMyMasterGetter$8957a0b5147c4f6aa102a6b79cc57468",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    },
-                    "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
-                    "Target": "CurrentTarget"
-                  }
-                ]
-              }
+              "Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+              "Aggregation": "Sum",
+              "Target": "RuleInitiator"
+            },
+            {
+              "$type": "2d72d175effd733e3855f4bd6d821869, FactRankFromContextOrOwnerGetter",
+              "name": "$FactRankFromContextOrOwnerGetter$cf43ffcac1fa46d0b6e5e38f541f8972",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": -5,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+              "Aggregation": "Sum",
+              "Target": "RuleInitiator"
             }
           ]
         }
