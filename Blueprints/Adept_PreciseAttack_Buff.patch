@@ -363,11 +363,46 @@
         },
         "m_Overrides": [],
         "Condition": {
-          "Operation": "Sum",
+          "Operation": "G",
           "TargetType": "CurrentEntity",
           "TargetEvaluator": null,
           "FailSilentlyIfNoTarget": false,
-          "Getters": []
+          "Getters": [
+            {
+              "$type": "6a45c42d96204b7d930bd97fa922b35d, CheckAbilityGroupGetter",
+              "name": "$CheckAbilityGroupGetter$fc9a3c912ba04cde86aee045f4e25f82",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "m_Groups": [
+                "!bp_1cf206b13141425491c379bc75ef0699"
+              ]
+            },
+            {
+              "$type": "6a45c42d96204b7d930bd97fa922b35d, CheckAbilityGroupGetter",
+              "name": "$CheckAbilityGroupGetter$4fa0e8191a014305bad83653d9868451",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "m_Groups": [
+                "!bp_36fdf1bc96884a9e803dcbcc8e447785"
+              ]
+            }
+          ]
         },
         "StartActions": {
           "Actions": []
