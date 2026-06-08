@@ -135,6 +135,14 @@
 	"26b41a59-8d8a-4bc8-9a04-6198fe306d74": {
       "Offset": 0,
       "Text": "The cyber-mastiff's attacks gain +5% {g|Encyclopedia:DodgeReduction}dodge reduction{/g} and +5% {g|Encyclopedia:ArmourPenetration}armour penetration{/g} per {g|Encyclopedia:Exploit}exploit{/g} on the target."
+    },
+	"cd4fb391-c082-4228-9b37-d5c6083fba3a": {
+      "Offset": 0,
+      "Text": "When the cyber-eagle inflicts {g|f:1e22c265a12744cc95a03d26b6c3cef9}obstructed{/g} on an enemy, that enemy must pass an {g|Encyclopedia:WarhammerAgility}Agility{/g} {g|Encyclopedia:ResistanceTest}resistance test{/g} with a −{uip|AGISave|5fc198b41b194129a8d29658840ddf76} {g|Encyclopedia:Penalty}penalty{/g} or suffer +{uip|ExploitNumber|5fc198b41b194129a8d29658840ddf76} {g|f:66e7b370e32b43118315ab0fd24a7f0d}exploits{/g}."
+    },
+	"2360a53a-c2ad-4dd8-ab60-93152241a802": {
+      "Offset": 0,
+      "Text": "If the Overseer starts their {g|Encyclopedia:Turn}turn{/g} in {g|Encyclopedia:DetailsOfTheCoverGlossary}partial cover{/g}, for 1 {g|Encyclopedia:Round}round{/g}, the cyber-mastiff gains +{uip|Overseer INT Bonus|ce95a986c4044c0ca07fd0db9915388c} {g|Encyclopedia:MovementPoints}MP{/g} and has its {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g} increased by +{uip|Overseer PER Bonus|ce95a986c4044c0ca07fd0db9915388c}%.\nIf the Overseer starts their turn in full cover, these bonuses are doubled."
     }
   }
 }

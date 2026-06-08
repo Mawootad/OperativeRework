@@ -135,6 +135,14 @@
 	"26b41a59-8d8a-4bc8-9a04-6198fe306d74": {
       "Offset": 0,
       "Text": "Атаки кибермастифа получают +5% к {g|Encyclopedia:DodgeReduction}снижению уклонения{/g} и +5% к {g|Encyclopedia:ArmourPenetration}пробитию брони{/g} за каждый эффект {g|Encyclopedia:Exploit}уязвимости{/g} на цели."
+    },
+	"cd4fb391-c082-4228-9b37-d5c6083fba3a": {
+      "Offset": 0,
+      "Text": "Когда киберорел накладывает на цель эффект {g|f:1e22c265a12744cc95a03d26b6c3cef9}обзор заблокирован{/g}, она выполняет проверку {g|Encyclopedia:WarhammerAgility}Ловкости{/g} на {g|Encyclopedia:ResistanceTest}сопротивление{/g} со {g|Encyclopedia:Penalty}штрафом{/g} −{uip|AGISave|5fc198b41b194129a8d29658840ddf76} и в случае провала получает {uip|ExploitNumber|5fc198b41b194129a8d29658840ddf76} {g|f:66e7b370e32b43118315ab0fd24a7f0d}уязвимостей{/g}."
+    },
+	"2360a53a-c2ad-4dd8-ab60-93152241a802": {
+      "Offset": 0,
+      "Text": "Если надзиратель начинает {g|Encyclopedia:Turn}ход{/g} в {g|Encyclopedia:DetailsOfTheCoverGlossary}частичном укрытии{/g}, на 1 {g|Encyclopedia:Round}раунд{/g} его кибермастиф получает +{uip|Overseer INT Bonus|ce95a986c4044c0ca07fd0db9915388c} {g|Encyclopedia:MovementPoints}ОП{/g} и +{uip|Overseer PER Bonus|ce95a986c4044c0ca07fd0db9915388c}% к {g|Encyclopedia:DodgeGlossary}уклонению{/g} и {g|Encyclopedia:Parry}парированию{/g}.\nЕсли надзиратель начинает свой ход в полном укрытии, эти бонусы удваиваются."
     }
   }
 }

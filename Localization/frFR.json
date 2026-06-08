@@ -135,6 +135,14 @@
 	"26b41a59-8d8a-4bc8-9a04-6198fe306d74": {
       "Offset": 0,
       "Text": "Les attaques du cyber-mastiff gagnent +5% de {g|Encyclopedia:DodgeReduction}réduction d'esquive{/g} et +5% de {g|Encyclopedia:ArmourPenetration}pénétration d'armure{/g} par {g|Encyclopedia:Exploit}vulnérabilité{/g} sur la cible."
+    },
+	"cd4fb391-c082-4228-9b37-d5c6083fba3a": {
+      "Offset": 0,
+      "Text": "Lorsque le cyber-aigle inflige {g|f:1e22c265a12744cc95a03d26b6c3cef9}Obstruction{/g} à un ennemi, ce dernier doit réussir un {g|Encyclopedia:ResistanceTest}test de résistance{/g} d'{g|Encyclopedia:WarhammerAgility}Agilité{/g} avec une {g|Encyclopedia:Penalty}pénalité{/g} de −{uip|AGISave|5fc198b41b194129a8d29658840ddf76}. En cas d'échec, il subit +{uip|ExploitNumber|5fc198b41b194129a8d29658840ddf76} cumuls de {g|f:66e7b370e32b43118315ab0fd24a7f0d}vulnérabilité{/g}."
+    },
+	"2360a53a-c2ad-4dd8-ab60-93152241a802": {
+      "Offset": 0,
+      "Text": "Si le surveillant commence son {g|Encyclopedia:Turn}tour{/g} en bénéficiant d'une {g|Encyclopedia:DetailsOfTheCoverGlossary}couverture partielle{/g}, le cyber-mastiff reçoit un bonus de +{uip|Overseer INT Bonus|ce95a986c4044c0ca07fd0db9915388c} {g|Encyclopedia:MovementPoints}PD{/g} pendant 1 {g|Encyclopedia:Round}round{/g} et bénéficie d'une {g|Encyclopedia:DodgeGlossary}Esquive{/g} et d'une {g|Encyclopedia:Parry}Parade{/g} augmentées de +{uip|Overseer PER Bonus|ce95a986c4044c0ca07fd0db9915388c} %.\nSi le surveillant commence son tour en bénéficiant d'une couverture totale, ces bonus sont doublés."
     }
   }
 }
