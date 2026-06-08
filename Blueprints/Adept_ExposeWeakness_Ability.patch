@@ -159,6 +159,69 @@
               "AddFactSource": false
             },
             {
+              "$type": "2dcc60a5b076f0047b982e9d4c04b226, ContextActionOnRandomTargetsAround",
+              "name": "$ContextActionOnRandomTargetsAround$dfbe985ba53a41c597aa7a4660ac92e6",
+              "OnEnemies": false,
+              "OnlyAllies": true,
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "name": "$ContextActionApplyBuff$1384c407687a4fc8971739a031e27157",
+                    "m_Buff": "!bp_e3da0042e9874fcf99a5cec848d093d9",
+                    "BuffEndCondition": "CombatEnd",
+                    "Permanent": true,
+                    "DurationValue": {
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      },
+                      "RoundsValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    },
+                    "ToCaster": false,
+                    "AsChild": false,
+                    "SameDuration": false,
+                    "Ranks": {
+                      "ValueType": "CasterNamedProperty",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "ActionsOnApply": {
+                      "Actions": []
+                    },
+                    "ActionsOnImmune": {
+                      "Actions": []
+                    },
+                    "AddFactSource": false
+                  }
+                ]
+              },
+              "NumberOfTargets": 99,
+              "TilesRadius": 4,
+              "LowestWounds": false,
+              "HighestWounds": false,
+              "AffectDead": false,
+              "m_FilterNoFact": null,
+              "m_FilterHasFact": "!bp_686537aaa3994f388d70595b2886492c"
+            },
+            {
               "$type": "d08c6f8712f9ceb821185aa7f4cbf05c, RemoveBuffStacksByCaster",
               "name": "$RemoveBuffStacksByCaster$6fd172ed43c44b8e8142915f12682f3c",
               "Buff": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
