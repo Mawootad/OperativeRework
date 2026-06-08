@@ -202,3 +202,24 @@ MonoBehaviour:
   - Guid: 1cdc9f50a6a440a28d86b0c239e5b9ff
     Filename: MastiffPet_Operative_Talent_01_Pet_Feature
     PatchType: 2
+  - Guid: 525c7a27dde04a90a2afb0a9f306850c
+    Filename: EaglePet_ObstructVision_Pet_Ability
+    PatchType: 2
+  - Guid: f66bcab5fead414e94871a8cd6264d29
+    Filename: EaglePet_ObstructVision_Pet_Ascended_Ability
+    PatchType: 2
+  - Guid: 5fc198b41b194129a8d29658840ddf76
+    Filename: EaglePet_SubAnalysis_Feature
+    PatchType: 2
+  - Guid: 5db2ed38e3f641f7b1ded0aa0a5a7dde
+    Filename: EaglePet_SubAnalysis_Pet_Feature
+    PatchType: 2
+  - Guid: ce95a986c4044c0ca07fd0db9915388c
+    Filename: MastiffPet_AdvancedInfiltration_Feature
+    PatchType: 2
+  - Guid: ef25bc918f784f879621a7683d747d40
+    Filename: MastiffPet_AdvancedInfiltration_Pet_Feature
+    PatchType: 2
+  - Guid: bbb1398ebbbe41c6b6224e1057dcde46
+    Filename: ServoskullPet_AllCornered_Ability
+    PatchType: 2
