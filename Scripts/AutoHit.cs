@@ -318,6 +318,11 @@ namespace OperativeRework
 		{
 			if (buff == (Fact as Buff)) UpdateBuffs();
 		}
+
+		public void HandleBuffIsSuppressedChanged(Buff buff)
+		{
+			if (buff == (Fact as Buff)) UpdateBuffs();
+		}
 	}
 
 	[TypeId("524af663a0e2d0daeca8a4f964fd2d7d")]
