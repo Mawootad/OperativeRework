@@ -350,6 +350,40 @@
         "OnlyMelee": false
       },
       "InsertAfterTarget": "$WarhammerWeaponHitTriggerInitiator$66056135-9e29-4713-9871-e49848a431ac"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "6ebdb034bf2f486b932f9342e175ec6d, AbilityLifecycleTriggerCaster",
+        "name": "$AbilityLifecycleTriggerCaster$8bcc9579-bc6c-49f2-b2c4-4e4301157484",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Condition": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": []
+        },
+        "StartActions": {
+          "Actions": []
+        },
+        "EndActions": {
+          "Actions": [
+            {
+              "$type": "1e0ebe55f7204066b7cdb0eb124b863a, ContextActionRemoveSelf",
+              "name": "$ContextActionRemoveSelf$e39845a5421c42b28d11f0f566ee4629"
+            }
+          ]
+        },
+        "m_Facts": [],
+        "m_FactsToCheckOnOwner": []
+      },
+      "InsertAfterTarget": "$BlockChanceModifierAttacker$98a1a8ba-1b32-414b-9658-4df7e4259f86"
     }
   ],
   "Author": "Unknown"
