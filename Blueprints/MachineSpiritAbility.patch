@@ -1,17 +1,7 @@
 {
   "Components": [
     {
-      "PatchType": "Relocate",
-      "Target": "$PropertyCalculatorComponent$ea6a9e0d-4127-4567-bdb2-bed2f0385db6",
-      "InsertAfterTarget": null
-    },
-    {
-      "PatchType": "Relocate",
-      "Target": "$AbilityTargetsInPattern$83e6e003-22b9-4f0e-ace8-9b7c62a5e25b",
-      "InsertAfterTarget": "$PropertyCalculatorComponent$ea6a9e0d-4127-4567-bdb2-bed2f0385db6"
-    },
-    {
-      "PatchType": "Insert",
+      "PatchType": "Prepend",
       "NewElement": {
         "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
         "name": "$AbilityEffectRunAction$03c189f2-2e0f-4daa-bfa1-397f55a5c8a7",
@@ -281,6 +271,11 @@
         }
       },
       "InsertAfterTarget": "$AbilityTargetsInPattern$83e6e003-22b9-4f0e-ace8-9b7c62a5e25b"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityTargetsInPattern$83e6e003-22b9-4f0e-ace8-9b7c62a5e25b",
+      "InsertAfterTarget": "$AbilityEffectRunAction$03c189f2-2e0f-4daa-bfa1-397f55a5c8a7"
     },
     {
       "PatchType": "RemoveFromEnd",
