@@ -19,8 +19,30 @@
             {
               "PatchType": "Prepend",
               "NewElement": {
+                "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                "name": "$FactRankGetter$ab0f48461dec4f4caee229440ebe0c3b",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                "CheckTarget": "CurrentTarget",
+                "Aggregation": "Max",
+                "BuffWithCasterFromTargetType": true,
+                "BuffCaster": "ContextCaster"
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
                 "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-                "name": "$PropertyCalculatorGetter$24830831468948288d2f22fdb4af88a1",
+                "name": "$PropertyCalculatorGetter$d4e7650d54824d2bb042fe2d12d503ea",
                 "Settings": {
                   "Progression": "AsIs",
                   "m_CustomProgression": [],
@@ -32,14 +54,14 @@
                   "Max": 0
                 },
                 "Value": {
-                  "Operation": "Sum",
-                  "TargetType": "CurrentTarget",
+                  "Operation": "Mul",
+                  "TargetType": "CurrentEntity",
                   "TargetEvaluator": null,
                   "FailSilentlyIfNoTarget": false,
                   "Getters": [
                     {
                       "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-                      "name": "$FactRankGetter$30b053aa1cec4dc5a6e778e5b8c8f38d",
+                      "name": "$FactRankGetter$b77470f3b7d2442d86cdbe9ddbea7601",
                       "Settings": {
                         "Progression": "AsIs",
                         "m_CustomProgression": [],
@@ -50,41 +72,54 @@
                         "Min": 0,
                         "Max": 0
                       },
-                      "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                      "m_Fact": "!bp_242e8fe76ec4493ebb0c229d8183e868",
+                      "CheckTarget": "CurrentEntity",
                       "Aggregation": "Max",
-                      "BuffWithCasterFromTargetType": true,
-                      "Target": "ContextCaster"
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "PatchType": "Relocate",
-              "Target": "$PropertyCalculatorGetter$8536fe39d2ae4cb6932fb7e0ba400da5",
-              "InsertAfterTarget": "$PropertyCalculatorGetter$24830831468948288d2f22fdb4af88a1"
-            },
-            {
-              "PatchType": "PatchElement",
-              "Target": "$PropertyCalculatorGetter$8536fe39d2ae4cb6932fb7e0ba400da5",
-              "ElementPatch": {
-                "Settings": {
-                  "Negate": false
-                },
-                "Value": {
-                  "Getters": [
-                    {
-                      "PatchType": "Relocate",
-                      "Target": "$PropertyCalculatorGetter$68bf837041ab46739eb5c5321b2c4961",
-                      "InsertAfterTarget": "$FactRankGetter$a50d5e06deac4a44bff06d1fa97eeef3"
+                      "BuffWithCasterFromTargetType": false,
+                      "BuffCaster": "CurrentEntity"
                     },
                     {
-                      "PatchType": "RemoveFromEnd",
-                      "Target": "$SimplePropertyGetter$a6cc98500f7c46809e219738ce6bf78e"
+                      "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                      "name": "$FactRankGetter$f071b5ff036f47c1bf120f34ea2ae057",
+                      "Settings": {
+                        "Progression": "AsIs",
+                        "m_CustomProgression": [],
+                        "m_StartLevel": 0,
+                        "m_StepLevel": 0,
+                        "Negate": false,
+                        "Limit": "None",
+                        "Min": 0,
+                        "Max": 0
+                      },
+                      "m_Fact": "!bp_3e0523f3c0484506818a4ff1f179ff36",
+                      "CheckTarget": "CurrentTarget",
+                      "Aggregation": "Max",
+                      "BuffWithCasterFromTargetType": false,
+                      "BuffCaster": "CurrentEntity"
+                    },
+                    {
+                      "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                      "name": "$FactRankGetter$6ccbef09c4704d8e9652ccd135fb250e",
+                      "Settings": {
+                        "Progression": "BonusValue",
+                        "m_CustomProgression": [],
+                        "m_StartLevel": 0,
+                        "m_StepLevel": 2,
+                        "Negate": false,
+                        "Limit": "None",
+                        "Min": 0,
+                        "Max": 0
+                      },
+                      "m_Fact": "bp_e6ed7e168bfb4adb9fc73fb07b5e7020",
+                      "CheckTarget": "CurrentEntity",
+                      "Aggregation": "Max",
+                      "BuffWithCasterFromTargetType": false,
+                      "Target": "CurrentEntity"
                     }
                   ]
                 }
-              }
+              },
+              "InsertAfterTarget": "$FactRankGetter$ab0f48461dec4f4caee229440ebe0c3b"
             },
             {
               "PatchType": "RemoveFromEnd",
@@ -411,9 +446,10 @@
                       "Max": 0
                     },
                     "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "CheckTarget": "CurrentEntity",
                     "Aggregation": "Max",
                     "BuffWithCasterFromTargetType": true,
-                    "Target": "ContextCaster"
+                    "BuffCaster": "ContextCaster"
                   },
                   {
                     "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
@@ -429,9 +465,10 @@
                       "Max": 0
                     },
                     "m_Fact": "!bp_215d9f42b7e6435e9ed77337156e0fc3",
+                    "CheckTarget": "CurrentEntity",
                     "Aggregation": "Max",
                     "BuffWithCasterFromTargetType": false,
-                    "Target": "CurrentEntity"
+                    "BuffCaster": "CurrentEntity"
                   }
                 ]
               },
