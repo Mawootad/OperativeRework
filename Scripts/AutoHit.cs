@@ -369,10 +369,10 @@ namespace OperativeRework
 
 			var entity = unitEntity.Master ?? unitEntity;
 
-			BlueprintUnitFact fact = Fact;
+			BlueprintUnitFact fact = Fact.Get();
 			int num = 0;
 
-			var ranks = CurrentEntity.Facts.GetAll<EntityFact>().Where(it => it.MaybeContext?.MaybeCaster == entity).Select(it => it.GetRank()).ToList();
+			var ranks = CurrentEntity.Facts.GetAll<EntityFact>().Where(it => it.Blueprint == fact).Where(it => it.MaybeContext?.MaybeCaster == entity).Select(it => it.GetRank()).ToList();
 
 			if (ranks.Empty()) return 0;
 
