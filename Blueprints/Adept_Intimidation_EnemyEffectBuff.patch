@@ -64,10 +64,6 @@
         }
       },
       "InsertAfterTarget": "$WarhammerDamageModifierInitiator$fdf88bb3-b689-4eb5-b4df-449d5ad67c80"
-    },
-    {
-      "PatchType": "RemoveFromEnd",
-      "Target": "$WarhammerBonusMovementPoints$bd5c60f7-bd3e-4dc4-a2bc-a16d2e44af88"
     }
   ],
   "Author": "Unknown"

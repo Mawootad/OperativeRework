@@ -103,10 +103,6 @@
     },
     {
       "PatchType": "RemoveFromEnd",
-      "Target": "$PropertyCalculatorComponent$55f2fe69-00f7-4060-89c4-0ce241caddbc"
-    },
-    {
-      "PatchType": "RemoveFromEnd",
       "Target": "$WarhammerWeaponHitTriggerInitiator$998df21d-ee12-4092-ab5d-277ef84cc594"
     }
   ],
