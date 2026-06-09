@@ -305,57 +305,7 @@
                 "Max": 0
               },
               "Type": "SingleShot"
-            },
-            {
-              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-              "name": "$PropertyCalculatorGetter$44801e81066146e78498b49f504eb3c1",
-              "Settings": {
-                "Progression": "AsIs",
-                "m_CustomProgression": [],
-                "m_StartLevel": 0,
-                "m_StepLevel": 0,
-                "Negate": false,
-                "Limit": "None",
-                "Min": 0,
-                "Max": 0
-              },
-              "Value": {
-                "Operation": "BoolAnd",
-                "TargetType": "CurrentEntity",
-                "TargetEvaluator": null,
-                "FailSilentlyIfNoTarget": false,
-                "Getters": [
-                  {
-                    "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
-                    "name": "$CheckAbilityAttackTypeGetter$d416feb3-9046-4d67-97ba-58d3a060a4d7",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    },
-                    "Type": "Melee"
-                  },
-                  {
-                    "$type": "a88aca1f99c04b5abe76a4f8ff634e37, CheckAbilityIsAoEGetter",
-                    "name": "$CheckAbilityIsAoEGetter$5a8cbb9297b74367bfeb9d299d1ac641",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": true,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    },
-                    "IncludeAreaEffects": false,
-                    "DoNotIncludeScatter": false
-                  }
+            }
                 ]
               }
             },
