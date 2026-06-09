@@ -32,9 +32,10 @@
                   "Max": 0
                 },
                 "m_Fact": "!bp_b78d820137d34cc99a38229c37e3760a",
+                "CheckTarget": "CurrentEntity",
                 "Aggregation": "Max",
                 "BuffWithCasterFromTargetType": false,
-                "Target": "CurrentEntity"
+                "BuffCaster": "CurrentEntity"
               },
               {
                 "$type": "622b2e3118c34edebe1597cf4c03339e, CheckAbilityBlueprintGetter",

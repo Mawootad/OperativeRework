@@ -79,9 +79,10 @@
                             "Max": 0
                           },
                           "m_Fact": "!bp_683d948e33544951927dd9ec0e8b373f",
+                          "CheckTarget": "CurrentEntity",
                           "Aggregation": "Max",
                           "BuffWithCasterFromTargetType": false,
-                          "Target": "CurrentEntity"
+                          "BuffCaster": "CurrentEntity"
                         },
                         {
                           "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",

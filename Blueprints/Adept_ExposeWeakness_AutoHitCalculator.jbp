@@ -54,9 +54,10 @@
                         "Max": 0
                       },
                       "m_Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+                      "CheckTarget": "CurrentEntity",
                       "Aggregation": "Sum",
                       "BuffWithCasterFromTargetType": false,
-                      "Target": "CurrentEntity"
+                      "BuffCaster": "CurrentEntity"
                     },
                     {
                       "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
@@ -98,9 +99,10 @@
                   "Max": 0
                 },
                 "m_Fact": "!bp_9105bae162914b79ac29b74313acde01",
+                "CheckTarget": "CurrentEntity",
                 "Aggregation": "Max",
                 "BuffWithCasterFromTargetType": true,
-                "Target": "RuleInitiator"
+                "BuffCaster": "RuleInitiator"
               }
             ]
           }

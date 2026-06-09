@@ -241,9 +241,10 @@
                 "Max": 0
               },
               "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+              "CheckTarget": "CurrentEntity",
               "Aggregation": "Sum",
               "BuffWithCasterFromTargetType": false,
-              "Target": "RuleInitiator"
+              "BuffCaster": "RuleInitiator"
             },
             {
               "$type": "2b7102ebfff042409c7f1493b16125a9, ConditionalGetter",
@@ -278,9 +279,10 @@
                       "Max": 1
                     },
                     "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "CheckTarget": "CurrentEntity",
                     "Aggregation": "Max",
                     "BuffWithCasterFromTargetType": false,
-                    "Target": "CurrentEntity"
+                    "BuffCaster": "CurrentEntity"
                   }
                 ]
               },
@@ -323,9 +325,10 @@
                             "Max": 0
                           },
                           "m_Fact": "!bp_242e8fe76ec4493ebb0c229d8183e868",
+                          "CheckTarget": "CurrentEntity",
                           "Aggregation": "Max",
                           "BuffWithCasterFromTargetType": false,
-                          "Target": "CurrentEntity"
+                          "BuffCaster": "CurrentEntity"
                         },
                         {
                           "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
@@ -360,9 +363,10 @@
                                   "Max": 0
                                 },
                                 "m_Fact": "!bp_3e0523f3c0484506818a4ff1f179ff36",
+                                "CheckTarget": "CurrentEntity",
                                 "Aggregation": "Max",
                                 "BuffWithCasterFromTargetType": false,
-                                "Target": "CurrentEntity"
+                                "BuffCaster": "CurrentEntity"
                               }
                             ]
                           }
@@ -384,9 +388,10 @@
                       "Max": 0
                     },
                     "m_Fact": "!bp_4db5feb706ee4b6796be176b8305c2e7",
+                    "CheckTarget": "CurrentEntity",
                     "Aggregation": "Max",
                     "BuffWithCasterFromTargetType": false,
-                    "Target": "CurrentEntity"
+                    "BuffCaster": "CurrentEntity"
                   }
                 ]
               },
@@ -468,9 +473,10 @@
                       "Max": 1
                     },
                     "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                    "CheckTarget": "CurrentEntity",
                     "Aggregation": "Max",
                     "BuffWithCasterFromTargetType": false,
-                    "Target": "CurrentEntity"
+                    "BuffCaster": "CurrentEntity"
                   }
                 ]
               },
@@ -513,9 +519,10 @@
                             "Max": 0
                           },
                           "m_Fact": "!bp_242e8fe76ec4493ebb0c229d8183e868",
+                          "CheckTarget": "CurrentEntity",
                           "Aggregation": "Max",
                           "BuffWithCasterFromTargetType": false,
-                          "Target": "CurrentEntity"
+                          "BuffCaster": "CurrentEntity"
                         },
                         {
                           "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
@@ -550,9 +557,10 @@
                                   "Max": 0
                                 },
                                 "m_Fact": "!bp_3e0523f3c0484506818a4ff1f179ff36",
+                                "CheckTarget": "CurrentEntity",
                                 "Aggregation": "Max",
                                 "BuffWithCasterFromTargetType": false,
-                                "Target": "CurrentEntity"
+                                "BuffCaster": "CurrentEntity"
                               }
                             ]
                           }
@@ -574,9 +582,10 @@
                       "Max": 0
                     },
                     "m_Fact": "!bp_4db5feb706ee4b6796be176b8305c2e7",
+                    "CheckTarget": "CurrentEntity",
                     "Aggregation": "Max",
                     "BuffWithCasterFromTargetType": false,
-                    "Target": "CurrentEntity"
+                    "BuffCaster": "CurrentEntity"
                   }
                 ]
               },

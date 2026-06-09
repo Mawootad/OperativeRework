@@ -121,9 +121,10 @@
                 "Max": 0
               },
               "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+              "CheckTarget": "CurrentEntity",
               "Aggregation": "Max",
               "BuffWithCasterFromTargetType": false,
-              "Target": "CurrentEntity"
+              "BuffCaster": "CurrentEntity"
             }
           ]
         }

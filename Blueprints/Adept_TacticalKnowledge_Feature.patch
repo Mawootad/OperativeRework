@@ -49,9 +49,10 @@
                             "Max": 0
                           },
                           "m_Fact": "!bp_8058270c43d64816808fb861731b7905",
+                          "CheckTarget": "CurrentEntity",
                           "Aggregation": "Max",
                           "BuffWithCasterFromTargetType": true,
-                          "Target": "RuleInitiator"
+                          "BuffCaster": "RuleInitiator"
                         }
                       ]
                     },

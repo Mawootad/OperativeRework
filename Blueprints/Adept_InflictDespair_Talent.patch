@@ -32,9 +32,10 @@
                   "Max": 0
                 },
                 "m_Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+                "CheckTarget": "CurrentEntity",
                 "Aggregation": "Max",
                 "BuffWithCasterFromTargetType": false,
-                "Target": "CurrentEntity"
+                "BuffCaster": "CurrentEntity"
               }
             ]
           }

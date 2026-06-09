@@ -69,9 +69,10 @@
                       "Max": 0
                     },
                     "m_Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+                    "CheckTarget": "CurrentEntity",
                     "Aggregation": "Sum",
                     "BuffWithCasterFromTargetType": true,
-                    "Target": "ContextCaster"
+                    "BuffCaster": "ContextCaster"
                   },
                   {
                     "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
@@ -166,9 +167,10 @@
                       "Max": 0
                     },
                     "m_Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+                    "CheckTarget": "CurrentEntity",
                     "Aggregation": "Sum",
                     "BuffWithCasterFromTargetType": true,
-                    "Target": "ContextCaster"
+                    "BuffCaster": "ContextCaster"
                   },
                   {
                     "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
@@ -458,9 +460,10 @@
                             "Max": 0
                           },
                           "m_Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+                          "CheckTarget": "CurrentEntity",
                           "Aggregation": "Sum",
                           "BuffWithCasterFromTargetType": true,
-                          "Target": "ContextCaster"
+                          "BuffCaster": "ContextCaster"
                         },
                         {
                           "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
