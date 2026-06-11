@@ -185,6 +185,109 @@
         }
       },
       "InsertAfterTarget": "$WarhammerDamageModifierInitiator$9025153b-f003-477a-8fce-fb64ca43f446"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "5a95724975c24882a5efb0c5aed8c2ab, GlobalCombatStateTrigger",
+        "name": "$GlobalCombatStateTrigger$94fcdbcd-7354-48d6-9d32-9df17b231ad5",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "ActionsOnEnter": {
+          "Actions": [
+            {
+              "$type": "d08c6f8712f9ceb821185aa7f4cbf05c, RemoveBuffStacksByCaster",
+              "name": "$RemoveBuffStacksByCaster$595f4a01717c457cb3f48dd969209b87",
+              "Buff": "!bp_8058270c43d64816808fb861731b7905",
+              "StackCount": {
+                "ValueType": "Simple",
+                "Value": 100,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+              "name": "$Conditional$158b28a9c1de4baaaee998845dcf0351",
+              "Comment": "",
+              "ConditionsChecker": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "c5b3b6002404ca249add2943e99f366a, ContextConditionIsAlly",
+                    "name": "$ContextConditionIsAlly$7c89c6153a1f4cdb95194c8e3a50b955",
+                    "Not": false
+                  }
+                ]
+              },
+              "IfTrue": {
+                "Actions": [
+                  {
+                    "$type": "7948892518980b855c341fdadac45263, ApplyBuffStackedByCaster",
+                    "name": "$ApplyBuffStackedByCaster$9effb324d15c463cb3ff604e42272892",
+                    "m_Buff": "!bp_8058270c43d64816808fb861731b7905",
+                    "BuffEndCondition": "CombatEnd",
+                    "Permanent": true,
+                    "DurationValue": {
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      },
+                      "RoundsValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    },
+                    "ToCaster": false,
+                    "AsChild": false,
+                    "SameDuration": false,
+                    "Ranks": {
+                      "ValueType": "CasterBuffRank",
+                      "Value": 1,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "ActionsOnApply": {
+                      "Actions": []
+                    },
+                    "ActionsOnImmune": {
+                      "Actions": []
+                    },
+                    "AddFactSource": false
+                  }
+                ]
+              },
+              "IfFalse": {
+                "Actions": []
+              }
+            }
+          ]
+        },
+        "ActionsOnLeave": {
+          "Actions": []
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$231b4cc8-9879-4933-9adf-4c15bed01a3b"
     }
   ],
   "Author": "Unknown"
