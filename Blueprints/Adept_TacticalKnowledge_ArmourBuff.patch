@@ -12,7 +12,7 @@
               "PatchType": "PatchElement",
               "Target": "$FactRankGetter$bd5b142be1b7409ab91ca772fbab0459",
               "ElementPatch": {
-                "m_Fact": "!bp_55477251f6724496b9a70bad24fb5582"
+                "BuffWithCasterFromTargetType": true,
               }
             },
             {
