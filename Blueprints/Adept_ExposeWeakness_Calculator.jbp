@@ -201,7 +201,7 @@
                       "Operation": "Sum",
                       "TargetType": "RuleInitiator",
                       "TargetEvaluator": null,
-                      "FailSilentlyIfNoTarget": false,
+                      "FailSilentlyIfNoTarget": true,
                       "Getters": [
                         {
                           "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
@@ -235,7 +235,7 @@
                             "Operation": "Mul",
                             "TargetType": "RuleInitiator",
                             "TargetEvaluator": null,
-                            "FailSilentlyIfNoTarget": false,
+                            "FailSilentlyIfNoTarget": true,
                             "Getters": [
                               {
                                 "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",

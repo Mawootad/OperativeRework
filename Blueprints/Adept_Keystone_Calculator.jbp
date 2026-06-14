@@ -164,7 +164,7 @@
                 "Operation": "Mul",
                 "TargetType": "RuleInitiator",
                 "TargetEvaluator": null,
-                "FailSilentlyIfNoTarget": false,
+                "FailSilentlyIfNoTarget": true,
                 "Getters": [
                   {
                     "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
@@ -290,7 +290,7 @@
                 "Operation": "Sum",
                 "TargetType": "RuleInitiator",
                 "TargetEvaluator": null,
-                "FailSilentlyIfNoTarget": false,
+                "FailSilentlyIfNoTarget": true,
                 "Getters": [
                   {
                     "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
@@ -309,7 +309,7 @@
                       "Operation": "Mul",
                       "TargetType": "RuleInitiator",
                       "TargetEvaluator": null,
-                      "FailSilentlyIfNoTarget": false,
+                      "FailSilentlyIfNoTarget": true,
                       "Getters": [
                         {
                           "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
@@ -484,7 +484,7 @@
                 "Operation": "Sum",
                 "TargetType": "RuleInitiator",
                 "TargetEvaluator": null,
-                "FailSilentlyIfNoTarget": false,
+                "FailSilentlyIfNoTarget": true,
                 "Getters": [
                   {
                     "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
@@ -503,7 +503,7 @@
                       "Operation": "Mul",
                       "TargetType": "RuleInitiator",
                       "TargetEvaluator": null,
-                      "FailSilentlyIfNoTarget": false,
+                      "FailSilentlyIfNoTarget": true,
                       "Getters": [
                         {
                           "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
