@@ -223,3 +223,9 @@ MonoBehaviour:
   - Guid: bbb1398ebbbe41c6b6224e1057dcde46
     Filename: ServoskullPet_AllCornered_Ability
     PatchType: 2
+  - Guid: c9dba0331212410dabe7dd2e19c52cd3
+    Filename: Assassin_KillingEdge_Ability
+    PatchType: 2
+  - Guid: fc2a9216b0d94e82a6e280175d47bc50
+    Filename: Assassin_KillingEdge_Ability_SecondHand
+    PatchType: 2

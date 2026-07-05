@@ -1,0 +1,23 @@
+{
+  "m_AbilityGroups": [
+    {
+      "PatchType": "Relocate",
+      "Target": "!bp_906890eff3e545049531c09d8b4aac4b",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "!bp_2324e1b3a57c436d8b0bdd82d316eab2",
+      "InsertAfterTarget": "!bp_906890eff3e545049531c09d8b4aac4b"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "!bp_540d50090c834199b6057f40aa5e215f",
+      "InsertAfterTarget": "!bp_2324e1b3a57c436d8b0bdd82d316eab2"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "!bp_1cf206b13141425491c379bc75ef0699"
+    }
+  ]
+}
